@@ -23,14 +23,14 @@ inventory. You play the story in order, and a few doors stay locked until you ge
   (Hunger, Alert, Disarm, Snake Bite, Injury and more).
 - **Codec:** call **143.40** for your status, and **143.41 and up** to warp back to chapters you have reached.
 - **DeathLink** and **release on goal**.
-- **Tracker:** a [PopTracker pack](https://github.com/jarichboeykens-hub/MGSDeltaAP-PopTracker) with maps of every area.
+- **Tracker:** a [PopTracker pack](https://github.com/jarich-b/MGSDeltaAP-PopTracker) with maps of every area.
 
 ## Requirements
 
 - Metal Gear Solid Delta: Snake Eater on PC (Steam), the version from 2026-02-01 (`MGSDelta-Win64-Shipping.exe`,
   221,809,664 bytes). A game update can break the client.
 - Windows.
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.9 or newer.
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.8 or newer.
 - The **experimental-latest** build of [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest)
   (`UE4SS_v3.0.1-…zip`), not the older v3.0.1 "Latest" release. From the same page, also download
   `zCustomGameConfigs.zip`: the game settings for MGS Delta are in there, not in the UE4SS zip.
@@ -52,7 +52,7 @@ Install while the game is closed.
 3. **APWorld:** double-click `mgs_delta.apworld` (or put it in Archipelago's `custom_worlds` folder).
 4. **YAML:** edit [`mgsdelta.yaml`](mgsdelta.yaml). Every option is explained in it.
 5. **Tracker (optional):** put `MGSDeltaAP_poptracker_maps.zip` from the
-   [tracker releases](https://github.com/jarichboeykens-hub/MGSDeltaAP-PopTracker/releases) into PopTracker's `packs`
+   [tracker releases](https://github.com/jarich-b/MGSDeltaAP-PopTracker/releases) into PopTracker's `packs`
    folder.
 
 ## Playing
@@ -74,7 +74,6 @@ later save.
 
 ## Known issues
 
-- **Non-lethal boss checks are experimental** and off by default.
 - **Box contents depend on the difficulty.** The tracker's pickup spots come from one difficulty, so a few can differ.
   The checks are not affected.
 - The **Weather** trap only shows outdoors. The **Alert** trap starts a caution phase, but guards don't search.

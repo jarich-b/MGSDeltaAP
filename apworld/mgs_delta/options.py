@@ -221,9 +221,9 @@ class SpiritCamoCheck(Toggle):
 
 
 class NonlethalBoss(Toggle):
-    """Experimental. Beating a boss without killing it (by draining its stamina) is an extra check: "Defeat <boss> Non-
-    Lethally" for Ocelot, The Pain, The Fear, The End, The Fury and Volgin. Picking up the reward a boss leaves
-    after a non-lethal win also sends it. Boss fights can be replayed with the codec warps.
+    """Beating a boss without killing it (by draining its stamina) is an extra check: "Defeat <boss> Non-Lethally"
+    for Ocelot, The Pain, The Fear, The End, The Fury and Volgin. Picking up the reward a boss leaves after a
+    non-lethal win also sends it. Boss fights can be replayed with the codec warps.
     Warning: if you snipe The End early at Ponizovje, his fight is gone for the rest of the run."""
     display_name = "Non-Lethal Boss Checks"
 
