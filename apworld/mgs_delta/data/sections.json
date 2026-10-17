@@ -1,0 +1,322 @@
+[
+ {
+  "id": "vm",
+  "name": "Virtuous Mission",
+  "areas": [
+   "v001",
+   "v003",
+   "v004",
+   "v005",
+   "v006",
+   "v007"
+  ],
+  "unlock": null,
+  "warp": false,
+  "note": "chapter A; tutorial, closes for good when it ends",
+  "new_weapon": [
+   11,
+   14,
+   15,
+   19,
+   21
+  ],
+  "new_equipment": [
+   7,
+   24,
+   48
+  ],
+  "new_camo": [],
+  "gates": [],
+  "new_medical": [
+   1,
+   2
+  ]
+ },
+ {
+  "id": "dremuchij",
+  "name": "Dremuchij to Bolshaya Past",
+  "areas": [
+   "s001",
+   "s002",
+   "s003",
+   "s004",
+   "s005",
+   "s006",
+   "s012",
+   "s021",
+   "s022"
+  ],
+  "unlock": null,
+  "warp": true,
+  "note": "chapter A; first Operation Snake Eater section, open from the start",
+  "new_weapon": [
+   12,
+   20,
+   22,
+   23,
+   25,
+   28,
+   29
+  ],
+  "new_equipment": [
+   12,
+   14,
+   18
+  ],
+  "new_camo": [
+   55,
+   56,
+   57,
+   59,
+   75,
+   123,
+   125
+  ],
+  "gates": [],
+  "new_medical": [
+   37,
+   39,
+   44
+  ]
+ },
+ {
+  "id": "crevice",
+  "name": "Bolshaya Past Crevice to Chyornaya Peschera Cave",
+  "areas": [
+   "s023",
+   "s031",
+   "s032",
+   "s033"
+  ],
+  "unlock": null,
+  "warp": true,
+  "boss": true,
+  "note": "chapter A; Ocelot and The Pain. Entered through the s022a cutscene trap: no gate",
+  "new_weapon": [
+   18
+  ],
+  "new_equipment": [
+   8
+  ],
+  "new_camo": [
+   61
+  ],
+  "gates": [],
+  "new_medical": [
+   36,
+   38,
+   47
+  ]
+ },
+ {
+  "id": "graniny",
+  "name": "Ponizovje to Svyatogornyj",
+  "areas": [
+   "s041",
+   "s042",
+   "s043",
+   "s044",
+   "s045",
+   "s051",
+   "s052",
+   "s053",
+   "s055",
+   "s056"
+  ],
+  "unlock": "Cave Exit",
+  "warp": true,
+  "note": "chapter B, gate 1: door s033a proc 111 -> s041a, exit back s041a proc 92",
+  "new_weapon": [
+   3,
+   4,
+   27
+  ],
+  "new_equipment": [],
+  "new_camo": [
+   81,
+   120,
+   121,
+   126
+  ],
+  "gates": [
+   {
+    "from": "s033",
+    "into": "s041"
+   }
+  ],
+  "new_medical": [
+   40,
+   45
+  ]
+ },
+ {
+  "id": "sokrovenno",
+  "name": "Sokrovenno",
+  "areas": [
+   "s061",
+   "s062",
+   "s063",
+   "s064",
+   "s065"
+  ],
+  "unlock": null,
+  "warp": true,
+  "boss": true,
+  "note": "chapter B; The End (fight, sniped early at s043 or old age)",
+  "new_weapon": [
+   13,
+   16
+  ],
+  "new_equipment": [],
+  "new_camo": [],
+  "gates": [],
+  "new_medical": []
+ },
+ {
+  "id": "krasnogorje",
+  "name": "Krasnogorje to Underground Tunnel",
+  "areas": [
+   "s066",
+   "s071",
+   "s072",
+   "s073",
+   "s074",
+   "s075"
+  ],
+  "unlock": "Sokrovenno Exit",
+  "warp": true,
+  "note": "chapter C, gate 2: door s065a proc 115 / s065b proc 123 -> s066a (trap active at story >= 67), exit back s066a proc 80 (writes the pose, then loads s065a or s065b)",
+  "new_weapon": [
+   17
+  ],
+  "new_equipment": [],
+  "new_camo": [],
+  "gates": [
+   {
+    "from": "s065",
+    "into": "s066"
+   }
+  ],
+  "new_medical": [
+   41,
+   42,
+   43
+  ]
+ },
+ {
+  "id": "groznyj",
+  "name": "Groznyj Grad",
+  "areas": [
+   "s081",
+   "s091",
+   "s092",
+   "s093",
+   "s094",
+   "s101",
+   "s111",
+   "s121"
+  ],
+  "unlock": null,
+  "warp": true,
+  "note": "chapter C; The Fury and the infiltration (s101 -> s111). The Main Wing s121 gate stays locked until the return (it opens by story, a short scene in the West Wing Corridor), so its checks need the Revival Pill (rules.POST_SORROW_AREAS); the return goes up to the C3 charges in s121",
+  "new_weapon": [
+   10
+  ],
+  "new_equipment": [
+   16
+  ],
+  "new_camo": [
+   63,
+   66
+  ],
+  "gates": [],
+  "new_medical": []
+ },
+ {
+  "id": "escape",
+  "name": "Capture and Escape",
+  "areas": [
+   "s112",
+   "s113",
+   "s141",
+   "s151",
+   "s152"
+  ],
+  "unlock": null,
+  "warp": false,
+  "note": "chapter C; story-forced after the capture: the cell, the sewers, The Sorrow, Tikhogornyj",
+  "new_weapon": [
+   2
+  ],
+  "new_equipment": [
+   15
+  ],
+  "new_camo": [
+   124
+  ],
+  "gates": [],
+  "new_medical": []
+ },
+ {
+  "id": "shagohod",
+  "name": "Volgin and Shagohod",
+  "areas": [
+   "s122",
+   "s161",
+   "s162",
+   "s163",
+   "s171"
+  ],
+  "unlock": null,
+  "unlock_count": {
+   "item": "C3 Charge",
+   "count": 4
+  },
+  "warp": false,
+  "boss": true,
+  "note": "chapter D, gate 3: the 4 fuel tanks in the Main Wing s121a (story 137-141) each take one C3 Charge and the story only goes on once all are planted; C3 can only be planted there, so no door is bounced. The client keeps the C3 stock at the charges received minus the ones planted. s111a is only reachable through s121a. Then a one-way story chain",
+  "new_weapon": [],
+  "new_equipment": [],
+  "new_camo": [],
+  "gates": [],
+  "new_medical": []
+ },
+ {
+  "id": "lazorevo",
+  "name": "Lazorevo to Zaozyorje",
+  "areas": [
+   "s181",
+   "s182",
+   "s183",
+   "s191",
+   "s192"
+  ],
+  "unlock": null,
+  "warp": false,
+  "note": "chapter D; one-way story chain after the escape",
+  "new_weapon": [],
+  "new_equipment": [],
+  "new_camo": [],
+  "gates": [],
+  "new_medical": []
+ },
+ {
+  "id": "finale",
+  "name": "Rokovoj Bereg and WIG",
+  "areas": [
+   "s201",
+   "s211"
+  ],
+  "unlock": null,
+  "warp": false,
+  "boss": true,
+  "note": "chapter D; The Boss, Ocelot duel, ending",
+  "new_weapon": [
+   8
+  ],
+  "new_equipment": [],
+  "new_camo": [],
+  "gates": [],
+  "new_medical": []
+ }
+]

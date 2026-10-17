@@ -1,0 +1,944 @@
+[
+ {
+  "kind": "weapon",
+  "id": 1,
+  "name": "Survival Knife"
+ },
+ {
+  "kind": "weapon",
+  "id": 2,
+  "name": "Fork"
+ },
+ {
+  "kind": "weapon",
+  "id": 3,
+  "name": "Cigar Gas"
+ },
+ {
+  "kind": "weapon",
+  "id": 4,
+  "name": "Handkerchief"
+ },
+ {
+  "kind": "weapon",
+  "id": 5,
+  "name": "Mk22"
+ },
+ {
+  "kind": "weapon",
+  "id": 6,
+  "name": "M1911A1"
+ },
+ {
+  "kind": "weapon",
+  "id": 7,
+  "name": "EZ Gun"
+ },
+ {
+  "kind": "weapon",
+  "id": 8,
+  "name": "SAA"
+ },
+ {
+  "kind": "weapon",
+  "id": 9,
+  "name": "Patriot"
+ },
+ {
+  "kind": "weapon",
+  "id": 10,
+  "name": "Scorpion"
+ },
+ {
+  "kind": "weapon",
+  "id": 11,
+  "name": "XM16E1"
+ },
+ {
+  "kind": "weapon",
+  "id": 12,
+  "name": "AK-47"
+ },
+ {
+  "kind": "weapon",
+  "id": 13,
+  "name": "M63"
+ },
+ {
+  "kind": "weapon",
+  "id": 14,
+  "name": "M37"
+ },
+ {
+  "kind": "weapon",
+  "id": 15,
+  "name": "SVD"
+ },
+ {
+  "kind": "weapon",
+  "id": 16,
+  "name": "Mosin-Nagant"
+ },
+ {
+  "kind": "weapon",
+  "id": 17,
+  "name": "RPG-7"
+ },
+ {
+  "kind": "weapon",
+  "id": 18,
+  "name": "Torch"
+ },
+ {
+  "kind": "weapon",
+  "id": 19,
+  "name": "Grenade"
+ },
+ {
+  "kind": "weapon",
+  "id": 20,
+  "name": "WP Grenade"
+ },
+ {
+  "kind": "weapon",
+  "id": 21,
+  "name": "Stun Grenade"
+ },
+ {
+  "kind": "weapon",
+  "id": 22,
+  "name": "Chaff Grenade"
+ },
+ {
+  "kind": "weapon",
+  "id": 23,
+  "name": "Smoke Grenade"
+ },
+ {
+  "kind": "weapon",
+  "id": 24,
+  "name": "Empty Magazine"
+ },
+ {
+  "kind": "weapon",
+  "id": 25,
+  "name": "TNT"
+ },
+ {
+  "kind": "weapon",
+  "id": 26,
+  "name": "C3"
+ },
+ {
+  "kind": "weapon",
+  "id": 27,
+  "name": "Claymore"
+ },
+ {
+  "kind": "weapon",
+  "id": 28,
+  "name": "Book"
+ },
+ {
+  "kind": "weapon",
+  "id": 29,
+  "name": "Mousetrap"
+ },
+ {
+  "kind": "weapon",
+  "id": 30,
+  "name": "Directional Microphone"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 1,
+  "name": "Life Medicine"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 2,
+  "name": "Pentazemin"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 3,
+  "name": "Fake Death Pill"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 4,
+  "name": "Revival Pill"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 5,
+  "name": "Cigar"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 6,
+  "name": "Binoculars"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 7,
+  "name": "Thermal Goggles"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 8,
+  "name": "Night Vision Goggles"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 9,
+  "name": "Camera"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 10,
+  "name": "Motion Detector"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 11,
+  "name": "Active Sonar"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 12,
+  "name": "Mine Detector"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 13,
+  "name": "Anti-Personnel Sensor"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 14,
+  "name": "Cardboard Box A"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 15,
+  "name": "Cardboard Box B"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 16,
+  "name": "Cardboard Box C"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 17,
+  "name": "Cardboard Box D"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 18,
+  "name": "Croc Cap"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 19,
+  "name": "Key A"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 20,
+  "name": "Key B"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 21,
+  "name": "Key C"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 22,
+  "name": "Bandana"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 23,
+  "name": "Stealth Camo"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 24,
+  "name": "Bug Juice"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 25,
+  "name": "Banana Cap"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 26,
+  "name": "AT Camo"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 27,
+  "name": "Compass"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 28,
+  "name": "Croc Suit"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 29,
+  "name": "Gako Mask"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 30,
+  "name": "Kerotan Mask"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 31,
+  "name": "Golden Banana Cap"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 34,
+  "name": "One-Eyed Croc Cap"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 36,
+  "name": "Blood Serum"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 37,
+  "name": "Antidote"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 38,
+  "name": "Medicine"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 39,
+  "name": "Stomach Powder"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 40,
+  "name": "Ointment"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 41,
+  "name": "Splinter"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 42,
+  "name": "Disinfectant"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 43,
+  "name": "Styptic"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 44,
+  "name": "Bandage"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 45,
+  "name": "Suture Kit"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 46,
+  "name": "Pincette"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 47,
+  "name": "Battery"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 48,
+  "name": "Suppressor (M1911A1)"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 49,
+  "name": "Suppressor (Mk22)"
+ },
+ {
+  "kind": "item",
+  "group": "item",
+  "id": 50,
+  "name": "Suppressor (XM16E1)"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 51,
+  "name": "Olive Drab Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 52,
+  "name": "Tiger Stripe Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 53,
+  "name": "Leaf Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 54,
+  "name": "Tree Bark Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 55,
+  "name": "Choco Chip Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 56,
+  "name": "Splitter Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 57,
+  "name": "Rain Stroke Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 58,
+  "name": "Squares Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 59,
+  "name": "Water Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 60,
+  "name": "Black Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 61,
+  "name": "Snow Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 62,
+  "name": "Naked Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 63,
+  "name": "Sneaking Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 64,
+  "name": "Scientist Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 65,
+  "name": "Officer Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 66,
+  "name": "Crew Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 67,
+  "name": "Tuxedo Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 68,
+  "name": "Hornet Stripe Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 69,
+  "name": "Spider Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 70,
+  "name": "Moss Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 71,
+  "name": "Fire Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 72,
+  "name": "Spirit Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 73,
+  "name": "Cold War Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 74,
+  "name": "Hebi Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 75,
+  "name": "Garco Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 76,
+  "name": "Desert Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 77,
+  "name": "Dpm Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 78,
+  "name": "Flecktarn Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 79,
+  "name": "Auscam Desert Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 80,
+  "name": "Animal Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 81,
+  "name": "Fly Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 82,
+  "name": "Banana Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 83,
+  "name": "Grenade Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 84,
+  "name": "Mummy Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 85,
+  "name": "Santa Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 86,
+  "name": "Valen Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 87,
+  "name": "Eastg Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 88,
+  "name": "Westg Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 89,
+  "name": "Swood Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 90,
+  "name": "Vtiger Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 91,
+  "name": "Klmk Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 92,
+  "name": "Rainbow Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 93,
+  "name": "Chamel Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 94,
+  "name": "Barrac Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 95,
+  "name": "Fest Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 96,
+  "name": "Dododo Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 97,
+  "name": "Rock Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 98,
+  "name": "Wsnake Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 99,
+  "name": "Ndsrt Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 100,
+  "name": "Swamp Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 101,
+  "name": "Flower Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 102,
+  "name": "Anubis Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 103,
+  "name": "Bonsai Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 104,
+  "name": "Usmx Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 105,
+  "name": "White Tuxedo Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 106,
+  "name": "Battle Dress PW Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 107,
+  "name": "Sneaking PW Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 108,
+  "name": "Naked Woodland Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 109,
+  "name": "Naked Beltlink Camo"
+ },
+ {
+  "kind": "item",
+  "group": "camo",
+  "id": 110,
+  "name": "Gold Camo"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 118,
+  "name": "Woodland Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 119,
+  "name": "Black Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 120,
+  "name": "Water Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 121,
+  "name": "Desert Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 122,
+  "name": "Splitter Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 123,
+  "name": "Snow Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 124,
+  "name": "Kabuki Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 125,
+  "name": "Zombie Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 126,
+  "name": "Oyama Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 127,
+  "name": "Mask Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 128,
+  "name": "Green Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 129,
+  "name": "Brown Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 130,
+  "name": "Infinity Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 131,
+  "name": "SV Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 132,
+  "name": "UK Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 133,
+  "name": "FR Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 134,
+  "name": "GR Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 135,
+  "name": "IT Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 136,
+  "name": "SP Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 137,
+  "name": "SW Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 138,
+  "name": "JP Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 139,
+  "name": "US Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 140,
+  "name": "Gold Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 141,
+  "name": "Glasses Face Paint"
+ },
+ {
+  "kind": "item",
+  "group": "facepaint",
+  "id": 142,
+  "name": "Sunglasses Face Paint"
+ }
+]

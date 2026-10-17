@@ -1,0 +1,12 @@
+[
+ {"boss": "Ocelot", "location": "Defeat Ocelot", "section": "crevice", "story_at_least": 34, "arena": ["s023"], "nonlethal": 0, "reward": 80, "reward_areas": ["s031"], "area": "s023"},
+ {"boss": "The Pain", "location": "Defeat The Pain", "section": "crevice", "story_at_least": 40, "arena": ["s032"], "nonlethal": 1, "reward": 68, "reward_areas": ["s032"], "area": "s032"},
+ {"boss": "The Fear", "location": "Defeat The Fear", "section": "graniny", "story_at_least": 58, "nonlethal": 2, "reward": 69, "reward_areas": ["s051"], "area": "s051"},
+ {"boss": "The End", "location": "Defeat The End", "section": "sokrovenno", "story_at_least": 66, "flag": [131, 6], "nonlethal": 3, "reward": 16, "reward_kind": "weapon", "reward_areas": ["s065"], "area": "s063"},
+ {"boss": "The Fury", "location": "Defeat The Fury", "section": "groznyj", "story_at_least": 82, "nonlethal": 4, "reward": 71, "reward_areas": ["s081"], "area": "s081"},
+ {"boss": "The Sorrow", "location": "Defeat The Sorrow", "section": "escape", "story_at_least": 113, "area": "s141"},
+ {"boss": "Volgin", "location": "Defeat Volgin", "section": "shagohod", "story_at_least": 158, "area": "s122", "nonlethal": 6, "reward": 73, "reward_areas": ["s122"]},
+ {"boss": "Shagohod", "location": "Defeat Shagohod", "section": "shagohod", "story_at_least": 178, "area": "s171"},
+ {"boss": "The Boss", "location": "Defeat The Boss", "section": "finale", "story_at_least": 204, "arena": ["s201"], "area": "s201"},
+ {"boss": "Ocelot (Duel)", "location": "Defeat Ocelot (Duel)", "section": "finale", "story_at_least": 214, "arena": ["s201"], "area": "s201"}
+]

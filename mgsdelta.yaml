@@ -1,0 +1,532 @@
+# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify that your Archipelago options are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game, limited to 16 characters.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: Snake{NUMBER}
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Metal Gear Solid Delta example settings
+
+game: Metal Gear Solid Delta
+requires:
+  version: 0.6.9 # Version of Archipelago required for this yaml to work as expected.
+  game:
+    Metal Gear Solid Delta: 0.1.0 # Version of the world required for this yaml to work as expected.
+
+Metal Gear Solid Delta:
+  ################
+  # Game Options #
+  ################
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # 
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-99: 0 # random value between 0 and 99
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # 
+    # **Full:** ensure everything can be reached and acquired.
+    # 
+    # **Minimal:** ensure what is needed to reach your goal can be acquired.
+    full: 50
+    minimal: 0
+
+  death_link:
+    # When you die, everyone who enabled death link dies. Of course, the reverse is true too.
+    'false': 50
+    'true': 0
+
+  ##############
+  # Game Setup #
+  ##############
+  difficulty:
+    # The game difficulty you will play on. It changes what is in the item boxes. European Extreme has no Alert trap,
+    # since an alert ends the game there.
+    very_easy: 0
+    easy: 0
+    normal: 50
+    hard: 0
+    extreme: 0
+    european_extreme: 0
+
+  loadout:
+    # What Snake starts with. empty: nothing. knife: the Survival Knife. pistol: the knife and the Mk22. vanilla: the
+    # game's normal starting gear. random_kit: one random weapon, one item and one utility item.
+    # Tip: the Survival Knife is needed to treat some wounds (The Pain's bees, The Fear's bolts, The End's darts).
+    # Without it, those wounds stay until it arrives.
+    empty: 50
+    knife: 0
+    pistol: 0
+    vanilla: 0
+    random_kit: 0
+
+  starting_camo:
+    # Snake's starting camo and face paint. vanilla: the game's normal ones. randomized: a random camo and face paint
+    # (never Infinity Face Paint), or sometimes a wearable item instead (AT Camo, a cap or a mask).
+    vanilla: 0
+    randomized: 50
+
+  dlc_items:
+    # Put the Sneaking DLC Pack items in the item pool and the random start (Battle Dress PW, Sneaking PW, Naked
+    # Woodland, Naked Beltlink and Gold camos, Glasses and Sunglasses face paint, Croc Suit and One-Eyed Croc
+    # Cap). Only turn this on if you own the pack.
+    'false': 50
+    'true': 0
+
+  ########
+  # Goal #
+  ########
+  cave_exit_gate:
+    # The door from the Cave to Ponizovje stays locked until you get the "Cave Exit" item. Off: the door is open.
+    'false': 0
+    'true': 50
+
+  sokrovenno_exit_gate:
+    # The way from Sokrovenno to Krasnogorje stays locked until you get the "Sokrovenno Exit" item. Off: the way is
+    # open.
+    'false': 0
+    'true': 50
+
+  raikov_disguise:
+    # Raikov's disguise (the Officer Camo and the Mask face paint) is needed in Groznyj Grad. vanilla: you get them as
+    # in the normal game. randomized: both are items in the pool, and the game's own copies are taken back.
+    vanilla: 50
+    randomized: 0
+
+  shagohod_rpg:
+    # The RPG-7 the game gives you for the Shagohod fight. vanilla: you keep it. randomized: you only have it if
+    # Archipelago sent it, and logic expects it before the Shagohod.
+    vanilla: 50
+    randomized: 0
+
+  release_on_goal:
+    # When you reach the goal, the client sends !release, which gives your remaining items to their players. The
+    # server's release setting still applies.
+    'false': 0
+    'true': 50
+
+  #################
+  # Weapon Checks #
+  #################
+  weapon_checks:
+    # Which weapons you find are checks. off: none. all: every weapon in the world (22). count: only the first Weapon
+    # Count different weapons you find. Weapons you find are taken back: you only keep the weapons Archipelago
+    # sends you.
+    'off': 0
+    all: 50
+    count: 0
+
+  weapon_count:
+    # With Weapon Checks set to count: how many different weapons are checks.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 22
+    10: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-22: 0 # random value between 1 and 22
+
+  weapon_bundle:
+    # Group weapon checks: one check for every Weapon Bundle Size new weapons, instead of one per weapon. Example: 10
+    # weapons in bundles of 3 give 4 checks (at the 3rd, 6th, 9th and 10th weapon).
+    'false': 50
+    'true': 0
+
+  weapon_bundle_size:
+    # New weapons per check when Weapon Bundles is on.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 20
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-20: 0 # random value between 2 and 20
+
+  ####################
+  # Equipment Checks #
+  ####################
+  equipment_checks:
+    # Which equipment you find is a check (goggles, sensors, cardboard boxes and so on). off: none. all: every piece
+    # in the world. count: only the first Equipment Count different pieces. Equipment you find is taken back: you
+    # only keep what Archipelago sends you. Suppressors only count with Suppressor Checks on.
+    'off': 0
+    all: 50
+    count: 0
+
+  equipment_count:
+    # With Equipment Checks set to count: how many different pieces of equipment are checks.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 10
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-10: 0 # random value between 1 and 10
+
+  equipment_bundle:
+    # Group equipment checks: one check ("Item Bundle") for every Equipment Bundle Size new pieces, instead of one per
+    # piece. Example: 10 pieces in bundles of 3 give 4 checks.
+    'false': 50
+    'true': 0
+
+  equipment_bundle_size:
+    # New pieces of equipment per check when Equipment Bundles is on.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 20
+    4: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-20: 0 # random value between 2 and 20
+
+  suppressor_checks:
+    # Suppressors you pick up count as equipment checks. A suppressor box only appears while you own its gun, and you
+    # only own a gun once Archipelago sends it. So you often go back for them later with a codec warp. Logic
+    # expects them last.
+    'false': 50
+    'true': 0
+
+  ###############
+  # Camo Checks #
+  ###############
+  camo_checks:
+    # Which camos and face paints you find are checks. off: none. all: every one in the world (15). count: only the
+    # first Camo Count. Boss reward camos never count here.
+    'off': 0
+    all: 0
+    count: 50
+
+  camo_count:
+    # With Camo Checks set to count: how many different camos and face paints are checks.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 15
+    10: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-15: 0 # random value between 1 and 15
+
+  camo_bundle:
+    # Group camo checks: one check for every Camo Bundle Size new camos, instead of one per camo. Example: 10 camos in
+    # bundles of 3 give 4 checks.
+    'false': 50
+    'true': 0
+
+  camo_bundle_size:
+    # New camos per check when Camo Bundles is on.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 20
+    2: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-20: 0 # random value between 2 and 20
+
+  ##################
+  # Medical Checks #
+  ##################
+  medical_checks:
+    # Which medicine you find is a check. off: none, and you keep the medicine you find. all: every medical item in
+    # the world. count: only the first Medical Count. When on, medicine is in the item pool and you start without
+    # any.
+    'off': 50
+    all: 0
+    count: 0
+
+  medical_count:
+    # With Medical Checks set to count: how many different medical items are checks.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 13
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-1-13: 0 # random value between 1 and 13
+
+  medical_bundle:
+    # Group medical checks: one check for every Medical Bundle Size new items, instead of one per item. Example: 10
+    # items in bundles of 3 give 4 checks.
+    'false': 50
+    'true': 0
+
+  medical_bundle_size:
+    # New medical items per check when Medical Bundles is on.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 2
+    # Maximum value is 11
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-2-11: 0 # random value between 2 and 11
+
+  ###################
+  # Optional Checks #
+  ###################
+  nonlethal_boss:
+    # Experimental. Beating a boss without killing it (by draining its stamina) is an extra check: "Defeat <boss> Non-
+    # Lethally" for Ocelot, The Pain, The Fear, The End, The Fury and Volgin. Picking up the reward a boss leaves
+    # after a non-lethal win also sends it. Boss fights can be replayed with the codec warps.
+    # Warning: if you snipe The End early at Ponizovje, his fight is gone for the rest of the run.
+    'false': 50
+    'true': 0
+
+  nonlethal_logic:
+    # With Non-Lethal Boss Checks: how you get a non-lethal weapon (Mk22, Mosin-Nagant or Stun Grenade). in_logic: the
+    # checks are only expected once you have one, so you may refight a boss later. early: one is placed in an
+    # early check. starting: you start with one. On Very Easy the game's own EZ Gun also counts.
+    in_logic: 0
+    early: 50
+    starting: 0
+
+  moss_camo_check:
+    # A check for holding up The End during his fight until he drops the Moss Camo. If you already have the Moss Camo,
+    # the client hides it during the fight and gives it back after.
+    'false': 50
+    'true': 0
+
+  spirit_camo_check:
+    # A check for the Spirit Camo, which EVA gives you after The Sorrow. If you already have it, the client hides it
+    # until then and gives it back after.
+    'false': 50
+    'true': 0
+
+  kerotan_checks:
+    # Each of the 64 Kerotan frogs you shoot is a check. Only frogs shot in this run count. Warp 143.41 takes you back
+    # to the Virtuous Mission frogs.
+    'false': 0
+    'true': 50
+
+  gako_checks:
+    # Each of the 64 Gako ducks you break is a check. Only ducks broken in this run count. Warp 143.41 takes you back
+    # to the Virtuous Mission ducks.
+    'false': 0
+    'true': 50
+
+  animal_checks:
+    # Capturing each of 28 animal species for the first time is a check, alive or dead. The snakes in the last area
+    # and the gavial don't count.
+    'false': 50
+    'true': 0
+
+  no_alert_areas:
+    # This many checks for areas you get through unseen (0 = off). Stay at least 10 seconds, never get spotted and
+    # leave through an exit. Each area counts once.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 30
+    5: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-30: 0 # random value between 0 and 30
+
+  cqc_takedowns:
+    # This many checks for CQC takedowns, such as a throw or a choke (0 = off).
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 30
+    3: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-30: 0 # random value between 0 and 30
+
+  ###############
+  # Extra Items #
+  ###############
+  extra_weapon:
+    # Weapons that are always in your item pool. With few checks some items don't fit in the pool; extras make sure
+    # these do. They are items you receive, not checks, and take the place of filler first. If there isn't enough
+    # room, generation fails. Default: the Survival Knife (it treats some wounds; skipped if you start with it).
+    # All values (copy the ones you want): ["AK-47", "Book", "Chaff Grenade", "Cigar Gas", "Claymore", "Directional Microphone", "Fork", "Grenade", "Handkerchief", "M1911A1", "M37", "M63", "Mk22", "Mosin-Nagant", "Mousetrap", "Patriot", "RPG-7", "SAA", "SVD", "Scorpion", "Smoke Grenade", "Stun Grenade", "Survival Knife", "TNT", "Torch", "WP Grenade", "XM16E1"]
+    ["AK-47", "Book", "Chaff Grenade", "Cigar Gas", "Claymore", "Directional Microphone", "Fork", "Grenade", "Handkerchief", "M1911A1", "M37", "M63", "Mk22", "Mosin-Nagant", "Mousetrap", "Patriot", "RPG-7", "SAA", "SVD", "Scorpion", "Smoke Grenade", "Stun Grenade", "Survival Knife", "TNT", "Torch", "WP Grenade", "XM16E1"]
+
+  extra_weapon_random:
+    # How many random weapons to add to your item pool, besides the ones already in it.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 30
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-30: 0 # random value between 0 and 30
+
+  extra_equipment:
+    # Equipment that is always in your item pool. Works like Extra Weapons.
+    # All values (copy the ones you want): ["AT Camo", "Active Sonar", "Anti-Personnel Sensor", "Banana Cap", "Binoculars", "Bug Juice", "Cardboard Box A", "Cardboard Box B", "Cardboard Box C", "Cardboard Box D", "Cigar", "Compass", "Croc Cap", "Croc Suit", "Gako Mask", "Golden Banana Cap", "Kerotan Mask", "Mine Detector", "Motion Detector", "Night Vision Goggles", "One-Eyed Croc Cap", "Stealth Camo", "Suppressor (M1911A1)", "Suppressor (Mk22)", "Suppressor (XM16E1)", "Thermal Goggles"]
+    ["AT Camo", "Active Sonar", "Anti-Personnel Sensor", "Banana Cap", "Binoculars", "Bug Juice", "Cardboard Box A", "Cardboard Box B", "Cardboard Box C", "Cardboard Box D", "Cigar", "Compass", "Croc Cap", "Gako Mask", "Golden Banana Cap", "Kerotan Mask", "Mine Detector", "Motion Detector", "Night Vision Goggles", "Stealth Camo", "Suppressor (M1911A1)", "Suppressor (Mk22)", "Suppressor (XM16E1)", "Thermal Goggles"]
+
+  extra_equipment_random:
+    # How many random pieces of equipment to add to your item pool, besides the ones already in it.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 28
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-28: 0 # random value between 0 and 28
+
+  extra_camo:
+    # Camos and face paints that are always in your item pool, including camos you can only get as rewards. Works like
+    # Extra Weapons.
+    # All values (copy the ones you want): ["Animal Camo", "Anubis Camo", "Auscam Desert Camo", "Banana Camo", "Barrac Camo", "Battle Dress PW Camo", "Black Camo", "Black Face Paint", "Brown Face Paint", "Chamel Camo", "Choco Chip Camo", "Cold War Camo", "Crew Camo", "Desert Camo", "Desert Face Paint", "Dododo Camo", "Dpm Camo", "Eastg Camo", "FR Face Paint", "Fest Camo", "Fire Camo", "Flecktarn Camo", "Flower Camo", "Fly Camo", "GR Face Paint", "Garco Camo", "Glasses Face Paint", "Gold Camo", "Gold Face Paint", "Green Face Paint", "Grenade Camo", "Hebi Camo", "Hornet Stripe Camo", "IT Face Paint", "Infinity Face Paint", "JP Face Paint", "Kabuki Face Paint", "Klmk Camo", "Leaf Camo", "Mask Face Paint", "Moss Camo", "Mummy Camo", "Naked Beltlink Camo", "Naked Camo", "Naked Woodland Camo", "Ndsrt Camo", "Officer Camo", "Olive Drab Camo", "Oyama Face Paint", "Rain Stroke Camo", "Rainbow Camo", "Rock Camo", "SP Face Paint", "SV Face Paint", "SW Face Paint", "Santa Camo", "Scientist Camo", "Sneaking Camo", "Sneaking PW Camo", "Snow Camo", "Snow Face Paint", "Spider Camo", "Spirit Camo", "Splitter Camo", "Splitter Face Paint", "Squares Camo", "Sunglasses Face Paint", "Swamp Camo", "Swood Camo", "Tiger Stripe Camo", "Tree Bark Camo", "Tuxedo Camo", "UK Face Paint", "US Face Paint", "Valen Camo", "Vtiger Camo", "Water Camo", "Water Face Paint", "Westg Camo", "White Tuxedo Camo", "Woodland Face Paint", "Wsnake Camo", "Zombie Face Paint"]
+    ["Animal Camo", "Anubis Camo", "Auscam Desert Camo", "Banana Camo", "Barrac Camo", "Black Camo", "Black Face Paint", "Brown Face Paint", "Chamel Camo", "Choco Chip Camo", "Cold War Camo", "Crew Camo", "Desert Camo", "Desert Face Paint", "Dododo Camo", "Dpm Camo", "Eastg Camo", "FR Face Paint", "Fest Camo", "Fire Camo", "Flecktarn Camo", "Flower Camo", "Fly Camo", "GR Face Paint", "Garco Camo", "Gold Face Paint", "Green Face Paint", "Grenade Camo", "Hebi Camo", "Hornet Stripe Camo", "IT Face Paint", "Infinity Face Paint", "JP Face Paint", "Kabuki Face Paint", "Klmk Camo", "Leaf Camo", "Mask Face Paint", "Moss Camo", "Mummy Camo", "Naked Camo", "Ndsrt Camo", "Officer Camo", "Olive Drab Camo", "Oyama Face Paint", "Rain Stroke Camo", "Rainbow Camo", "Rock Camo", "SP Face Paint", "SV Face Paint", "SW Face Paint", "Santa Camo", "Scientist Camo", "Sneaking Camo", "Snow Camo", "Snow Face Paint", "Spider Camo", "Spirit Camo", "Splitter Camo", "Splitter Face Paint", "Squares Camo", "Swamp Camo", "Swood Camo", "Tiger Stripe Camo", "Tree Bark Camo", "Tuxedo Camo", "UK Face Paint", "US Face Paint", "Valen Camo", "Vtiger Camo", "Water Camo", "Water Face Paint", "Westg Camo", "White Tuxedo Camo", "Woodland Face Paint", "Wsnake Camo", "Zombie Face Paint"]
+
+  extra_camo_random:
+    # How many random camos and face paints to add to your item pool, besides the ones already in it.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 83
+    0: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-83: 0 # random value between 0 and 83
+
+  ####################
+  # Traps & Benefits #
+  ####################
+  filler_percentage:
+    # How much of the item pool is filler (benefits and traps), in percent of the room left after the required items.
+    # The rest is game items. 0: filler only when the game items run out. 100: almost only filler. Extra items
+    # replace filler first.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    33: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  trap_percentage:
+    # How much of the filler is traps; the rest is benefits. Example: 40 gives 4 traps for every 6 benefits.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    20: 50
+    random: 0
+    random-low: 0 # random value weighted towards lower values
+    random-high: 0 # random value weighted towards higher values
+    random-range-0-100: 0 # random value between 0 and 100
+
+  enabled_traps:
+    # Traps that can appear. Weather only shows outdoors. Alert starts a caution phase, but guards don't search.
+    # All values (copy the ones you want): ["Alert", "Area Reset", "Battery Drain", "Butterfingers", "Disarm", "Empty Magazine", "Fashion", "Hunger", "Injury", "Snake Bite", "Spoiled Food", "Weather"]
+    ['Hunger', 'Empty Magazine', 'Alert', 'Battery Drain', 'Fashion', 'Disarm', 'Butterfingers', 'Weather', 'Snake Bite', 'Injury', 'Spoiled Food', 'Area Reset']
+
+  injury_wounds:
+    # Wounds the Injury trap can give, picked at random. Treat them in the Cure menu.
+    # All values (copy the ones you want): ["Arrow", "Bee Sting", "Bullet", "Burn", "Cut", "Leech", "Needle", "Shotgun"]
+    ['Burn', 'Cut', 'Bullet', 'Shotgun', 'Bee Sting', 'Leech', 'Arrow', 'Needle']
+
+  injury_count:
+    # How many wounds one Injury trap gives.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 5
+    1: 50
+
+  enabled_benefits:
+    # Benefits (filler) that can appear.
+    # All values (copy the ones you want): ["Ammo Refill", "Battery Refill", "Cure Kit", "Food", "Grenade Refill", "Infinity Face Paint (temporary)", "Life Refill", "Stamina Refill", "Stealth Camo (temporary)", "Suppressor Recovery"]
+    ['Ammo Refill', 'Life Refill', 'Grenade Refill', 'Cure Kit', 'Battery Refill', 'Infinity Face Paint (temporary)', 'Stamina Refill', 'Suppressor Recovery', 'Food', 'Stealth Camo (temporary)']
+
+  ###########################
+  # Item & Location Options #
+  ###########################
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with the specified amount of these items. Example: {Bomb: 1, Arrow: 3}
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the ``!hint`` command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the ``!hint`` command.
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item.
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item.
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  plando_items:
+    # Generic items plando.
+    []

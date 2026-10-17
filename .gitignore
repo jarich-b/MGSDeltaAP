@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# Release builds
+dist/
+*.apworld
+
+# Runtime files written by the UE4SS mod and the client
+ue4ss_mod/MGSDeltaAP/*.jsonl
+ue4ss_mod/MGSDeltaAP/*.log

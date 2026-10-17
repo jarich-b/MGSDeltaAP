@@ -1,0 +1,9591 @@
+[
+ {
+  "area": "v001",
+  "stages": [
+   "v001a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   725.0,
+   -675.0,
+   441.2
+  ],
+  "timers": {
+   "v001a": 685
+  },
+  "name": "Virtuous Mission Dremuchij South: Life Medicine"
+ },
+ {
+  "area": "v001",
+  "stages": [
+   "v001a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1975.0,
+   1175.0,
+   -46.9
+  ],
+  "timers": {
+   "v001a": 684
+  },
+  "name": "Virtuous Mission Dremuchij South: Mk22 Ammo"
+ },
+ {
+  "area": "v003",
+  "stages": [
+   "v003a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   375.0,
+   37.5,
+   32.3
+  ],
+  "timers": {
+   "v003a": 818
+  },
+  "name": "Virtuous Mission Dremuchij Swampland: Mk22 Ammo"
+ },
+ {
+  "area": "v003",
+  "stages": [
+   "v003a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 24
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -300.0,
+   1275.0,
+   35.0
+  ],
+  "timers": {
+   "v003a": 821
+  },
+  "name": "Virtuous Mission Dremuchij Swampland: Bug Juice"
+ },
+ {
+  "area": "v003",
+  "stages": [
+   "v003a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   575.0,
+   825.0,
+   47.5
+  ],
+  "timers": {
+   "v003a": 819
+  },
+  "name": "Virtuous Mission Dremuchij Swampland: Grenade"
+ },
+ {
+  "area": "v003",
+  "stages": [
+   "v003a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -850.0,
+   -850.0,
+   28.9
+  ],
+  "timers": {
+   "v003a": 820
+  },
+  "name": "Virtuous Mission Dremuchij Swampland: Suppressor (M1911A1)"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1600.0,
+   -5300.0,
+   -550.0
+  ],
+  "timers": {
+   "v004a": 898
+  },
+  "name": "Virtuous Mission Dremuchij North: Mk22 Ammo"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 24
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -3103.0,
+   -1512.0,
+   3.9
+  ],
+  "timers": {
+   "v004a": 900
+  },
+  "name": "Virtuous Mission Dremuchij North: Bug Juice"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 7
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   1350.0,
+   -6150.0,
+   -437.5
+  ],
+  "name": "Virtuous Mission Dremuchij North: Thermal Goggles"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -3300.0,
+   -5800.0,
+   -37.5
+  ],
+  "timers": {
+   "v004a": 899
+  },
+  "name": "Virtuous Mission Dremuchij North: Grenade"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -500.0,
+   -4000.0,
+   -100.0
+  ],
+  "timers": {
+   "v004a": 901
+  },
+  "name": "Virtuous Mission Dremuchij North: Stun Grenade"
+ },
+ {
+  "area": "v004",
+  "stages": [
+   "v004a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   990.4,
+   843.4,
+   105.2
+  ],
+  "timers": {
+   "v004a": 902
+  },
+  "name": "Virtuous Mission Dremuchij North: SVD"
+ },
+ {
+  "area": "v005",
+  "stages": [
+   "v005a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 2
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   989.7,
+   -4598.2,
+   -484.2
+  ],
+  "timers": {
+   "v005a": 970
+  },
+  "name": "Virtuous Mission Dolinovodno: Pentazemin"
+ },
+ {
+  "area": "v005",
+  "stages": [
+   "v005a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   908.3,
+   -4599.1,
+   -484.2
+  ],
+  "timers": {
+   "v005a": 968
+  },
+  "name": "Virtuous Mission Dolinovodno: Mk22 Ammo"
+ },
+ {
+  "area": "v005",
+  "stages": [
+   "v005a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   825.0,
+   -4600.0,
+   -484.2
+  ],
+  "timers": {
+   "v005a": 969
+  },
+  "name": "Virtuous Mission Dolinovodno: XM16E1"
+ },
+ {
+  "area": "v006",
+  "stages": [
+   "v006a",
+   "v006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   900.0,
+   -7030.0,
+   75.0
+  ],
+  "timers": {
+   "v006a": 1011,
+   "v006b": 1011
+  },
+  "name": "Virtuous Mission Rassvet: Life Medicine"
+ },
+ {
+  "area": "v006",
+  "stages": [
+   "v006a",
+   "v006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1275.0,
+   -5360.0,
+   400.0
+  ],
+  "timers": {
+   "v006a": 1008,
+   "v006b": 1008
+  },
+  "name": "Virtuous Mission Rassvet: XM16E1 Ammo"
+ },
+ {
+  "area": "v006",
+  "stages": [
+   "v006a",
+   "v006b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -975.0,
+   -4465.0,
+   0.0
+  ],
+  "timers": {
+   "v006a": 1009,
+   "v006b": 1009
+  },
+  "name": "Virtuous Mission Rassvet: M37"
+ },
+ {
+  "area": "v006",
+  "stages": [
+   "v006a",
+   "v006b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -1345.0,
+   -5360.0,
+   400.0
+  ],
+  "timers": {
+   "v006a": 1010,
+   "v006b": 1010
+  },
+  "name": "Virtuous Mission Rassvet: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s001",
+  "stages": [
+   "s001a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -1875.0,
+   1299.7,
+   -44.8
+  ],
+  "timers": {
+   "s001a": 694
+  },
+  "name": "Dremuchij South: Chaff Grenade"
+ },
+ {
+  "area": "s001",
+  "stages": [
+   "s001a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   700.0,
+   1775.0,
+   25.3
+  ],
+  "timers": {
+   "s001a": 692
+  },
+  "name": "Dremuchij South: Grenade"
+ },
+ {
+  "area": "s001",
+  "stages": [
+   "s001a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   700.0,
+   1875.0,
+   34.4
+  ],
+  "timers": {
+   "s001a": 693
+  },
+  "name": "Dremuchij South: Stun Grenade"
+ },
+ {
+  "area": "s005",
+  "stages": [
+   "s005a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 57
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   908.3,
+   -4599.1,
+   -484.2
+  ],
+  "name": "Dolinovodno: Rain Stroke Camo"
+ },
+ {
+  "area": "s005",
+  "stages": [
+   "s005a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   825.0,
+   -4600.0,
+   -484.2
+  ],
+  "timers": {
+   "s005a": 976
+  },
+  "name": "Dolinovodno: Life Medicine"
+ },
+ {
+  "area": "s005",
+  "stages": [
+   "s005a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   989.7,
+   -4598.2,
+   -484.2
+  ],
+  "timers": {
+   "s005a": 977
+  },
+  "name": "Dolinovodno: Smoke Grenade"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 125
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   554.2,
+   -7518.6,
+   92.6
+  ],
+  "name": "Rassvet: Zombie Face Paint"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1000.0,
+   -4450.0,
+   5.0
+  ],
+  "timers": {
+   "s006a": 1036,
+   "s006b": 1036
+  },
+  "name": "Rassvet: AK-47 Ammo 1"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1225.0,
+   -5350.0,
+   405.0
+  ],
+  "name": "Rassvet: AK-47 Ammo 2"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   275.0,
+   -4825.0,
+   5.0
+  ],
+  "timers": {
+   "s006a": 1037,
+   "s006b": 1037
+  },
+  "name": "Rassvet: Mk22 Ammo 1"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   900.0,
+   -6100.0,
+   80.0
+  ],
+  "timers": {
+   "s006a": 1038,
+   "s006b": 1038
+  },
+  "name": "Rassvet: Mk22 Ammo 2"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 24
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   2422.7,
+   -6853.0,
+   -96.0
+  ],
+  "timers": {
+   "s006a": 1039,
+   "s006b": 1039
+  },
+  "name": "Rassvet: Bug Juice"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 7
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   1150.0,
+   -6375.0,
+   105.0
+  ],
+  "name": "Rassvet: Thermal Goggles"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 14
+  },
+  "models": [
+   "ibox_cbox_body"
+  ],
+  "pos": [
+   675.0,
+   -6625.0,
+   280.0
+  ],
+  "name": "Rassvet: Cardboard Box A"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 12
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   1675.0,
+   -5650.0,
+   80.0
+  ],
+  "name": "Rassvet: Mine Detector"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -300.0,
+   -7000.0,
+   -95.0
+  ],
+  "timers": {
+   "s006a": 1034,
+   "s006b": 1034
+  },
+  "name": "Rassvet: Smoke Grenade"
+ },
+ {
+  "area": "s006",
+  "stages": [
+   "s006a",
+   "s006b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -1325.0,
+   -5350.0,
+   406.0
+  ],
+  "timers": {
+   "s006a": 1032,
+   "s006b": 1032
+  },
+  "name": "Rassvet: AK-47"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 75
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   3011.7,
+   -2276.1,
+   -43.9
+  ],
+  "name": "Chyornyj Prud: Garco Camo"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 18
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -1102.3,
+   -2738.8,
+   254.5
+  ],
+  "name": "Chyornyj Prud: Croc Cap"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1072.6,
+   2143.2,
+   -49.7
+  ],
+  "timers": {
+   "s012a": 1104
+  },
+  "name": "Chyornyj Prud: AK-47 Ammo"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1017.5,
+   -2492.8,
+   -11.3
+  ],
+  "timers": {
+   "s012a": 1106
+  },
+  "name": "Chyornyj Prud: Mk22 Ammo 1"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -4035.0,
+   -426.5,
+   -53.3
+  ],
+  "timers": {
+   "s012a": 1105
+  },
+  "name": "Chyornyj Prud: Mk22 Ammo 2"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3135.4,
+   -2215.9,
+   -43.9
+  ],
+  "timers": {
+   "s012a": 1110
+  },
+  "name": "Chyornyj Prud: Chaff Grenade"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -1388.0,
+   2106.2,
+   -71.8
+  ],
+  "timers": {
+   "s012a": 1109
+  },
+  "name": "Chyornyj Prud: Smoke Grenade"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -3913.4,
+   -465.5,
+   -59.7
+  ],
+  "timers": {
+   "s012a": 1107
+  },
+  "name": "Chyornyj Prud: Grenade"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3633.3,
+   -9342.0,
+   4.0
+  ],
+  "timers": {
+   "s012a": 1111
+  },
+  "name": "Chyornyj Prud: WP Grenade"
+ },
+ {
+  "area": "s012",
+  "stages": [
+   "s012a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -896.1,
+   -2565.5,
+   -7.5
+  ],
+  "timers": {
+   "s012a": 1108
+  },
+  "name": "Chyornyj Prud: Stun Grenade"
+ },
+ {
+  "area": "s021",
+  "stages": [
+   "s021a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 55
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -2302.3,
+   -4287.8,
+   747.0
+  ],
+  "name": "Bolshaya Past South: Choco Chip Camo"
+ },
+ {
+  "area": "s021",
+  "stages": [
+   "s021a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 56
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   1500.0,
+   -2100.0,
+   586.2
+  ],
+  "name": "Bolshaya Past South: Splitter Camo"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 123
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -2485.0,
+   -5105.0,
+   -95.0
+  ],
+  "name": "Bolshaya Past Base: Snow Face Paint"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 59
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -1455.0,
+   -5950.0,
+   550.0
+  ],
+  "name": "Bolshaya Past Base: Water Camo"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   1612.5,
+   -8402.6,
+   1.3
+  ],
+  "timers": {
+   "s022a": 1179
+  },
+  "name": "Bolshaya Past Base: Life Medicine"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   3708.4,
+   -9269.1,
+   4.0
+  ],
+  "timers": {
+   "s022a": 1178
+  },
+  "name": "Bolshaya Past Base: Mk22 Ammo 1"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   -564.1,
+   -6506.4,
+   67.5
+  ],
+  "timers": {
+   "s022a": 1161
+  },
+  "name": "Bolshaya Past Base: Weapon Ammo 1"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 39
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1612.7,
+   -8552.9,
+   1.2
+  ],
+  "timers": {
+   "s022a": 1168
+  },
+  "name": "Bolshaya Past Base: Stomach Powder"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -650.0,
+   -6360.0,
+   67.5
+  ],
+  "timers": {
+   "s022a": 1162
+  },
+  "name": "Bolshaya Past Base: Weapon Ammo 2"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1460.8,
+   -8722.3,
+   1.3
+  ],
+  "timers": {
+   "s022a": 1167
+  },
+  "name": "Bolshaya Past Base: Bandage"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 37
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1378.1,
+   -8401.6,
+   1.5
+  ],
+  "timers": {
+   "s022a": 1166
+  },
+  "name": "Bolshaya Past Base: Antidote"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -790.0,
+   -5300.0,
+   0.0
+  ],
+  "timers": {
+   "s022a": 1176
+  },
+  "name": "Bolshaya Past Base: Mk22 Ammo 2"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -599.8,
+   -7914.4,
+   -96.0
+  ],
+  "timers": {
+   "s022a": 1177
+  },
+  "name": "Bolshaya Past Base: Mk22 Ammo 3"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   881.1,
+   -7489.5,
+   -96.4
+  ],
+  "timers": {
+   "s022a": 1165
+  },
+  "name": "Bolshaya Past Base: Book"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3726.8,
+   -9560.0,
+   4.0
+  ],
+  "timers": {
+   "s022a": 1169
+  },
+  "name": "Bolshaya Past Base: Grenade"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3656.4,
+   -9482.6,
+   6.4
+  ],
+  "timers": {
+   "s022a": 1173
+  },
+  "name": "Bolshaya Past Base: TNT"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3633.3,
+   -9342.0,
+   4.0
+  ],
+  "timers": {
+   "s022a": 1172
+  },
+  "name": "Bolshaya Past Base: WP Grenade"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -490.9,
+   -6439.3,
+   2.3
+  ],
+  "timers": {
+   "s022a": 1170
+  },
+  "name": "Bolshaya Past Base: Stun Grenade 1"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3573.6,
+   -9433.5,
+   4.0
+  ],
+  "timers": {
+   "s022a": 1171
+  },
+  "name": "Bolshaya Past Base: Stun Grenade 2"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -175.0,
+   -5255.0,
+   0.0
+  ],
+  "timers": {
+   "s022a": 1175
+  },
+  "name": "Bolshaya Past Base: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 29
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -397.2,
+   -6623.9,
+   67.5
+  ],
+  "timers": {
+   "s022a": 1163
+  },
+  "name": "Bolshaya Past Base: Mousetrap 1"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 29
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -785.0,
+   -5025.0,
+   0.0
+  ],
+  "timers": {
+   "s022a": 1164
+  },
+  "name": "Bolshaya Past Base: Mousetrap 2"
+ },
+ {
+  "area": "s022",
+  "stages": [
+   "s022a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   3801.6,
+   -9481.6,
+   4.0
+  ],
+  "timers": {
+   "s022a": 1174
+  },
+  "name": "Bolshaya Past Base: AK-47"
+ },
+ {
+  "area": "s023",
+  "stages": [
+   "s023a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1648.3,
+   -3345.3,
+   28.1
+  ],
+  "timers": {
+   "s023a": 1273
+  },
+  "name": "Bolshaya Past Crevice: AK-47 Ammo"
+ },
+ {
+  "area": "s023",
+  "stages": [
+   "s023a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2600.0,
+   -3905.0,
+   -44.3
+  ],
+  "timers": {
+   "s023a": 1274
+  },
+  "name": "Bolshaya Past Crevice: Mk22 Ammo 1"
+ },
+ {
+  "area": "s023",
+  "stages": [
+   "s023a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2500.0,
+   -3330.0,
+   8.1
+  ],
+  "timers": {
+   "s023a": 1276
+  },
+  "name": "Bolshaya Past Crevice: Mk22 Ammo 2"
+ },
+ {
+  "area": "s023",
+  "stages": [
+   "s023a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   2685.0,
+   -3915.0,
+   -54.9
+  ],
+  "timers": {
+   "s023a": 1272
+  },
+  "name": "Bolshaya Past Crevice: Grenade"
+ },
+ {
+  "area": "s023",
+  "stages": [
+   "s023a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   2285.0,
+   -3960.0,
+   472.5
+  ],
+  "timers": {
+   "s023a": 1275
+  },
+  "name": "Bolshaya Past Crevice: WP Grenade"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 80
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   555.9,
+   -424.7,
+   55.8
+  ],
+  "name": "Chyornaya Peschera Cave Branch: Animal Camo"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2532.3,
+   -4924.0,
+   -4.6
+  ],
+  "timers": {
+   "s031a": 1293
+  },
+  "name": "Chyornaya Peschera Cave Branch: AK-47 Ammo 1"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -175.0,
+   -3475.0,
+   -1120.0
+  ],
+  "timers": {
+   "s031a": 1294
+  },
+  "name": "Chyornaya Peschera Cave Branch: AK-47 Ammo 2"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2275.0,
+   -7525.0,
+   838.8
+  ],
+  "timers": {
+   "s031a": 1295
+  },
+  "name": "Chyornaya Peschera Cave Branch: AK-47 Ammo 3"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 47
+  },
+  "models": [
+   "ibox_battery_body"
+  ],
+  "pos": [
+   -1025.0,
+   -6625.0,
+   -153.1
+  ],
+  "timers": {
+   "s031a": 1298
+  },
+  "name": "Chyornaya Peschera Cave Branch: Battery"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4150.0,
+   -5150.0,
+   -508.1
+  ],
+  "timers": {
+   "s031a": 1291
+  },
+  "name": "Chyornaya Peschera Cave Branch: Mk22 Ammo 1"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -175.0,
+   -3225.0,
+   -1120.0
+  ],
+  "timers": {
+   "s031a": 1292
+  },
+  "name": "Chyornaya Peschera Cave Branch: Mk22 Ammo 2"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   2699.7,
+   -4675.1,
+   -721.0
+  ],
+  "timers": {
+   "s031a": 1302
+  },
+  "name": "Chyornaya Peschera Cave Branch: Weapon Ammo"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1375.0,
+   -6900.0,
+   230.0
+  ],
+  "timers": {
+   "s031a": 1299
+  },
+  "name": "Chyornaya Peschera Cave Branch: Blood Serum 1"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1583.6,
+   -4559.9,
+   354.0
+  ],
+  "timers": {
+   "s031a": 1300
+  },
+  "name": "Chyornaya Peschera Cave Branch: Blood Serum 2"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2200.0,
+   -7525.0,
+   838.8
+  ],
+  "timers": {
+   "s031a": 1296
+  },
+  "name": "Chyornaya Peschera Cave Branch: Mk22 Ammo 3"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 38
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1250.0,
+   -6900.0,
+   230.0
+  ],
+  "timers": {
+   "s031a": 1301
+  },
+  "name": "Chyornaya Peschera Cave Branch: Medicine"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 24
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   1553.6,
+   -8533.1,
+   815.6
+  ],
+  "timers": {
+   "s031a": 1303
+  },
+  "name": "Chyornaya Peschera Cave Branch: Bug Juice"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 8
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   2701.8,
+   -4416.8,
+   -4.4
+  ],
+  "name": "Chyornaya Peschera Cave Branch: Night Vision Goggles"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4125.0,
+   -5350.0,
+   -564.4
+  ],
+  "timers": {
+   "s031a": 1288
+  },
+  "name": "Chyornaya Peschera Cave Branch: Grenade"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   1950.0,
+   -5350.0,
+   7.4
+  ],
+  "timers": {
+   "s031a": 1290
+  },
+  "name": "Chyornaya Peschera Cave Branch: WP Grenade"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -1138.5,
+   -6628.4,
+   -135.1
+  ],
+  "timers": {
+   "s031a": 1289
+  },
+  "name": "Chyornaya Peschera Cave Branch: AK-47"
+ },
+ {
+  "area": "s031",
+  "stages": [
+   "s031a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 18
+  },
+  "models": [
+   "ibox_torch_body"
+  ],
+  "pos": [
+   1950.0,
+   -5425.0,
+   8.0
+  ],
+  "timers": {
+   "s031a": 1297
+  },
+  "name": "Chyornaya Peschera Cave Branch: Torch"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 68
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   522.2,
+   -5594.3,
+   172.1
+  ],
+  "name": "Chyornaya Peschera Cave: Hornet Stripe Camo"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 61
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   842.1,
+   -1715.7,
+   93.7
+  ],
+  "name": "Chyornaya Peschera Cave: Snow Camo"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a",
+   "s032b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -101.9,
+   -2901.9,
+   23.4
+  ],
+  "timers": {
+   "s032a": 1365,
+   "s032b": 1609
+  },
+  "name": "Chyornaya Peschera Cave: Life Medicine"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a",
+   "s032b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1829.6,
+   -721.1,
+   26.1
+  ],
+  "timers": {
+   "s032a": 1361,
+   "s032b": 1605
+  },
+  "name": "Chyornaya Peschera Cave: AK-47 Ammo"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1552.5,
+   -710.7,
+   14.0
+  ],
+  "timers": {
+   "s032a": 1360
+  },
+  "name": "Chyornaya Peschera Cave: Mk22 Ammo 1"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1175.4,
+   -5873.7,
+   60.9
+  ],
+  "timers": {
+   "s032b": 1607
+  },
+  "name": "Chyornaya Peschera Cave: M37 Ammo"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a",
+   "s032b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1961.9,
+   641.6,
+   -0.6
+  ],
+  "timers": {
+   "s032a": 1362,
+   "s032b": 1606
+  },
+  "name": "Chyornaya Peschera Cave: Mk22 Ammo 2"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -365.0,
+   -3435.0,
+   -111.1
+  ],
+  "timers": {
+   "s032b": 1608
+  },
+  "name": "Chyornaya Peschera Cave: Mk22 Ammo 3"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   405.0,
+   -4680.0,
+   -394.3
+  ],
+  "timers": {
+   "s032b": 1604
+  },
+  "name": "Chyornaya Peschera Cave: Grenade"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -1627.4,
+   -526.3,
+   9.6
+  ],
+  "timers": {
+   "s032a": 1363
+  },
+  "name": "Chyornaya Peschera Cave: Smoke Grenade"
+ },
+ {
+  "area": "s032",
+  "stages": [
+   "s032a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   1835.0,
+   659.7,
+   0.0
+  ],
+  "timers": {
+   "s032a": 1364
+  },
+  "name": "Chyornaya Peschera Cave: M37"
+ },
+ {
+  "area": "s033",
+  "stages": [
+   "s033a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   778.4,
+   -8970.0,
+   423.6
+  ],
+  "timers": {
+   "s033a": 1661
+  },
+  "name": "Chyornaya Peschera Cave Entrance: AK-47 Ammo"
+ },
+ {
+  "area": "s033",
+  "stages": [
+   "s033a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   520.0,
+   -8881.2,
+   420.4
+  ],
+  "timers": {
+   "s033a": 1660
+  },
+  "name": "Chyornaya Peschera Cave Entrance: Mk22 Ammo 1"
+ },
+ {
+  "area": "s033",
+  "stages": [
+   "s033a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   444.1,
+   -8694.2,
+   420.7
+  ],
+  "timers": {
+   "s033a": 1662
+  },
+  "name": "Chyornaya Peschera Cave Entrance: Mk22 Ammo 2"
+ },
+ {
+  "area": "s033",
+  "stages": [
+   "s033a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 12
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   290.8,
+   -5498.1,
+   -22.4
+  ],
+  "name": "Chyornaya Peschera Cave Entrance: Mine Detector"
+ },
+ {
+  "area": "s041",
+  "stages": [
+   "s041a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 120
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -19.2,
+   2512.9,
+   -86.0
+  ],
+  "name": "Ponizovje South: Water Face Paint"
+ },
+ {
+  "area": "s041",
+  "stages": [
+   "s041a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   243.9,
+   2229.7,
+   -86.0
+  ],
+  "timers": {
+   "s041a": 1708
+  },
+  "name": "Ponizovje South: M37 Ammo"
+ },
+ {
+  "area": "s041",
+  "stages": [
+   "s041a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -245.9,
+   -2172.4,
+   -86.0
+  ],
+  "timers": {
+   "s041a": 1709
+  },
+  "name": "Ponizovje South: Chaff Grenade"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1395.3,
+   -2948.7,
+   154.0
+  ],
+  "timers": {
+   "s042a": 1792
+  },
+  "name": "Ponizovje West: AK-47 Ammo"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2263.2,
+   96.9,
+   30.0
+  ],
+  "timers": {
+   "s042a": 1797
+  },
+  "name": "Ponizovje West: Mk22 Ammo 1"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1351.8,
+   -2828.3,
+   154.0
+  ],
+  "timers": {
+   "s042a": 1795
+  },
+  "name": "Ponizovje West: Mk22 Ammo 2"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2270.8,
+   308.8,
+   29.0
+  ],
+  "timers": {
+   "s042a": 1796
+  },
+  "name": "Ponizovje West: Mk22 Ammo 3"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1295.3,
+   -2887.2,
+   154.0
+  ],
+  "timers": {
+   "s042a": 1794
+  },
+  "name": "Ponizovje West: M37 Ammo"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2502.5,
+   -2015.9,
+   54.0
+  ],
+  "timers": {
+   "s042a": 1805
+  },
+  "name": "Ponizovje West: Chaff Grenade"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -1465.3,
+   -3010.8,
+   154.0
+  ],
+  "timers": {
+   "s042a": 1801
+  },
+  "name": "Ponizovje West: Grenade"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -1548.8,
+   -2948.0,
+   154.0
+  ],
+  "timers": {
+   "s042a": 1800
+  },
+  "name": "Ponizovje West: TNT"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2679.7,
+   -249.1,
+   28.9
+  ],
+  "timers": {
+   "s042a": 1807
+  },
+  "name": "Ponizovje West: WP Grenade"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2271.1,
+   -734.4,
+   28.5
+  ],
+  "timers": {
+   "s042a": 1803
+  },
+  "name": "Ponizovje West: Stun Grenade"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -2658.6,
+   1562.8,
+   -295.2
+  ],
+  "timers": {
+   "s042a": 1798
+  },
+  "name": "Ponizovje West: Suppressor (M1911A1) 1"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -2462.3,
+   -2921.5,
+   157.6
+  ],
+  "timers": {
+   "s042a": 1799
+  },
+  "name": "Ponizovje West: Suppressor (M1911A1) 2"
+ },
+ {
+  "area": "s042",
+  "stages": [
+   "s042a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -1373.8,
+   -2749.5,
+   157.5
+  ],
+  "timers": {
+   "s042a": 1793
+  },
+  "name": "Ponizovje West: SVD"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1227.1,
+   -236.8,
+   -296.0
+  ],
+  "timers": {
+   "s043a": 1884
+  },
+  "name": "Ponizovje Warehouse: Exterior: SVD Ammo"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -472.3,
+   -1317.9,
+   29.7
+  ],
+  "timers": {
+   "s043a": 1880
+  },
+  "name": "Ponizovje Warehouse: Exterior: AK-47 Ammo"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -473.7,
+   -1428.3,
+   -256.4
+  ],
+  "timers": {
+   "s043a": 1882
+  },
+  "name": "Ponizovje Warehouse: Exterior: Mk22 Ammo 1"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   603.6,
+   -1876.3,
+   -241.4
+  ],
+  "timers": {
+   "s043a": 1883
+  },
+  "name": "Ponizovje Warehouse: Exterior: Mk22 Ammo 2"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -874.7,
+   -1672.6,
+   29.1
+  ],
+  "timers": {
+   "s043a": 1885
+  },
+  "name": "Ponizovje Warehouse: Exterior: Mk22 Ammo 3"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   992.6,
+   -719.2,
+   -291.3
+  ],
+  "timers": {
+   "s043a": 1881
+  },
+  "name": "Ponizovje Warehouse: Exterior: M37 Ammo"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 8
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   -281.2,
+   -2117.0,
+   59.8
+  ],
+  "name": "Ponizovje Warehouse: Exterior: Night Vision Goggles"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -939.8,
+   -2673.5,
+   58.4
+  ],
+  "timers": {
+   "s043a": 1889
+  },
+  "name": "Ponizovje Warehouse: Exterior: Smoke Grenade"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -874.7,
+   -1451.2,
+   28.3
+  ],
+  "timers": {
+   "s043a": 1888
+  },
+  "name": "Ponizovje Warehouse: Exterior: Stun Grenade"
+ },
+ {
+  "area": "s043",
+  "stages": [
+   "s043a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   605.0,
+   -1770.0,
+   -240.0
+  ],
+  "timers": {
+   "s043a": 1886
+  },
+  "name": "Ponizovje Warehouse: Exterior: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 121
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": null,
+  "name": "Ponizovje Warehouse: Desert Face Paint"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   382.4,
+   -2265.8,
+   526.5
+  ],
+  "timers": {
+   "s044a": 1984
+  },
+  "name": "Ponizovje Warehouse: Weapon Ammo 1"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   324.7,
+   -2180.2,
+   526.5
+  ],
+  "timers": {
+   "s044a": 1982
+  },
+  "name": "Ponizovje Warehouse: Weapon Ammo 2"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 7
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   -649.0,
+   751.6,
+   10.0
+  ],
+  "name": "Ponizovje Warehouse: Thermal Goggles"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 14
+  },
+  "models": [
+   "ibox_cbox_body"
+  ],
+  "pos": [
+   -307.4,
+   -150.6,
+   10.0
+  ],
+  "name": "Ponizovje Warehouse: Cardboard Box A"
+ },
+ {
+  "area": "s044",
+  "stages": [
+   "s044a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body",
+   "ibox_weapon_sp_body"
+  ],
+  "pos": null,
+  "name": "Ponizovje Warehouse: Blood Serum"
+ },
+ {
+  "area": "s045",
+  "stages": [
+   "s045a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": null,
+  "timers": {
+   "s045a": 2064
+  },
+  "name": "Svyatogornyj South: Book"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 69
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   4733.8,
+   -7140.3,
+   -446.0
+  ],
+  "name": "Graniny Gorki South: Spider Camo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   6811.4,
+   -7225.3,
+   -196.0
+  ],
+  "timers": {
+   "s051a": 2074
+  },
+  "name": "Graniny Gorki South: Life Medicine"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2937.8,
+   -9462.0,
+   -108.0
+  ],
+  "timers": {
+   "s051b": 2181
+  },
+  "name": "Graniny Gorki South: AK-47 Ammo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6040.0,
+   -9406.6,
+   -97.6
+  ],
+  "timers": {
+   "s051b": 2186
+  },
+  "name": "Graniny Gorki South: M37 Ammo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6611.7,
+   -6245.6,
+   -148.7
+  ],
+  "timers": {
+   "s051b": 2182
+  },
+  "name": "Graniny Gorki South: Mk22 Ammo 1"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6487.5,
+   -8275.0,
+   -362.5
+  ],
+  "timers": {
+   "s051b": 2182
+  },
+  "name": "Graniny Gorki South: Mk22 Ammo 2"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2701.8,
+   -7961.1,
+   -193.4
+  ],
+  "timers": {
+   "s051b": 2185
+  },
+  "name": "Graniny Gorki South: SVD Ammo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   5845.6,
+   -7496.4,
+   -445.5
+  ],
+  "timers": {
+   "s051b": 2183
+  },
+  "name": "Graniny Gorki South: XM16E1 Ammo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   2932.8,
+   -9491.6,
+   -105.8
+  ],
+  "timers": {
+   "s051a": 2072
+  },
+  "name": "Graniny Gorki South: Weapon Ammo"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4164.8,
+   -8361.6,
+   -34.9
+  ],
+  "timers": {
+   "s051b": 2184
+  },
+  "name": "Graniny Gorki South: Mk22 Ammo 3"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4037.5,
+   -7150.0,
+   -337.5
+  ],
+  "timers": {
+   "s051b": 2184
+  },
+  "name": "Graniny Gorki South: Mk22 Ammo 4"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   3782.6,
+   -7023.5,
+   -446.0
+  ],
+  "timers": {
+   "s051a": 2073
+  },
+  "name": "Graniny Gorki South: Book"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3714.9,
+   -6276.4,
+   -447.8
+  ],
+  "timers": {
+   "s051b": 2180
+  },
+  "name": "Graniny Gorki South: Grenade 1"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4412.5,
+   -5912.5,
+   -450.0
+  ],
+  "name": "Graniny Gorki South: Grenade 2"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3000.0,
+   -7300.0,
+   -300.0
+  ],
+  "name": "Graniny Gorki South: TNT"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   5900.0,
+   -8800.0,
+   -212.5
+  ],
+  "name": "Graniny Gorki South: WP Grenade"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 27
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4437.5,
+   -9712.5,
+   -50.0
+  ],
+  "name": "Graniny Gorki South: Claymore"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4550.0,
+   -8312.5,
+   -237.5
+  ],
+  "name": "Graniny Gorki South: Stun Grenade"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   5587.5,
+   -9350.0,
+   -112.5
+  ],
+  "name": "Graniny Gorki South: AK-47"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   3375.0,
+   -9387.5,
+   -112.5
+  ],
+  "name": "Graniny Gorki South: M37"
+ },
+ {
+  "area": "s051",
+  "stages": [
+   "s051b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   3787.5,
+   -6962.5,
+   -450.0
+  ],
+  "name": "Graniny Gorki South: XM16E1"
+ },
+ {
+  "area": "s052",
+  "stages": [
+   "s052b"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 55
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -38.4,
+   -1683.6,
+   654.0
+  ],
+  "name": "Graniny Gorki Lab Exterior: Outside Walls: Choco Chip Camo"
+ },
+ {
+  "area": "s052",
+  "stages": [
+   "s052a",
+   "s052b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_grd_body",
+   "ibox_weapon_sp_body"
+  ],
+  "pos": null,
+  "name": "Graniny Gorki Lab Exterior: Outside Walls: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s052",
+  "stages": [
+   "s052b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   2891.3,
+   468.7,
+   15.0
+  ],
+  "timers": {
+   "s052b": 2232
+  },
+  "name": "Graniny Gorki Lab Exterior: Outside Walls: XM16E1"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 126
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   497.5,
+   -3469.5,
+   -135.6
+  ],
+  "name": "Graniny Gorki Lab 1F/2F: Oyama Face Paint"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 81
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   2450.0,
+   -4530.0,
+   625.0
+  ],
+  "name": "Graniny Gorki Lab 1F/2F: Fly Camo"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 45
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1870.0,
+   -1690.0,
+   0.0
+  ],
+  "timers": {
+   "s053a": 2251
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Suture Kit"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   730.0,
+   -2372.0,
+   600.0
+  ],
+  "timers": {
+   "s053a": 2256
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Weapon Ammo 1"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   530.0,
+   -2380.0,
+   600.0
+  ],
+  "timers": {
+   "s053a": 2255
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Weapon Ammo 2"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1580.1,
+   -1574.4,
+   0.0
+  ],
+  "timers": {
+   "s053a": 2249
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Blood Serum"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   2001.8,
+   -1571.4,
+   0.0
+  ],
+  "timers": {
+   "s053a": 2253
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Ointment"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   2428.7,
+   -1518.4,
+   0.0
+  ],
+  "timers": {
+   "s053a": 2252
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Bandage"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 3
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2867.5,
+   -1551.4,
+   29.0
+  ],
+  "timers": {
+   "s053a": 2257
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Cigar Gas Ammo"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   900.0,
+   -4570.0,
+   620.0
+  ],
+  "timers": {
+   "s053a": 2244
+  },
+  "name": "Graniny Gorki Lab 1F/2F: AK-47 Ammo"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   800.0,
+   -4570.0,
+   620.0
+  ],
+  "timers": {
+   "s053a": 2243
+  },
+  "name": "Graniny Gorki Lab 1F/2F: XM16E1 Ammo"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   740.0,
+   -2211.0,
+   600.0
+  ],
+  "timers": {
+   "s053a": 2254
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Weapon Ammo 3"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   1360.0,
+   -2560.0,
+   600.0
+  ],
+  "timers": {
+   "s053a": 2248
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Book"
+ },
+ {
+  "area": "s053",
+  "stages": [
+   "s053a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   2320.0,
+   -3630.0,
+   600.0
+  ],
+  "timers": {
+   "s053a": 2247
+  },
+  "name": "Graniny Gorki Lab 1F/2F: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   1037.5,
+   -1437.5,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2275
+  },
+  "name": "Graniny Gorki Lab B1 East: Life Medicine"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2197.5,
+   -1232.5,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2278
+  },
+  "name": "Graniny Gorki Lab B1 East: SVD Ammo"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2275.0,
+   -1232.5,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2279
+  },
+  "name": "Graniny Gorki Lab B1 East: M37 Ammo"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 37
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   2117.5,
+   -1340.0,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2276
+  },
+  "name": "Graniny Gorki Lab B1 East: Antidote"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2115.0,
+   -1530.0,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2277
+  },
+  "name": "Graniny Gorki Lab B1 East: Mk22 Ammo"
+ },
+ {
+  "area": "s055",
+  "stages": [
+   "s055a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 29
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   200.0,
+   -1450.0,
+   -600.0
+  ],
+  "timers": {
+   "s055a": 2274
+  },
+  "name": "Graniny Gorki Lab B1 East: Mousetrap"
+ },
+ {
+  "area": "s056",
+  "stages": [
+   "s056a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 47
+  },
+  "models": [
+   "ibox_battery_body"
+  ],
+  "pos": [
+   1747.5,
+   -3405.0,
+   -600.0
+  ],
+  "timers": {
+   "s056a": 2285
+  },
+  "name": "Graniny Gorki Lab B1 West: Battery"
+ },
+ {
+  "area": "s056",
+  "stages": [
+   "s056a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   1737.5,
+   -4387.5,
+   -600.0
+  ],
+  "timers": {
+   "s056a": 2284
+  },
+  "name": "Graniny Gorki Lab B1 West: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s056",
+  "stages": [
+   "s056a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 4
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   450.0,
+   -3675.0,
+   -580.0
+  ],
+  "timers": {
+   "s056a": 2283
+  },
+  "name": "Graniny Gorki Lab B1 West: Handkerchief"
+ },
+ {
+  "area": "s056",
+  "stages": [
+   "s056a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 3
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   1975.0,
+   -2575.0,
+   -600.0
+  ],
+  "timers": {
+   "s056a": 2282
+  },
+  "name": "Graniny Gorki Lab B1 West: Cigar Gas"
+ },
+ {
+  "area": "s061",
+  "stages": [
+   "s061a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1387.5,
+   -9410.0,
+   128.7
+  ],
+  "timers": {
+   "s061a": 2291
+  },
+  "name": "Svyatogornyj West: XM16E1 Ammo"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6550.0,
+   -6460.0,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2342
+  },
+  "name": "Svyatogornyj East: SVD Ammo"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   3250.0,
+   -8275.0,
+   65.0
+  ],
+  "timers": {
+   "s062a": 2352
+  },
+  "name": "Svyatogornyj East: Weapon Ammo 1"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   3100.0,
+   -8375.0,
+   65.0
+  ],
+  "timers": {
+   "s062a": 2351
+  },
+  "name": "Svyatogornyj East: Weapon Ammo 2"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6550.0,
+   -7367.5,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2340
+  },
+  "name": "Svyatogornyj East: XM16E1 Ammo"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   3325.0,
+   -8150.0,
+   65.0
+  ],
+  "timers": {
+   "s062a": 2350
+  },
+  "name": "Svyatogornyj East: Weapon Ammo 3"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   5820.0,
+   -7372.5,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2341
+  },
+  "name": "Svyatogornyj East: Mk22 Ammo"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   7550.0,
+   -3162.5,
+   100.7
+  ],
+  "timers": {
+   "s062a": 2346
+  },
+  "name": "Svyatogornyj East: Book"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   5355.0,
+   -7935.0,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2345
+  },
+  "name": "Svyatogornyj East: TNT"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   5562.5,
+   -6810.0,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2348
+  },
+  "name": "Svyatogornyj East: Suppressor (M1911A1) 1"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   5662.5,
+   -7590.0,
+   179.0
+  ],
+  "timers": {
+   "s062a": 2349
+  },
+  "name": "Svyatogornyj East: Suppressor (M1911A1) 2"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   6114.2,
+   -6370.0,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2344
+  },
+  "name": "Svyatogornyj East: M37"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 13
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   5865.0,
+   -7735.0,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2343
+  },
+  "name": "Svyatogornyj East: M63"
+ },
+ {
+  "area": "s062",
+  "stages": [
+   "s062a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   5372.5,
+   -6892.5,
+   184.0
+  ],
+  "timers": {
+   "s062a": 2347
+  },
+  "name": "Svyatogornyj East: Suppressor (M1911A1) 3"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   800.0,
+   -6300.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2405
+  },
+  "name": "Sokrovenno South: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a",
+   "s063b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   575.0,
+   -6225.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2403,
+   "s063b": 2403
+  },
+  "name": "Sokrovenno South: Mk22 Ammo"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a",
+   "s063b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   650.0,
+   -6100.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2402,
+   "s063b": 2402
+  },
+  "name": "Sokrovenno South: M37 Ammo"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a",
+   "s063b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   700.0,
+   -6200.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2404,
+   "s063b": 2404
+  },
+  "name": "Sokrovenno South: XM16E1 Ammo"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a",
+   "s063b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   800.0,
+   -6300.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2401,
+   "s063b": 2401
+  },
+  "name": "Sokrovenno South: TNT"
+ },
+ {
+  "area": "s063",
+  "stages": [
+   "s063a",
+   "s063b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   700.0,
+   -6300.0,
+   12.5
+  ],
+  "timers": {
+   "s063a": 2400,
+   "s063b": 2400
+  },
+  "name": "Sokrovenno South: SVD"
+ },
+ {
+  "area": "s065",
+  "stages": [
+   "s065a",
+   "s065b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   2649.8,
+   -17915.7,
+   186.2
+  ],
+  "timers": {
+   "s065a": 2520,
+   "s065b": 2520
+  },
+  "name": "Sokrovenno North: Mosin-Nagant"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   4066.7,
+   -511.7,
+   72.9
+  ],
+  "timers": {
+   "s071a": 2571
+  },
+  "name": "Krasnogorje Mountain Base: Blood Serum 1"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -2190.4,
+   -6637.7,
+   591.7
+  ],
+  "timers": {
+   "s071a": 2572
+  },
+  "name": "Krasnogorje Mountain Base: Blood Serum 2"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2142.0,
+   -6432.9,
+   561.7
+  ],
+  "timers": {
+   "s071a": 2567
+  },
+  "name": "Krasnogorje Mountain Base: Mk22 Ammo"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2188.9,
+   -6225.8,
+   536.5
+  ],
+  "timers": {
+   "s071a": 2566
+  },
+  "name": "Krasnogorje Mountain Base: SVD Ammo"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   82.7,
+   -4685.3,
+   975.8
+  ],
+  "timers": {
+   "s071a": 2569
+  },
+  "name": "Krasnogorje Mountain Base: Chaff Grenade"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4184.6,
+   -398.1,
+   62.9
+  ],
+  "timers": {
+   "s071a": 2570
+  },
+  "name": "Krasnogorje Mountain Base: Smoke Grenade"
+ },
+ {
+  "area": "s071",
+  "stages": [
+   "s071a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   116.5,
+   -4552.2,
+   991.7
+  ],
+  "timers": {
+   "s071a": 2568
+  },
+  "name": "Krasnogorje Mountain Base: Grenade"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1136.8,
+   -10584.1,
+   1207.0
+  ],
+  "timers": {
+   "s072a": 2623,
+   "s072b": 2623
+  },
+  "name": "Krasnogorje Mountainside: AK-47 Ammo"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   850.6,
+   -10781.0,
+   1202.9
+  ],
+  "timers": {
+   "s072a": 2629,
+   "s072b": 2629
+  },
+  "name": "Krasnogorje Mountainside: Mk22 Ammo"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4160.4,
+   -14958.8,
+   3993.4
+  ],
+  "timers": {
+   "s072a": 2626,
+   "s072b": 2626
+  },
+  "name": "Krasnogorje Mountainside: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   7021.4,
+   -15147.2,
+   3932.6
+  ],
+  "timers": {
+   "s072a": 2642,
+   "s072b": 2642
+  },
+  "name": "Krasnogorje Mountainside: Weapon Ammo 1"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1677.5,
+   -12701.9,
+   1512.1
+  ],
+  "timers": {
+   "s072a": 2638,
+   "s072b": 2638
+  },
+  "name": "Krasnogorje Mountainside: Styptic"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   6927.3,
+   -14927.4,
+   3934.1
+  ],
+  "timers": {
+   "s072a": 2639,
+   "s072b": 2639
+  },
+  "name": "Krasnogorje Mountainside: Weapon Ammo 2"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   6965.6,
+   -15018.1,
+   3932.5
+  ],
+  "timers": {
+   "s072a": 2640,
+   "s072b": 2640
+  },
+  "name": "Krasnogorje Mountainside: Weapon Ammo 3"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   6811.0,
+   -14924.2,
+   3933.6
+  ],
+  "timers": {
+   "s072a": 2641,
+   "s072b": 2641
+  },
+  "name": "Krasnogorje Mountainside: Weapon Ammo 4"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 36
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   6796.0,
+   -15855.7,
+   3659.0
+  ],
+  "timers": {
+   "s072a": 2633,
+   "s072b": 2633
+  },
+  "name": "Krasnogorje Mountainside: Blood Serum"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   2077.5,
+   -11946.4,
+   2600.0
+  ],
+  "timers": {
+   "s072a": 2636,
+   "s072b": 2636
+  },
+  "name": "Krasnogorje Mountainside: Bandage"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2173.3,
+   -11536.1,
+   2481.0
+  ],
+  "timers": {
+   "s072a": 2627,
+   "s072b": 2627
+  },
+  "name": "Krasnogorje Mountainside: M37 Ammo 1"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   618.3,
+   -10884.4,
+   1170.7
+  ],
+  "timers": {
+   "s072a": 2628,
+   "s072b": 2628
+  },
+  "name": "Krasnogorje Mountainside: M37 Ammo 2"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 37
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   465.2,
+   -10487.0,
+   1204.6
+  ],
+  "timers": {
+   "s072a": 2634,
+   "s072b": 2634
+  },
+  "name": "Krasnogorje Mountainside: Antidote"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   6628.3,
+   -15734.7,
+   3659.0
+  ],
+  "timers": {
+   "s072a": 2637,
+   "s072b": 2637
+  },
+  "name": "Krasnogorje Mountainside: Disinfectant"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 41
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   6800.8,
+   -15753.8,
+   3659.1
+  ],
+  "timers": {
+   "s072a": 2635,
+   "s072b": 2635
+  },
+  "name": "Krasnogorje Mountainside: Splinter"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1758.6,
+   -12885.4,
+   1526.2
+  ],
+  "timers": {
+   "s072a": 2621,
+   "s072b": 2621
+  },
+  "name": "Krasnogorje Mountainside: SVD Ammo 1"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   108.7,
+   -10418.6,
+   1171.7
+  ],
+  "timers": {
+   "s072a": 2622,
+   "s072b": 2622
+  },
+  "name": "Krasnogorje Mountainside: SVD Ammo 2"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1708.4,
+   -13096.0,
+   2002.6
+  ],
+  "timers": {
+   "s072a": 2624,
+   "s072b": 2624
+  },
+  "name": "Krasnogorje Mountainside: XM16E1 Ammo 1"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1874.5,
+   -12800.5,
+   1516.2
+  ],
+  "timers": {
+   "s072a": 2625,
+   "s072b": 2625
+  },
+  "name": "Krasnogorje Mountainside: XM16E1 Ammo 2"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   5703.3,
+   -15139.0,
+   3458.9
+  ],
+  "timers": {
+   "s072a": 2630,
+   "s072b": 2630
+  },
+  "name": "Krasnogorje Mountainside: TNT"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   1852.6,
+   -12676.6,
+   1506.9
+  ],
+  "timers": {
+   "s072a": 2632,
+   "s072b": 2632
+  },
+  "name": "Krasnogorje Mountainside: WP Grenade"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   858.1,
+   -11657.1,
+   1060.4
+  ],
+  "timers": {
+   "s072a": 2631,
+   "s072b": 2631
+  },
+  "name": "Krasnogorje Mountainside: Stun Grenade"
+ },
+ {
+  "area": "s072",
+  "stages": [
+   "s072a",
+   "s072b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 17
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_amo_b_body",
+   "ibox_weapon_rpg_body"
+  ],
+  "pos": [
+   5721.8,
+   -14989.5,
+   3458.5
+  ],
+  "timers": {
+   "s072a": 2620,
+   "s072b": 2620
+  },
+  "name": "Krasnogorje Mountainside: RPG-7"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 56
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   13640.6,
+   -17793.9,
+   6891.7
+  ],
+  "name": "Krasnogorje Mountaintop: Splitter Camo"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 45
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   10967.4,
+   -22547.5,
+   7695.4
+  ],
+  "timers": {
+   "s073a": 2711,
+   "s073b": 2711
+  },
+  "name": "Krasnogorje Mountaintop: Suture Kit"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 17
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_amo_b_body"
+  ],
+  "pos": [
+   11919.9,
+   -21518.7,
+   7594.7
+  ],
+  "timers": {
+   "s073a": 2702,
+   "s073b": 2702
+  },
+  "name": "Krasnogorje Mountaintop: RPG-7 Ammo"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   10968.2,
+   -22416.1,
+   7694.5
+  ],
+  "timers": {
+   "s073a": 2712,
+   "s073b": 2712
+  },
+  "name": "Krasnogorje Mountaintop: Ointment"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   10838.0,
+   -22546.1,
+   7694.7
+  ],
+  "timers": {
+   "s073a": 2710,
+   "s073b": 2710
+  },
+  "name": "Krasnogorje Mountaintop: Bandage"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   13160.9,
+   -18374.9,
+   7020.1
+  ],
+  "timers": {
+   "s073a": 2704,
+   "s073b": 2704
+  },
+  "name": "Krasnogorje Mountaintop: M37 Ammo"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 13
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   11922.9,
+   -21384.6,
+   7594.9
+  ],
+  "timers": {
+   "s073a": 2703,
+   "s073b": 2703
+  },
+  "name": "Krasnogorje Mountaintop: M63 Ammo"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   12042.3,
+   -21518.5,
+   7594.7
+  ],
+  "timers": {
+   "s073a": 2705,
+   "s073b": 2705
+  },
+  "name": "Krasnogorje Mountaintop: SVD Ammo"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   13161.4,
+   -18557.2,
+   7019.8
+  ],
+  "timers": {
+   "s073a": 2709,
+   "s073b": 2709
+  },
+  "name": "Krasnogorje Mountaintop: Smoke Grenade"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   12993.5,
+   -18557.9,
+   7020.1
+  ],
+  "timers": {
+   "s073a": 2708,
+   "s073b": 2708
+  },
+  "name": "Krasnogorje Mountaintop: Grenade"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   12041.6,
+   -21642.0,
+   7592.9
+  ],
+  "timers": {
+   "s073a": 2706,
+   "s073b": 2706
+  },
+  "name": "Krasnogorje Mountaintop: TNT"
+ },
+ {
+  "area": "s073",
+  "stages": [
+   "s073a",
+   "s073b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 27
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   12047.1,
+   -21384.9,
+   7593.9
+  ],
+  "timers": {
+   "s073a": 2707,
+   "s073b": 2707
+  },
+  "name": "Krasnogorje Mountaintop: Claymore"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   117.9,
+   -242.8,
+   2.5
+  ],
+  "timers": {
+   "s074a": 2751
+  },
+  "name": "Krasnogorje Mountaintop Ruins: AK-47 Ammo"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   116.4,
+   -167.1,
+   2.5
+  ],
+  "timers": {
+   "s074a": 2753
+  },
+  "name": "Krasnogorje Mountaintop Ruins: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   117.1,
+   -313.0,
+   2.5
+  ],
+  "timers": {
+   "s074a": 2750
+  },
+  "name": "Krasnogorje Mountaintop Ruins: SVD Ammo"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   466.9,
+   -311.6,
+   5.5
+  ],
+  "timers": {
+   "s074a": 2752
+  },
+  "name": "Krasnogorje Mountaintop Ruins: XM16E1 Ammo"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   418.4,
+   -1117.1,
+   204.0
+  ],
+  "timers": {
+   "s074a": 2760
+  },
+  "name": "Krasnogorje Mountaintop Ruins: Weapon Ammo 1"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   403.8,
+   -1257.3,
+   204.0
+  ],
+  "timers": {
+   "s074a": 2761
+  },
+  "name": "Krasnogorje Mountaintop Ruins: Weapon Ammo 2"
+ },
+ {
+  "area": "s074",
+  "stages": [
+   "s074a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 27
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   469.8,
+   -225.0,
+   2.5
+  ],
+  "timers": {
+   "s074a": 2754
+  },
+  "name": "Krasnogorje Mountaintop Ruins: Claymore"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 71
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   107.2,
+   -4350.0,
+   204.0
+  ],
+  "name": "Groznyj Grad Underground Tunnel: Fire Camo"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1266.4,
+   -2924.7,
+   211.5
+  ],
+  "timers": {
+   "s081a": 2776
+  },
+  "name": "Groznyj Grad Underground Tunnel: AK-47 Ammo 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 47
+  },
+  "models": [
+   "ibox_battery_body"
+  ],
+  "pos": [
+   1305.0,
+   1724.4,
+   504.3
+  ],
+  "timers": {
+   "s081a": 2784
+  },
+  "name": "Groznyj Grad Underground Tunnel: Battery"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   708.3,
+   1746.0,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2789
+  },
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   104.2,
+   -5845.3,
+   204.0
+  ],
+  "timers": {
+   "s081a": 2791
+  },
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   281.2,
+   2048.9,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2786
+  },
+  "name": "Groznyj Grad Underground Tunnel: Ointment 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -337.1,
+   -6643.0,
+   205.7
+  ],
+  "timers": {
+   "s081a": 2782
+  },
+  "name": "Groznyj Grad Underground Tunnel: Ointment 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   358.7,
+   -6680.5,
+   204.8
+  ],
+  "timers": {
+   "s081a": 2781
+  },
+  "name": "Groznyj Grad Underground Tunnel: Bandage 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   285.6,
+   5369.3,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2787
+  },
+  "name": "Groznyj Grad Underground Tunnel: M37 Ammo"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   285.6,
+   5259.7,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2788
+  },
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 3"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   285.6,
+   2281.1,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2785
+  },
+  "name": "Groznyj Grad Underground Tunnel: Bandage 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   797.1,
+   1646.0,
+   504.0
+  ],
+  "timers": {
+   "s081a": 2774
+  },
+  "name": "Groznyj Grad Underground Tunnel: AK-47 Ammo 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   303.9,
+   -5457.7,
+   203.7
+  ],
+  "timers": {
+   "s081a": 2783
+  },
+  "name": "Groznyj Grad Underground Tunnel: Disinfectant"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   109.3,
+   5370.1,
+   502.7
+  ],
+  "timers": {
+   "s081a": 2775
+  },
+  "name": "Groznyj Grad Underground Tunnel: XM16E1 Ammo 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1039.9,
+   802.7,
+   105.0
+  ],
+  "timers": {
+   "s081a": 2777
+  },
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 4"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   425.0,
+   -1012.5,
+   200.0
+  ],
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 5"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1344.1,
+   -2816.2,
+   204.2
+  ],
+  "timers": {
+   "s081a": 2780
+  },
+  "name": "Groznyj Grad Underground Tunnel: SVD Ammo"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   427.3,
+   -1018.7,
+   200.0
+  ],
+  "timers": {
+   "s081a": 2778
+  },
+  "name": "Groznyj Grad Underground Tunnel: XM16E1 Ammo 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1085.9,
+   804.4,
+   105.0
+  ],
+  "timers": {
+   "s081a": 2779
+  },
+  "name": "Groznyj Grad Underground Tunnel: Mk22 Ammo 6"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 14
+  },
+  "models": [
+   "ibox_cbox_body"
+  ],
+  "pos": [
+   -475.0,
+   -1000.0,
+   200.0
+  ],
+  "name": "Groznyj Grad Underground Tunnel: Cardboard Box A"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -484.0,
+   -1007.5,
+   200.0
+  ],
+  "timers": {
+   "s081a": 2772
+  },
+  "name": "Groznyj Grad Underground Tunnel: Grenade 1"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   187.5,
+   -3900.0,
+   200.0
+  ],
+  "name": "Groznyj Grad Underground Tunnel: TNT"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -10.8,
+   5382.1,
+   1253.7
+  ],
+  "timers": {
+   "s081a": 2773
+  },
+  "name": "Groznyj Grad Underground Tunnel: Grenade 2"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 27
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -275.0,
+   -2487.5,
+   50.0
+  ],
+  "name": "Groznyj Grad Underground Tunnel: Claymore"
+ },
+ {
+  "area": "s081",
+  "stages": [
+   "s081a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   299.7,
+   -6296.1,
+   204.0
+  ],
+  "timers": {
+   "s081a": 2790
+  },
+  "name": "Groznyj Grad Underground Tunnel: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6300.0,
+   -950.0,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2844,
+   "s091c": 2844
+  },
+  "name": "Groznyj Grad Southwest: SVD Ammo"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091b",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   5194.0,
+   -944.9,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2853,
+   "s091b": 2853,
+   "s091c": 2853
+  },
+  "name": "Groznyj Grad Southwest: Styptic"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091b",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   4184.3,
+   -1562.0,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2851,
+   "s091b": 2851,
+   "s091c": 2851
+  },
+  "name": "Groznyj Grad Southwest: Bandage"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091b",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   4416.7,
+   -1561.5,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2852,
+   "s091b": 2852,
+   "s091c": 2852
+  },
+  "name": "Groznyj Grad Southwest: Disinfectant"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   5275.0,
+   275.0,
+   -200.0
+  ],
+  "timers": {
+   "s091a": 2848,
+   "s091c": 2848
+  },
+  "name": "Groznyj Grad Southwest: Mk22 Ammo 1"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   5525.0,
+   275.0,
+   -200.0
+  ],
+  "timers": {
+   "s091a": 2850,
+   "s091c": 2850
+  },
+  "name": "Groznyj Grad Southwest: XM16E1 Ammo 1"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4299.9,
+   -349.1,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2855,
+   "s091c": 2855
+  },
+  "name": "Groznyj Grad Southwest: XM16E1 Ammo 2"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6297.2,
+   -1553.2,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2854,
+   "s091c": 2854
+  },
+  "name": "Groznyj Grad Southwest: Mk22 Ammo 2"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4237.5,
+   275.0,
+   0.0
+  ],
+  "timers": {
+   "s091a": 2846,
+   "s091c": 2846
+  },
+  "name": "Groznyj Grad Southwest: Chaff Grenade"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091b",
+   "s091c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   5400.0,
+   275.0,
+   -200.0
+  ],
+  "timers": {
+   "s091a": 2849,
+   "s091b": 2849,
+   "s091c": 2849
+  },
+  "name": "Groznyj Grad Southwest: Smoke Grenade"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091b",
+   "s091c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   5275.0,
+   412.5,
+   -200.0
+  ],
+  "timers": {
+   "s091a": 2847,
+   "s091b": 2847,
+   "s091c": 2847
+  },
+  "name": "Groznyj Grad Southwest: Grenade"
+ },
+ {
+  "area": "s091",
+  "stages": [
+   "s091a",
+   "s091c"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   500.0,
+   -2125.0,
+   100.0
+  ],
+  "timers": {
+   "s091a": 2845,
+   "s091c": 2845
+  },
+  "name": "Groznyj Grad Southwest: Suppressor (M1911A1)"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2631.6,
+   -7525.0,
+   100.0
+  ],
+  "timers": {
+   "s092b": 2887
+  },
+  "name": "Groznyj Grad Northwest: Mk22 Ammo 1"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2737.5,
+   -12900.0,
+   0.0
+  ],
+  "timers": {
+   "s092b": 2888
+  },
+  "name": "Groznyj Grad Northwest: Mk22 Ammo 2"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2698.8,
+   -5799.1,
+   -0.0
+  ],
+  "timers": {
+   "s092b": 2889
+  },
+  "name": "Groznyj Grad Northwest: Mk22 Ammo 3"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -3957.5,
+   -5053.9,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2901,
+   "s092b": 2901,
+   "s092c": 2901
+  },
+  "name": "Groznyj Grad Northwest: Styptic"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -3971.2,
+   -4300.4,
+   0.0
+  ],
+  "timers": {
+   "s092b": 2892
+  },
+  "name": "Groznyj Grad Northwest: Weapon Ammo"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -2726.3,
+   -4298.6,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2899,
+   "s092b": 2899,
+   "s092c": 2899
+  },
+  "name": "Groznyj Grad Northwest: Bandage"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -2707.5,
+   -5050.7,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2900,
+   "s092b": 2900,
+   "s092c": 2900
+  },
+  "name": "Groznyj Grad Northwest: Disinfectant"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2540.4,
+   -7525.0,
+   100.0
+  ],
+  "timers": {
+   "s092a": 2898,
+   "s092c": 2898
+  },
+  "name": "Groznyj Grad Northwest: AK-47 Ammo"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2737.5,
+   -12900.0,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2894,
+   "s092c": 2894
+  },
+  "name": "Groznyj Grad Northwest: M37 Ammo"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 13
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -398.9,
+   -7615.5,
+   251.4
+  ],
+  "timers": {
+   "s092a": 2885,
+   "s092b": 2885,
+   "s092c": 2885
+  },
+  "name": "Groznyj Grad Northwest: M63 Ammo"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 10
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2675.0,
+   -12975.0,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2893,
+   "s092c": 2893
+  },
+  "name": "Groznyj Grad Northwest: Scorpion Ammo"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2631.6,
+   -7525.0,
+   100.0
+  ],
+  "timers": {
+   "s092a": 2896,
+   "s092c": 2896
+  },
+  "name": "Groznyj Grad Northwest: Mk22 Ammo 4"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -3958.1,
+   -6550.0,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2897,
+   "s092c": 2897
+  },
+  "name": "Groznyj Grad Northwest: Mk22 Ammo 5"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2675.0,
+   -12975.0,
+   0.0
+  ],
+  "timers": {
+   "s092b": 2890
+  },
+  "name": "Groznyj Grad Northwest: Smoke Grenade"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2800.0,
+   -12987.5,
+   0.0
+  ],
+  "timers": {
+   "s092b": 2891
+  },
+  "name": "Groznyj Grad Northwest: Grenade"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 25
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   -2737.5,
+   -12825.0,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2886,
+   "s092b": 2886,
+   "s092c": 2886
+  },
+  "name": "Groznyj Grad Northwest: TNT"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092b",
+   "s092c"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 13
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -2800.0,
+   -13087.5,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2884,
+   "s092b": 2884,
+   "s092c": 2884
+  },
+  "name": "Groznyj Grad Northwest: M63"
+ },
+ {
+  "area": "s092",
+  "stages": [
+   "s092a",
+   "s092c"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_riflel_body"
+  ],
+  "pos": [
+   -2800.0,
+   -12987.5,
+   0.0
+  ],
+  "timers": {
+   "s092a": 2895,
+   "s092c": 2895
+  },
+  "name": "Groznyj Grad Northwest: XM16E1"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4444.7,
+   -6689.7,
+   100.0
+  ],
+  "timers": {
+   "s093b": 2922
+  },
+  "name": "Groznyj Grad Northeast: Mk22 Ammo 1"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6852.9,
+   -6350.5,
+   -100.0
+  ],
+  "timers": {
+   "s093b": 2923
+  },
+  "name": "Groznyj Grad Northeast: Mk22 Ammo 2"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093b",
+   "s093c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   8200.0,
+   -8950.0,
+   0.0
+  ],
+  "timers": {
+   "s093a": 2927,
+   "s093b": 2927,
+   "s093c": 2927
+  },
+  "name": "Groznyj Grad Northeast: Weapon Ammo 1"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093b",
+   "s093c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   8071.5,
+   -8922.2,
+   -0.0
+  ],
+  "timers": {
+   "s093a": 2925,
+   "s093b": 2925,
+   "s093c": 2925
+  },
+  "name": "Groznyj Grad Northeast: Weapon Ammo 2"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093b",
+   "s093c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   8023.1,
+   -9010.0,
+   0.0
+  ],
+  "timers": {
+   "s093a": 2926,
+   "s093b": 2926,
+   "s093c": 2926
+  },
+  "name": "Groznyj Grad Northeast: Weapon Ammo 3"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4397.3,
+   -6519.0,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2918,
+   "s093c": 2918
+  },
+  "name": "Groznyj Grad Northeast: Mk22 Ammo 3"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 22
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3499.8,
+   -6192.0,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2920,
+   "s093c": 2920
+  },
+  "name": "Groznyj Grad Northeast: Chaff Grenade"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093b",
+   "s093c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4367.6,
+   -6598.6,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2917,
+   "s093b": 2917,
+   "s093c": 2917
+  },
+  "name": "Groznyj Grad Northeast: Smoke Grenade"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093b",
+   "s093c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3405.2,
+   -6276.4,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2916,
+   "s093b": 2916,
+   "s093c": 2916
+  },
+  "name": "Groznyj Grad Northeast: Grenade"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 20
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   4444.7,
+   -6689.7,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2921,
+   "s093c": 2921
+  },
+  "name": "Groznyj Grad Northeast: WP Grenade"
+ },
+ {
+  "area": "s093",
+  "stages": [
+   "s093a",
+   "s093c"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   3593.7,
+   -6249.4,
+   100.0
+  ],
+  "timers": {
+   "s093a": 2919,
+   "s093c": 2919
+  },
+  "name": "Groznyj Grad Northeast: Stun Grenade"
+ },
+ {
+  "area": "s094",
+  "stages": [
+   "s094a",
+   "s094c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   4550.0,
+   -2450.0,
+   0.0
+  ],
+  "timers": {
+   "s094a": 2943,
+   "s094c": 2943
+  },
+  "name": "Groznyj Grad Southeast: AK-47 Ammo"
+ },
+ {
+  "area": "s094",
+  "stages": [
+   "s094a",
+   "s094c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   6650.0,
+   -2450.0,
+   0.0
+  ],
+  "timers": {
+   "s094a": 2942,
+   "s094c": 2942
+  },
+  "name": "Groznyj Grad Southeast: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s094",
+  "stages": [
+   "s094a",
+   "s094c"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   6925.0,
+   -3662.5,
+   475.0
+  ],
+  "timers": {
+   "s094a": 2941,
+   "s094c": 2941
+  },
+  "name": "Groznyj Grad Southeast: Book"
+ },
+ {
+  "area": "s094",
+  "stages": [
+   "s094a",
+   "s094b",
+   "s094c"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 16
+  },
+  "models": [
+   "ibox_cbox_body"
+  ],
+  "pos": [
+   8587.5,
+   -3475.0,
+   0.0
+  ],
+  "name": "Groznyj Grad Southeast: Cardboard Box C"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 66
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   767.8,
+   -1249.2,
+   525.0
+  ],
+  "name": "Groznyj Grad Weapons Lab: East Wing: Crew Camo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 63
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   433.2,
+   -951.1,
+   525.0
+  ],
+  "name": "Groznyj Grad Weapons Lab: East Wing: Sneaking Camo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 45
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1675.0,
+   -1650.0,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3168,
+   "s101b": 3168
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Suture Kit"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1872.9,
+   -1648.6,
+   200.4
+  ],
+  "timers": {
+   "s101a": 3170,
+   "s101b": 3170
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Ointment"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1575.0,
+   -950.0,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3169,
+   "s101b": 3169
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Bandage"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 37
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   2049.1,
+   -1125.5,
+   101.2
+  ],
+  "timers": {
+   "s101a": 3167,
+   "s101b": 3167
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Antidote"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   34.2,
+   -1052.6,
+   523.9
+  ],
+  "timers": {
+   "s101a": 3171,
+   "s101b": 3171
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Weapon Ammo 1"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   436.5,
+   -1149.8,
+   522.9
+  ],
+  "timers": {
+   "s101a": 3172,
+   "s101b": 3172
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Weapon Ammo 2"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2125.0,
+   -2125.0,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3160,
+   "s101b": 3160
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: M37 Ammo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 13
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2225.2,
+   -2226.4,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3159,
+   "s101b": 3159
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: M63 Ammo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2009.4,
+   -1776.3,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3158,
+   "s101b": 3158
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: XM16E1 Ammo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   2620.9,
+   -1788.9,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3157,
+   "s101b": 3157
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Mk22 Ammo"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 28
+  },
+  "models": [
+   "ibox_magazine_body"
+  ],
+  "pos": [
+   87.5,
+   -3312.5,
+   0.0
+  ],
+  "timers": {
+   "s101a": 3155,
+   "s101b": 3155
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Book"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 7
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   1624.5,
+   -3274.1,
+   500.0
+  ],
+  "name": "Groznyj Grad Weapons Lab: East Wing: Thermal Goggles"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 10
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   2500.0,
+   -2425.0,
+   0.0
+  ],
+  "timers": {
+   "s101a": 3154,
+   "s101b": 3154
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Scorpion"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   31.2,
+   -1249.2,
+   525.0
+  ],
+  "timers": {
+   "s101a": 3164,
+   "s101b": 3164
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Suppressor (M1911A1) 1"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   31.2,
+   -951.1,
+   525.0
+  ],
+  "timers": {
+   "s101a": 3162,
+   "s101b": 3162
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Suppressor (M1911A1) 2"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 4
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   350.0,
+   -2050.0,
+   500.0
+  ],
+  "timers": {
+   "s101a": 3153,
+   "s101b": 3153
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Handkerchief"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 3
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   2406.4,
+   -1630.4,
+   500.0
+  ],
+  "timers": {
+   "s101a": 3152,
+   "s101b": 3152
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Cigar Gas"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   1587.5,
+   -1775.0,
+   0.0
+  ],
+  "timers": {
+   "s101a": 3163,
+   "s101b": 3163
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Suppressor (M1911A1) 3"
+ },
+ {
+  "area": "s101",
+  "stages": [
+   "s101a",
+   "s101b"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 29
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   2375.0,
+   -1350.0,
+   100.0
+  ],
+  "timers": {
+   "s101a": 3156,
+   "s101b": 3156
+  },
+  "name": "Groznyj Grad Weapons Lab: East Wing: Mousetrap"
+ },
+ {
+  "area": "s111",
+  "stages": [
+   "s111a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -5276.4,
+   -1799.5,
+   501.5
+  ],
+  "timers": {
+   "s111a": 3322
+  },
+  "name": "Groznyj Grad Weapons Lab: West Wing Corridor: Life Medicine"
+ },
+ {
+  "area": "s111",
+  "stages": [
+   "s111a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -5526.3,
+   -1662.7,
+   500.0
+  ],
+  "timers": {
+   "s111a": 3321
+  },
+  "name": "Groznyj Grad Weapons Lab: West Wing Corridor: Suppressor (M1911A1) 1"
+ },
+ {
+  "area": "s111",
+  "stages": [
+   "s111a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -5526.3,
+   -1937.5,
+   500.0
+  ],
+  "timers": {
+   "s111a": 3320
+  },
+  "name": "Groznyj Grad Weapons Lab: West Wing Corridor: Suppressor (M1911A1) 2"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 45
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   987.5,
+   450.0,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3195
+  },
+  "name": "Groznyj Grad Torture Room: Suture Kit"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   826.5,
+   151.1,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3199
+  },
+  "name": "Groznyj Grad Torture Room: Styptic"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 40
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1125.0,
+   350.0,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3197
+  },
+  "name": "Groznyj Grad Torture Room: Ointment"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   825.0,
+   450.0,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3196
+  },
+  "name": "Groznyj Grad Torture Room: Bandage"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   1125.0,
+   450.0,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3198
+  },
+  "name": "Groznyj Grad Torture Room: Disinfectant"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 9
+  },
+  "models": [
+   "ibox_item_body"
+  ],
+  "pos": [
+   1262.5,
+   -1375.0,
+   -0.0
+  ],
+  "name": "Groznyj Grad Torture Room: Camera"
+ },
+ {
+  "area": "s112",
+  "stages": [
+   "s112a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 2
+  },
+  "models": [
+   "ibox_fork_body"
+  ],
+  "pos": [
+   2300.0,
+   -425.0,
+   -0.0
+  ],
+  "timers": {
+   "s112a": 3192
+  },
+  "name": "Groznyj Grad Torture Room: Fork"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -644.1,
+   2292.5,
+   1350.0
+  ],
+  "timers": {
+   "s113a": 3220
+  },
+  "name": "Groznyj Grad Sewers: Life Medicine 1"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   300.0,
+   -1500.0,
+   175.0
+  ],
+  "timers": {
+   "s113a": 3221
+  },
+  "name": "Groznyj Grad Sewers: Life Medicine 2"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -2.9,
+   -5398.7,
+   -375.0
+  ],
+  "timers": {
+   "s113a": 3225
+  },
+  "name": "Groznyj Grad Sewers: Styptic"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -604.5,
+   2405.0,
+   100.0
+  ],
+  "timers": {
+   "s113a": 3222
+  },
+  "name": "Groznyj Grad Sewers: Weapon Ammo 1"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -898.4,
+   -5143.4,
+   -375.0
+  ],
+  "timers": {
+   "s113a": 3223
+  },
+  "name": "Groznyj Grad Sewers: Weapon Ammo 2"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   -894.7,
+   -5652.5,
+   -375.0
+  ],
+  "timers": {
+   "s113a": 3224
+  },
+  "name": "Groznyj Grad Sewers: Weapon Ammo 3"
+ },
+ {
+  "area": "s113",
+  "stages": [
+   "s113a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": null,
+  "name": "Groznyj Grad Sewers: Mk22 Ammo"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -2362.5,
+   -7575.0,
+   0.0
+  ],
+  "timers": {
+   "s121a": 3240
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Life Medicine"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 95
+  },
+  "models": [
+   "ibox_caloriemate_body"
+  ],
+  "pos": [
+   -275.0,
+   -7700.0,
+   650.0
+  ],
+  "timers": {
+   "s121a": 3243
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Weapon Ammo 1"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -3562.5,
+   -2225.0,
+   1000.0
+  ],
+  "timers": {
+   "s121a": 3242
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Weapon Ammo 2"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 3
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -3749.7,
+   -7653.9,
+   1100.0
+  ],
+  "timers": {
+   "s121a": 3247
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Cigar Gas Ammo"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -3563.0,
+   -60.6,
+   250.0
+  ],
+  "timers": {
+   "s121a": 3245
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Mosin-Nagant Ammo 1"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -548.7,
+   -1545.9,
+   0.0
+  ],
+  "timers": {
+   "s121a": 3246
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Mosin-Nagant Ammo 2"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 93
+  },
+  "models": [
+   "ibox_chiki_body"
+  ],
+  "pos": [
+   -1962.5,
+   -6341.5,
+   0.0
+  ],
+  "timers": {
+   "s121a": 3241
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Weapon Ammo 3"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -3062.2,
+   -4000.8,
+   250.0
+  ],
+  "timers": {
+   "s121a": 3244
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Mk22 Ammo"
+ },
+ {
+  "area": "s121",
+  "stages": [
+   "s121a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 4
+  },
+  "models": [
+   "ibox_amo_a_body",
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   -250.9,
+   -7657.4,
+   1100.0
+  ],
+  "timers": {
+   "s121a": 3248
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing: Handkerchief"
+ },
+ {
+  "area": "s122",
+  "stages": [
+   "s122a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1799.5,
+   -1742.1,
+   -626.0
+  ],
+  "timers": {
+   "s122a": 3264
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing B1: AK-47 Ammo"
+ },
+ {
+  "area": "s122",
+  "stages": [
+   "s122a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 10
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1806.9,
+   -2917.7,
+   -626.0
+  ],
+  "timers": {
+   "s122a": 3267
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing B1: Scorpion Ammo"
+ },
+ {
+  "area": "s122",
+  "stages": [
+   "s122a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2907.7,
+   -2918.3,
+   -626.0
+  ],
+  "timers": {
+   "s122a": 3265
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing B1: Mk22 Ammo 1"
+ },
+ {
+  "area": "s122",
+  "stages": [
+   "s122a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2908.4,
+   -1741.7,
+   -626.0
+  ],
+  "timers": {
+   "s122a": 3266
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing B1: Mk22 Ammo 2"
+ },
+ {
+  "area": "s122",
+  "stages": [
+   "s122a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2354.1,
+   -3096.4,
+   -626.0
+  ],
+  "timers": {
+   "s122a": 3268
+  },
+  "name": "Groznyj Grad Weapons Lab: Main Wing B1: XM16E1 Ammo"
+ },
+ {
+  "area": "s151",
+  "stages": [
+   "s151a"
+  ],
+  "category": "camo",
+  "vanilla": {
+   "kind": "item",
+   "id": 124
+  },
+  "models": [
+   "ibox_uniform_body"
+  ],
+  "pos": [
+   -885.6,
+   -2471.2,
+   -500.6
+  ],
+  "name": "Tikhogornyj: Kabuki Face Paint"
+ },
+ {
+  "area": "s151",
+  "stages": [
+   "s151a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 1
+  },
+  "models": [
+   "ibox_medicine_b_body"
+  ],
+  "pos": [
+   -69.4,
+   1264.9,
+   7.8
+  ],
+  "timers": {
+   "s151a": 3272
+  },
+  "name": "Tikhogornyj: Life Medicine"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 43
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -208.3,
+   -8202.2,
+   -0.0
+  ],
+  "timers": {
+   "s152a": 3344
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Styptic"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   -2911.3,
+   -12992.7,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3345
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Weapon Ammo"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 44
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   -1179.0,
+   -9219.9,
+   -0.0
+  ],
+  "timers": {
+   "s152a": 3342
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Bandage"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "item",
+   "id": 42
+  },
+  "models": [
+   "ibox_medicine_a_body"
+  ],
+  "pos": [
+   91.2,
+   -4989.7,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3343
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Disinfectant"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1499.4,
+   -10729.1,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3338
+  },
+  "name": "Tikhogornyj: Behind Waterfall: AK-47 Ammo"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2487.3,
+   -13737.4,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3337
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Mk22 Ammo 1"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -1457.9,
+   -9884.2,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3336
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Mk22 Ammo 2"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -2629.8,
+   -13254.1,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3346
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Mk22 Ammo 3"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "equipment",
+  "vanilla": {
+   "kind": "item",
+   "id": 15
+  },
+  "models": [
+   "ibox_cbox_body"
+  ],
+  "pos": [
+   -2312.2,
+   -13743.1,
+   -0.0
+  ],
+  "name": "Tikhogornyj: Behind Waterfall: Cardboard Box B"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   112.5,
+   -7112.5,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3341
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Suppressor (M1911A1) 1"
+ },
+ {
+  "area": "s152",
+  "stages": [
+   "s152a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "item",
+   "id": 48
+  },
+  "models": [
+   "ibox_weapon_sp_body"
+  ],
+  "pos": [
+   -542.5,
+   -4975.5,
+   0.0
+  ],
+  "timers": {
+   "s152a": 3340
+  },
+  "name": "Tikhogornyj: Behind Waterfall: Suppressor (M1911A1) 2"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   560.0,
+   60.0,
+   -138.0
+  ],
+  "timers": {
+   "s191a": 3373,
+   "s191b": 3373
+  },
+  "name": "Zaozyorje West: XM16E1 Ammo"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   65.0,
+   270.0,
+   -149.1
+  ],
+  "timers": {
+   "s191a": 3374,
+   "s191b": 3374
+  },
+  "name": "Zaozyorje West: AK-47 Ammo"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   120.0,
+   415.0,
+   -151.6
+  ],
+  "timers": {
+   "s191a": 3376,
+   "s191b": 3376
+  },
+  "name": "Zaozyorje West: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   255.5,
+   128.7,
+   -142.2
+  ],
+  "timers": {
+   "s191a": 3377,
+   "s191b": 3377
+  },
+  "name": "Zaozyorje West: Weapon Ammo 1"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 94
+  },
+  "models": [
+   "ibox_ration_body"
+  ],
+  "pos": [
+   363.3,
+   105.8,
+   -141.3
+  ],
+  "timers": {
+   "s191a": 3378,
+   "s191b": 3378
+  },
+  "name": "Zaozyorje West: Weapon Ammo 2"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   570.0,
+   175.0,
+   -143.8
+  ],
+  "timers": {
+   "s191a": 3372,
+   "s191b": 3372
+  },
+  "name": "Zaozyorje West: Mk22 Ammo"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   25.0,
+   345.0,
+   -146.6
+  ],
+  "timers": {
+   "s191a": 3375,
+   "s191b": 3375
+  },
+  "name": "Zaozyorje West: SVD Ammo"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 23
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   555.0,
+   450.0,
+   -154.4
+  ],
+  "timers": {
+   "s191a": 3370,
+   "s191b": 3370
+  },
+  "name": "Zaozyorje West: Smoke Grenade"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 19
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   470.0,
+   375.0,
+   -155.9
+  ],
+  "timers": {
+   "s191a": 3368,
+   "s191b": 3368
+  },
+  "name": "Zaozyorje West: Grenade"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 27
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   475.0,
+   140.0,
+   -142.0
+  ],
+  "timers": {
+   "s191a": 3371,
+   "s191b": 3371
+  },
+  "name": "Zaozyorje West: Claymore"
+ },
+ {
+  "area": "s191",
+  "stages": [
+   "s191a",
+   "s191b"
+  ],
+  "category": "grenade",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 21
+  },
+  "models": [
+   "ibox_weapon_grd_body"
+  ],
+  "pos": [
+   560.0,
+   330.0,
+   -153.1
+  ],
+  "timers": {
+   "s191a": 3369,
+   "s191b": 3369
+  },
+  "name": "Zaozyorje West: Stun Grenade"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 12
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -896.6,
+   -66.9,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: AK-47 Ammo"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 14
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   1268.1,
+   379.2,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: M37 Ammo"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -151.7,
+   486.8,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: Mk22 Ammo 1"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 16
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -813.1,
+   -714.6,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: Mosin-Nagant Ammo"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 15
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   238.4,
+   -1622.7,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: SVD Ammo"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 5
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   -237.5,
+   295.4,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: Mk22 Ammo 2"
+ },
+ {
+  "area": "s201",
+  "stages": [
+   "s201a"
+  ],
+  "category": "consumable",
+  "vanilla": {
+   "kind": "ammo",
+   "id": 11
+  },
+  "models": [
+   "ibox_amo_a_body"
+  ],
+  "pos": [
+   70.4,
+   1986.8,
+   4.6
+  ],
+  "name": "Rokovoj Bereg: XM16E1 Ammo"
+ },
+ {
+  "area": "s211",
+  "stages": [
+   "s211a"
+  ],
+  "category": "weapon",
+  "vanilla": {
+   "kind": "weapon",
+   "id": 8
+  },
+  "models": [
+   "ibox_weapon_handgun_body"
+  ],
+  "pos": [
+   -50.0,
+   800.0,
+   375.0
+  ],
+  "name": "WIG: Interior: SAA"
+ }
+]

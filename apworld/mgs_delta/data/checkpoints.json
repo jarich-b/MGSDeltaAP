@@ -1,0 +1,16 @@
+[
+ {"name": "Virtuous Mission", "freq": 14341, "area": "v001", "unlock_area": "v003", "stage": "v001a", "via": "v003a", "story": 0, "vm_story": 17, "chapter": "A"},
+ {"name": "Dremuchij", "freq": 14342, "area": "s002", "stage": "s002a", "via": "s000a_1", "story": 11, "chapter": "A"},
+ {"name": "Chyornaya Peschera Cave (start)", "freq": 14343, "area": "s031", "stage": "s031a", "via": "s023a_0", "story": 35, "chapter": "A"},
+ {"name": "After The Pain", "freq": 14344, "area": "s032", "stage": "s032a", "via": "s032b_0", "story": 41, "chapter": "A"},
+ {"name": "Ponizovje / Graniny Gorki", "freq": 14345, "area": "s041", "stage": "s041a", "via": "s033a", "story": 43, "chapter": "B"},
+ {"name": "Svyatogornyj & The End", "freq": 14346, "area": "s045", "stage": "s045a", "via": "s044a", "story": 59, "chapter": "B"},
+ {"name": "Sokrovenno North", "freq": 14347, "area": "s065", "stage": "s065a", "via": "s066a", "story": 65, "story_if_end_alive": 65, "story_if_end_dead": 67, "stage_if_end_sniped": "s065b", "chapter": "B"},
+ {"name": "Krasnogorje", "freq": 14348, "area": "s071", "stage": "s071a", "via": "s066a", "story": 67, "chapter": "C"},
+ {"name": "Groznyj Grad infiltration", "freq": 14349, "area": "s081", "stage": "s081a", "via": "s081a_0", "via_proc": 55, "story": 83, "chapter": "C"},
+ {"name": "Escape & The Sorrow", "freq": 14350, "area": "s112", "stage": "s112a", "via": "s112a_0", "story": 105, "chapter": "C"},
+ {"name": "Groznyj Grad return", "freq": 14351, "area": "s152", "stage": "s152a", "via": "s151a", "via_proc": 58, "story": 135, "chapter": "C"},
+ {"name": "Shagohod", "freq": 14352, "area": "s161", "stage": "s161a", "via": "s161a_0", "story": 161, "chapter": "D"},
+ {"name": "Zaozyorje", "freq": 14353, "area": "s191", "stage": "s191a", "via": "s191a_0", "via_proc": 79, "story": 187, "chapter": "D"},
+ {"name": "Finale", "freq": 14354, "area": "s201", "stage": "s201a", "via": "s201a_0", "story": 203, "chapter": "D"}
+]

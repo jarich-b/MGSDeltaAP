@@ -1,0 +1,670 @@
+{
+ "_source": "tools/gamestate_offsets.py (static analysis of the exe, untested in-game). Address = *(uint64*)base + offset (follow 'chain' derefs first if present).",
+ "ENDPlayerSleepLife": {
+  "base": "0x14c532038",
+  "offset": "0x19b4",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b5b0",
+  "notes": "",
+  "thunk": "0x144fb8b70"
+ },
+ "ENEMEMCurrentNum": {
+  "base": "0x14c532038",
+  "offset": "0x2c42",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b5c0",
+  "notes": "",
+  "thunk": "0x144fb7f70"
+ },
+ "EVALife": {
+  "base": "0x14c532038",
+  "offset": "0x19b8",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b5d0",
+  "notes": "",
+  "thunk": "0x144fb8a70"
+ },
+ "EVALifeMax": {
+  "base": "0x14c532038",
+  "offset": "0x19ba",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b5e0",
+  "notes": "",
+  "thunk": "0x144fb8970"
+ },
+ "EVAStamina": {
+  "base": "0x14c532038",
+  "offset": "0x19bc",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b5f0",
+  "notes": "",
+  "thunk": "0x144fb8870"
+ },
+ "EVAStaminaMax": {
+  "base": "0x14c532038",
+  "offset": "0x19be",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b600",
+  "notes": "",
+  "thunk": "0x144fb8770"
+ },
+ "GMActiveItemsMax": {
+  "base": "0x14c532038",
+  "offset": "0x6e0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b610",
+  "notes": "",
+  "thunk": "0x144fbad70"
+ },
+ "GMActiveWeaponsMax": {
+  "base": "0x14c532038",
+  "offset": "0x6dc",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b620",
+  "notes": "",
+  "thunk": "0x144fbae70"
+ },
+ "GMAlertCount": {
+  "base": "0x14c532038",
+  "offset": "0x38",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b630",
+  "notes": "",
+  "thunk": "0x144fbb770"
+ },
+ "GMC3Time": {
+  "base": "0x14c532038",
+  "offset": "0x2c44",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b690",
+  "notes": "",
+  "thunk": "0x144fb7e70"
+ },
+ "GMCamRotX": {
+  "base": "0x14c532038",
+  "offset": "0xba0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6a0",
+  "notes": "",
+  "thunk": "0x144fb9070"
+ },
+ "GMCamRotY": {
+  "base": "0x14c532038",
+  "offset": "0xba4",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6b0",
+  "notes": "",
+  "thunk": "0x144fb8f70"
+ },
+ "GMCamTargX": {
+  "base": "0x14c532038",
+  "offset": "0xb94",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6c0",
+  "notes": "",
+  "thunk": "0x144fb9370"
+ },
+ "GMCamTargY": {
+  "base": "0x14c532038",
+  "offset": "0xb98",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6d0",
+  "notes": "",
+  "thunk": "0x144fb9270"
+ },
+ "GMCamTargZ": {
+  "base": "0x14c532038",
+  "offset": "0xb9c",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6e0",
+  "notes": "",
+  "thunk": "0x144fb9170"
+ },
+ "GMCamZoom": {
+  "base": "0x14c532038",
+  "offset": "0xba8",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b6f0",
+  "notes": "",
+  "thunk": "0x144fb8e70"
+ },
+ "GMCameraX": {
+  "base": "0x14c532038",
+  "offset": "0xb88",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b700",
+  "notes": "",
+  "thunk": "0x144fb9670"
+ },
+ "GMCameraY": {
+  "base": "0x14c532038",
+  "offset": "0xb8c",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b710",
+  "notes": "",
+  "thunk": "0x144fb9570"
+ },
+ "GMCameraZ": {
+  "base": "0x14c532038",
+  "offset": "0xb90",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b720",
+  "notes": "",
+  "thunk": "0x144fb9470"
+ },
+ "GMClaymoreStorageCount": {
+  "base": "0x14c532038",
+  "offset": "0xbb0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b730",
+  "notes": "",
+  "thunk": "0x144fb8c70"
+ },
+ "GMConfiguration": {
+  "base": "0x14c532038",
+  "offset": "0x8",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b740",
+  "notes": "",
+  "thunk": "0x144fbbd70"
+ },
+ "GMContinueCount": {
+  "base": "0x14c532038",
+  "offset": "0x34",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b750",
+  "notes": "",
+  "thunk": "0x144fbb970"
+ },
+ "GMDamageCount": {
+  "base": "0x14c532038",
+  "offset": "0x42",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b780",
+  "notes": "",
+  "thunk": "0x144fbb470"
+ },
+ "GMDamageLifeCount": {
+  "base": "0x14c532038",
+  "offset": "0x44",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b790",
+  "notes": "",
+  "thunk": "0x144fbb370"
+ },
+ "GMEatCount": {
+  "base": "0x14c532038",
+  "offset": "0x46",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b7c0",
+  "notes": "",
+  "thunk": "0x144fbb270"
+ },
+ "GMGameClearCount": {
+  "base": "0x14c532038",
+  "offset": "0x0",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b7f0",
+  "notes": "",
+  "thunk": "0x144fbc170"
+ },
+ "GMGameLevel": {
+  "base": "0x14c532038",
+  "offset": "0x6",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b800",
+  "notes": "",
+  "thunk": "0x144fbbe70"
+ },
+ "GMGamePhase": {
+  "base": "0x14c532038",
+  "offset": "0x19c2",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b810",
+  "notes": "",
+  "thunk": "0x144fb8570"
+ },
+ "GMGlobalLoadCount": {
+  "base": "0x14c532038",
+  "offset": "0x1a3c",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b820",
+  "notes": "",
+  "thunk": "0x144fb8170"
+ },
+ "GMItem": {
+  "base": "0x14c532038",
+  "offset": "0x706",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b830",
+  "notes": "",
+  "thunk": "0x144fbab70"
+ },
+ "GMItemPrev": {
+  "base": "0x14c532038",
+  "offset": "0x70a",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b840",
+  "notes": "",
+  "thunk": "0x144fba970"
+ },
+ "GMKillCount": {
+  "base": "0x14c532038",
+  "offset": "0x3a",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b850",
+  "notes": "",
+  "thunk": "0x144fbb670"
+ },
+ "GMLanguage": {
+  "base": "0x14c532038",
+  "offset": "0x4",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b880",
+  "notes": "",
+  "thunk": "0x144fbbf70"
+ },
+ "GMLifeRecoveryCount": {
+  "base": "0x14c532038",
+  "offset": "0x6da",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b890",
+  "notes": "",
+  "thunk": "0x144fbaf70"
+ },
+ "GMMntKillCount": {
+  "base": "0x14c532038",
+  "offset": "0x32a4",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b8c0",
+  "notes": "",
+  "thunk": "0x144fb7a70"
+ },
+ "GMPhaseFlag": {
+  "base": "0x14c532038",
+  "offset": "0x19c8",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b8d0",
+  "notes": "",
+  "thunk": "0x144fb8370"
+ },
+ "GMPhaseLevel": {
+  "base": "0x14c532038",
+  "offset": "0x19c4",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b8e0",
+  "notes": "",
+  "thunk": "0x144fb8470"
+ },
+ "GMPlayTime": {
+  "base": "0x14c532038",
+  "offset": "0x4c",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b8f0",
+  "notes": "raw frame counter; getter returns value / fps() where fps=0x147b6d8e0 returns 60 (or 50 when 0x147c0b8b0()==1)",
+  "thunk": "0x144fbb070"
+ },
+ "GMPlayerBattery": {
+  "base": "0x14c532038",
+  "offset": "0xb7e",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b940",
+  "notes": "",
+  "thunk": "0x144fb9b70"
+ },
+ "GMPlayerBatteryMax": {
+  "base": "0x14c532038",
+  "offset": "0xb80",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b950",
+  "notes": "",
+  "thunk": "0x144fb9a70"
+ },
+ "GMPlayerBugproof": {
+  "base": "0x14c532038",
+  "offset": "0xb82",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b960",
+  "notes": "",
+  "thunk": "0x144fb9970"
+ },
+ "GMPlayerBugproofMax": {
+  "base": "0x14c532038",
+  "offset": "0xb84",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b970",
+  "notes": "",
+  "thunk": "0x144fb9870"
+ },
+ "GMPlayerCamPosX": {
+  "base": "0x14c532038",
+  "offset": "0x7a0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b980",
+  "notes": "",
+  "thunk": "0x144fba470"
+ },
+ "GMPlayerCamPosY": {
+  "base": "0x14c532038",
+  "offset": "0x7a4",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b990",
+  "notes": "",
+  "thunk": "0x144fba370"
+ },
+ "GMPlayerCamPosZ": {
+  "base": "0x14c532038",
+  "offset": "0x7a8",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b9a0",
+  "notes": "",
+  "thunk": "0x144fba270"
+ },
+ "GMPlayerDir": {
+  "base": "0x14c532038",
+  "offset": "0x7ac",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b9c0",
+  "notes": "",
+  "thunk": "0x144fba170"
+ },
+ "GMPlayerEquipment": {
+  "base": "0x14c532038",
+  "offset": "0x7b0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5b9d0",
+  "notes": "",
+  "thunk": "0x144fba070"
+ },
+ "GMPlayerLife": {
+  "base": "0x14c532038",
+  "offset": "0x7b4",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5b9f0",
+  "notes": "",
+  "thunk": "0x144fb9f70"
+ },
+ "GMPlayerLifeMax": {
+  "base": "0x14c532038",
+  "offset": "0x7b6",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba00",
+  "notes": "",
+  "thunk": "0x144fb9e70"
+ },
+ "GMPlayerPentazemin": {
+  "base": "0x14c532038",
+  "offset": "0xb86",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba10",
+  "notes": "",
+  "thunk": "0x144fb9770"
+ },
+ "GMPlayerPosX": {
+  "base": "0x14c532038",
+  "offset": "0x794",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5ba20",
+  "notes": "",
+  "thunk": "0x144fba770"
+ },
+ "GMPlayerPosY": {
+  "base": "0x14c532038",
+  "offset": "0x798",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5ba30",
+  "notes": "",
+  "thunk": "0x144fba670"
+ },
+ "GMPlayerPosZ": {
+  "base": "0x14c532038",
+  "offset": "0x79c",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5ba40",
+  "notes": "",
+  "thunk": "0x144fba570"
+ },
+ "GMPlayerStamina": {
+  "base": "0x14c532038",
+  "offset": "0xb7a",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba50",
+  "notes": "",
+  "thunk": "0x144fb9d70"
+ },
+ "GMPlayerStaminaMax": {
+  "base": "0x14c532038",
+  "offset": "0xb7c",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba60",
+  "notes": "",
+  "thunk": "0x144fb9c70"
+ },
+ "GMResetLoadCount": {
+  "base": "0x14c532038",
+  "offset": "0x2c40",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba70",
+  "notes": "",
+  "thunk": "0x144fb8070"
+ },
+ "GMResult": {
+  "base": "0x14c532038",
+  "offset": "0x2",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5ba80",
+  "notes": "",
+  "thunk": "0x144fbc070"
+ },
+ "GMSaveArea": {
+  "base": "0x14c532038",
+  "offset": "0x10",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5ba90",
+  "notes": "",
+  "thunk": "0x144fbba70"
+ },
+ "GMSaveCount": {
+  "base": "0x14c532038",
+  "offset": "0x36",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5baa0",
+  "notes": "",
+  "thunk": "0x144fbb870"
+ },
+ "GMScrAdjX": {
+  "base": "0x14c532038",
+  "offset": "0xc",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bad0",
+  "notes": "",
+  "thunk": "0x144fbbc70"
+ },
+ "GMScrAdjY": {
+  "base": "0x14c532038",
+  "offset": "0xe",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bae0",
+  "notes": "",
+  "thunk": "0x144fbbb70"
+ },
+ "GMStagePlayTime": {
+  "base": "0x14c532038",
+  "offset": "0x48",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bb20",
+  "notes": "raw frame counter; getter returns value / fps() where fps=0x147b6d8e0 returns 60 (or 50 when 0x147c0b8b0()==1)",
+  "thunk": "0x144fbb170"
+ },
+ "GMTntStorageCount": {
+  "base": "0x14c532038",
+  "offset": "0xbac",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bb40",
+  "notes": "",
+  "thunk": "0x144fb8d70"
+ },
+ "GMUniqueAnimalFlag": {
+  "base": "0x14c532038",
+  "offset": "0x19cc",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bb50",
+  "notes": "",
+  "thunk": "0x144fb8270"
+ },
+ "GMWeapon": {
+  "base": "0x14c532038",
+  "offset": "0x704",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bb60",
+  "notes": "",
+  "thunk": "0x144fbac70"
+ },
+ "GMWeaponLoad": {
+  "base": "0x14c532038",
+  "offset": "0x70c",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bb70",
+  "notes": "",
+  "thunk": "0x144fba870"
+ },
+ "GMWeaponPrev": {
+  "base": "0x14c532038",
+  "offset": "0x708",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bb80",
+  "notes": "",
+  "thunk": "0x144fbaa70"
+ },
+ "GMWeather": {
+  "base": "0x14c532038",
+  "offset": "0x19c0",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bb90",
+  "notes": "",
+  "thunk": "0x144fb8670"
+ },
+ "GMWoundCount": {
+  "base": "0x14c532038",
+  "offset": "0x40",
+  "type": "int16",
+  "chain": [],
+  "impl": "0x147a5bba0",
+  "notes": "",
+  "thunk": "0x144fbb570"
+ },
+ "SVTheEndStage": {
+  "base": "0x14c532038",
+  "offset": "0x3298",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bbf0",
+  "notes": "",
+  "thunk": "0x144fb7d70"
+ },
+ "SVTheEndX": {
+  "base": "0x14c532038",
+  "offset": "0x329c",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bc00",
+  "notes": "",
+  "thunk": "0x144fb7c70"
+ },
+ "SVTheEndZ": {
+  "base": "0x14c532038",
+  "offset": "0x32a0",
+  "type": "int32",
+  "chain": [],
+  "impl": "0x147a5bc10",
+  "notes": "",
+  "thunk": "0x144fb7b70"
+ },
+ "_weapon_table": {
+  "base": "0x1535b7cf8",
+  "stride": "0x58",
+  "max_id": "0x82",
+  "absolute": true,
+  "fields": {
+   "0x24": "uint8 weapon class (switch in SetWeaponStock); dword@+0x24 bit 0x1000 = +1 chambered round on reload",
+   "0x28": "int16 stock (total rounds incl. loaded; FireRound decrements it)",
+   "0x2a": "int16 stock max",
+   "0x2c": "int16 rounds currently loaded (magazine); clamped to stock",
+   "0x2e": "int16 magazine size (reload sets +0x2c = +0x2e [+1 chamber], clamped to stock)"
+  },
+  "globals": {
+   "0x1535bd868": "qword ptr to the equipped weapon's table entry (set by EquipWeapon, used by Reload)",
+   "0x1535bd858": "qword ptr to the last entry FireRound was called on"
+  },
+  "gm_mirror": "GM(*0x14c532038)+0x70C (GMWeaponLoad) is overwritten with entry+0x2C by FireRound, Reload, EquipWeapon and SetWeaponStock; it is a display/mirror copy, not the source of truth"
+ },
+ "_unresolved": []
+}
