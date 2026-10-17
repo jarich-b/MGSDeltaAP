@@ -31,7 +31,9 @@ inventory. You play the story in order, and a few doors stay locked until you ge
   221,809,664 bytes). A game update can break the client.
 - Windows.
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.9 or newer.
-- The experimental build of [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS/releases) (4.0.0-rc1).
+- The **experimental-latest** build of [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest)
+  (`UE4SS_v3.0.1-…zip`), not the older v3.0.1 "Latest" release. From the same page, also download
+  `zCustomGameConfigs.zip`: the game settings for MGS Delta are in there, not in the UE4SS zip.
 
 The client finds the game in your Steam libraries. If it is installed somewhere else, set the environment variable
 `MGSDELTA_GAME_DIR` to the game folder (the one with `MGSDelta.exe`).
@@ -40,8 +42,9 @@ The client finds the game in your Steam libraries. If it is installed somewhere 
 
 Install while the game is closed.
 
-1. **UE4SS:** extract it into the game's `MGSDelta\Binaries\Win64` folder. Copy the files from
-   `ue4ss\CustomGameConfigs\MetalGearSolidDelta\` into `ue4ss\` (replace `UE4SS-settings.ini`).
+1. **UE4SS:** extract the UE4SS zip into the game's `MGSDelta\Binaries\Win64` folder. Then open
+   `zCustomGameConfigs.zip` (a separate download) and copy everything in its `MetalGearSolidDelta` folder
+   (`UE4SS-settings.ini` and `UE4SS_Signatures`) into `ue4ss\`, replacing `UE4SS-settings.ini`.
    Optional: to hide the UE4SS console windows, set `ConsoleEnabled`, `GuiConsoleEnabled` and `GuiConsoleVisible` to `0`
    in `ue4ss\UE4SS-settings.ini`.
 2. **Mod:** unzip `MGSDeltaAP_mod.zip` into `ue4ss\Mods\`. In `ue4ss\Mods\mods.txt`, add the line `MGSDeltaAP : 1`
