@@ -101,11 +101,13 @@ class MGSDeltaContext(CommonContext):
             slot_data = args.get("slot_data") or {}
             state_path = Utils.user_path(f"mgs_delta_{self.server_seed_name or self.seed_name}_{self.slot}.json")
             state = RunState(state_path)
+            guarded = load("guarded_areas.json")
             self.session = Session(self.bridge, self.modlink, state, slot_data, LOCATION_NAME_TO_ID,
                                    ITEM_KEY_BY_NAME, build_sections(slot_data), load("exits.json"),
                                    log=logger.info, gamestate=load("gamestate.json"), entries=load("entries.json"),
                                    bosses=load("bosses.json"), checkpoints=load("checkpoints.json"),
-                                   animals=load("animals.json"),
+                                   animals=load("animals.json"), guarded=guarded["areas"],
+                                   dead_ends=guarded["dead_ends"],
                                    detail=logging.getLogger("MGSDeltaAP").info)   # not shown in the window
             self._received_cache = []
             self.progress_publisher.reset()

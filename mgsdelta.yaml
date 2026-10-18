@@ -34,7 +34,7 @@ game: Metal Gear Solid Delta
 requires:
   version: 0.6.8 # Version of Archipelago required for this yaml to work as expected.
   game:
-    Metal Gear Solid Delta: 0.1.0 # Version of the world required for this yaml to work as expected.
+    Metal Gear Solid Delta: 0.2.0 # Version of the world required for this yaml to work as expected.
 
 Metal Gear Solid Delta:
   ################
@@ -359,8 +359,9 @@ Metal Gear Solid Delta:
     'true': 0
 
   no_alert_areas:
-    # This many checks for areas you get through unseen (0 = off). Stay at least 10 seconds, never get spotted and
-    # leave through an exit. Each area counts once.
+    # This many checks for areas with guards that you get through unseen (0 = off). Stay at least 10 seconds, never
+    # cause an alert or evasion (a caution is fine) and leave through an exit to another area than the one you came
+    # from (in a dead end, back the way you came is fine). Each area counts once; areas without soldiers never count.
     #
     # You can define additional values between the minimum and maximum values.
     # Minimum value is 0
@@ -390,6 +391,7 @@ Metal Gear Solid Delta:
     # Weapons that are always in your item pool. With few checks some items don't fit in the pool; extras make sure
     # these do. They are items you receive, not checks, and take the place of filler first. If there isn't enough
     # room, generation fails. Default: the Survival Knife (it treats some wounds; skipped if you start with it).
+    # For none, use [] (or leave it blank).
     # All values (copy the ones you want): ["AK-47", "Book", "Chaff Grenade", "Cigar Gas", "Claymore", "Directional Microphone", "Fork", "Grenade", "Handkerchief", "M1911A1", "M37", "M63", "Mk22", "Mosin-Nagant", "Mousetrap", "Patriot", "RPG-7", "SAA", "SVD", "Scorpion", "Smoke Grenade", "Stun Grenade", "Survival Knife", "TNT", "Torch", "WP Grenade", "XM16E1"]
     ["AK-47", "Book", "Chaff Grenade", "Cigar Gas", "Claymore", "Directional Microphone", "Fork", "Grenade", "Handkerchief", "M1911A1", "M37", "M63", "Mk22", "Mosin-Nagant", "Mousetrap", "Patriot", "RPG-7", "SAA", "SVD", "Scorpion", "Smoke Grenade", "Stun Grenade", "Survival Knife", "TNT", "Torch", "WP Grenade", "XM16E1"]
 
@@ -406,7 +408,7 @@ Metal Gear Solid Delta:
     random-range-0-30: 0 # random value between 0 and 30
 
   extra_equipment:
-    # Equipment that is always in your item pool. Works like Extra Weapons.
+    # Equipment that is always in your item pool. Works like Extra Weapons. For none, use [] (or leave it blank).
     # All values (copy the ones you want): ["AT Camo", "Active Sonar", "Anti-Personnel Sensor", "Banana Cap", "Binoculars", "Bug Juice", "Cardboard Box A", "Cardboard Box B", "Cardboard Box C", "Cardboard Box D", "Cigar", "Compass", "Croc Cap", "Croc Suit", "Gako Mask", "Golden Banana Cap", "Kerotan Mask", "Mine Detector", "Motion Detector", "Night Vision Goggles", "One-Eyed Croc Cap", "Stealth Camo", "Suppressor (M1911A1)", "Suppressor (Mk22)", "Suppressor (XM16E1)", "Thermal Goggles"]
     ["AT Camo", "Active Sonar", "Anti-Personnel Sensor", "Banana Cap", "Binoculars", "Bug Juice", "Cardboard Box A", "Cardboard Box B", "Cardboard Box C", "Cardboard Box D", "Cigar", "Compass", "Croc Cap", "Gako Mask", "Golden Banana Cap", "Kerotan Mask", "Mine Detector", "Motion Detector", "Night Vision Goggles", "Stealth Camo", "Suppressor (M1911A1)", "Suppressor (Mk22)", "Suppressor (XM16E1)", "Thermal Goggles"]
 
@@ -424,7 +426,7 @@ Metal Gear Solid Delta:
 
   extra_camo:
     # Camos and face paints that are always in your item pool, including camos you can only get as rewards. Works like
-    # Extra Weapons.
+    # Extra Weapons. For none, use [] (or leave it blank).
     # All values (copy the ones you want): ["Animal Camo", "Anubis Camo", "Auscam Desert Camo", "Banana Camo", "Barrac Camo", "Battle Dress PW Camo", "Black Camo", "Black Face Paint", "Brown Face Paint", "Chamel Camo", "Choco Chip Camo", "Cold War Camo", "Crew Camo", "Desert Camo", "Desert Face Paint", "Dododo Camo", "Dpm Camo", "Eastg Camo", "FR Face Paint", "Fest Camo", "Fire Camo", "Flecktarn Camo", "Flower Camo", "Fly Camo", "GR Face Paint", "Garco Camo", "Glasses Face Paint", "Gold Camo", "Gold Face Paint", "Green Face Paint", "Grenade Camo", "Hebi Camo", "Hornet Stripe Camo", "IT Face Paint", "Infinity Face Paint", "JP Face Paint", "Kabuki Face Paint", "Klmk Camo", "Leaf Camo", "Mask Face Paint", "Moss Camo", "Mummy Camo", "Naked Beltlink Camo", "Naked Camo", "Naked Woodland Camo", "Ndsrt Camo", "Officer Camo", "Olive Drab Camo", "Oyama Face Paint", "Rain Stroke Camo", "Rainbow Camo", "Rock Camo", "SP Face Paint", "SV Face Paint", "SW Face Paint", "Santa Camo", "Scientist Camo", "Sneaking Camo", "Sneaking PW Camo", "Snow Camo", "Snow Face Paint", "Spider Camo", "Spirit Camo", "Splitter Camo", "Splitter Face Paint", "Squares Camo", "Sunglasses Face Paint", "Swamp Camo", "Swood Camo", "Tiger Stripe Camo", "Tree Bark Camo", "Tuxedo Camo", "UK Face Paint", "US Face Paint", "Valen Camo", "Vtiger Camo", "Water Camo", "Water Face Paint", "Westg Camo", "White Tuxedo Camo", "Woodland Face Paint", "Wsnake Camo", "Zombie Face Paint"]
     ["Animal Camo", "Anubis Camo", "Auscam Desert Camo", "Banana Camo", "Barrac Camo", "Black Camo", "Black Face Paint", "Brown Face Paint", "Chamel Camo", "Choco Chip Camo", "Cold War Camo", "Crew Camo", "Desert Camo", "Desert Face Paint", "Dododo Camo", "Dpm Camo", "Eastg Camo", "FR Face Paint", "Fest Camo", "Fire Camo", "Flecktarn Camo", "Flower Camo", "Fly Camo", "GR Face Paint", "Garco Camo", "Gold Face Paint", "Green Face Paint", "Grenade Camo", "Hebi Camo", "Hornet Stripe Camo", "IT Face Paint", "Infinity Face Paint", "JP Face Paint", "Kabuki Face Paint", "Klmk Camo", "Leaf Camo", "Mask Face Paint", "Moss Camo", "Mummy Camo", "Naked Camo", "Ndsrt Camo", "Officer Camo", "Olive Drab Camo", "Oyama Face Paint", "Rain Stroke Camo", "Rainbow Camo", "Rock Camo", "SP Face Paint", "SV Face Paint", "SW Face Paint", "Santa Camo", "Scientist Camo", "Sneaking Camo", "Snow Camo", "Snow Face Paint", "Spider Camo", "Spirit Camo", "Splitter Camo", "Splitter Face Paint", "Squares Camo", "Swamp Camo", "Swood Camo", "Tiger Stripe Camo", "Tree Bark Camo", "Tuxedo Camo", "UK Face Paint", "US Face Paint", "Valen Camo", "Vtiger Camo", "Water Camo", "Water Face Paint", "Westg Camo", "White Tuxedo Camo", "Woodland Face Paint", "Wsnake Camo", "Zombie Face Paint"]
 

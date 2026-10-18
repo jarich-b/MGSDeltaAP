@@ -84,6 +84,11 @@ class PickupDetector:
             out += self._flush(unload=False)
         return out
 
+    def discard_pending(self):
+        """Drop the item_end events still waiting (a death's reload ended them). Returns how many."""
+        dropped, self.pending = len(self.pending), []
+        return dropped
+
     def _flush(self, unload):
         batch, self.pending = self.pending, []
         if not batch:

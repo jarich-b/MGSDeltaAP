@@ -20,8 +20,8 @@ from .probe import EscapeProbe
 from .state import GameVars
 from .tracking import TrackingMixin
 
-# Dev testing of received-item boxes (env MGSDELTA_BOX_TEST=1): never count on arrival (a missing box stays visible
-# and can be retried), and hide received items even after their check was sent, so their box can be checked again.
+# Dev testing of received-item boxes (env MGSDELTA_BOX_TEST=1): hide received items even after their check was sent,
+# so their box can be checked again.
 BOX_TEST = os.environ.get("MGSDELTA_BOX_TEST") == "1"
 ACQ_LABELS = {"weapon": "New Weapon", "equipment": "New Equipment", "camo": "New Camo", "medical": "New Medicine"}
 ACQ_BUNDLE_LABELS = {"weapon": "Weapon Bundle", "equipment": "Item Bundle", "camo": "Camo Bundle",
@@ -38,6 +38,9 @@ BULK_GAINS = 4               # this many gains together outside a save load = th
 GAIN_WINDOW = 1.5            # new gains wait this long before they count as finds (a spread-out hand-out is seen whole)
 DEATH_DEBOUNCE = 20.0
 DEATHLINK_GRACE = 10.0       # ignore our own death detection after a received DeathLink
+DEATH_RELOAD_SETTLE = 5.0    # s after Snake's life is back (the continue loaded) that box ends and gains are the reload's
+                             # (short: a box right at the respawn point can be picked up soon after)
+DEATH_RELOAD_MAX = 60.0      # a death reload never lasts longer than this (Snake's life was never seen coming back)
 REGRANT_SECONDS = 2.0
 NO_REGRANT_SECTIONS = {"escape"}    # sections.json id of "Capture and Escape"
 SHAGOHOD_SECTION = "shagohod"
@@ -78,6 +81,10 @@ OFFICER_CAMO_TYPE, MASK_PAINT_TYPE = 65 - 51, MASK_PAINT - 117    # their worn-c
 # guns stay as they are). Cardboard boxes are made active but not equipped: equipping one puts Snake in the box.
 ACTIVE_UTILITY_IDS = set(range(5, 36)) - {item_id for _, item_id in KEY_ITEMS}
 NO_AUTO_EQUIP = {14, 15, 16, 17}
+# Fashion trap: wearable items it may put on (the randomized start's, options.WEARABLE_ITEMS), one in this many traps
+FASHION_WEARABLES = ("AT Camo", "Croc Suit", "Croc Cap", "One-Eyed Croc Cap", "Banana Cap", "Golden Banana Cap",
+                     "Gako Mask", "Kerotan Mask")
+FASHION_WEARABLE_CHANCE = 4
 # Suppressor item -> its gun (weapon id): a suppressor box only appears while Snake owns that gun, so a suppressor that
 # turns up without it is the game's own doing (it put back a stripped hand-out suppressor in Rassvet), never a find.
 SUPPRESSOR_GUN = {("item", 48): 6, ("item", 49): 5, ("item", 50): 11}     # M1911A1, Mk22, XM16E1
@@ -85,6 +92,8 @@ REVIVAL_PILL = ("item", 4)       # needed at the end of The Sorrow's river (s141
 SORROW_STAGE = "s141"
 STORY_STAGES = {"kyle_op"}   # non-playable stages inside a story chain (Virtuous Mission end -> kyle_op -> s000a_0 ...)
 START_PREFIX = "v001"        # Virtuous Mission first area: the run starts after Snake's backpack hand-out
+BACKPACK_GAINS = 30          # the backpack hand-out is 47-48 gains; a new game's profile kit (Mk22, EZ Gun, SAA, ...)
+                             # was 13 and once started the run before the backpack
 START_SETTLE = 1.0           # the hand-out must be quiet this long (no further gains) before the run starts
 START_FALLBACK = 120.0       # seconds of play in v001 after which the run starts even without a hand-out
 # Camos that only come as a boss's non-lethal reward (Hornet Stripe, Spider, Moss, Fire, Animal): never collections.
@@ -135,7 +144,7 @@ class Session(TrackingMixin, CodecMixin):
 
     def __init__(self, bridge, modlink, state, slot_data, location_ids, item_keys, sections, exits,
                  log=print, gamestate=None, clock=time.monotonic, game_vars_factory=None, entries=None, bosses=None,
-                 checkpoints=None, animals=None, detail=None):
+                 checkpoints=None, animals=None, detail=None, guarded=None, dead_ends=None):
         """location_ids: {location name: id} of the whole game; item_keys: {item name: (kind, id)};
         sections: ordered [{"id", "name", "unlock", "unlock_item", "unlock_count", "areas", "gates"}] (a section
         needs unlock_count copies of unlock_item; without those keys, "unlock" once);
@@ -146,7 +155,9 @@ class Session(TrackingMixin, CodecMixin):
         area it loads (log text); settle = seconds after the load start before the bounce.
         entries: {stage: [{"from", "proc", "pose", "gate"}]} for safe warps; bosses: [{"boss", "location",
         "story_at_least", "flag"?, "arena"?}]; checkpoints: the codec warps (see game/codec.py);
-        animals: [{"kind", "name"}] of the capturable species (data/animals.json)."""
+        animals: [{"kind", "name"}] of the capturable species (data/animals.json); guarded: the areas with guards,
+        the only no-alert areas (data/guarded_areas.json; None = every area); dead_ends: those of them left back the
+        way they were entered still count."""
         self.bridge = bridge
         self.modlink = modlink
         # medicine for the two scenes that require the Cure menu
@@ -210,7 +221,8 @@ class Session(TrackingMixin, CodecMixin):
         self.death_lock_until = 0.0
         self.last_life = None
         self.last_continue = None
-        self.init_tracking(location_ids, self.bosses, animals)
+        self.death_reload = None     # {"t": died at, "back": life back at}: the continue's reload (see note_death_reload)
+        self.init_tracking(location_ids, self.bosses, animals, guarded, dead_ends)
         self.init_codec(checkpoints or [], entries or {}, end_boss)
         self.probe = EscapeProbe(self)       # read-only logging of the Capture and Escape section ("[probe]")
 
@@ -430,6 +442,10 @@ class Session(TrackingMixin, CodecMixin):
         bridge = self.bridge
         pickups = bridge.poll_events()
         self.probe.pickups(stage, pickups)
+        if pickups and self.death_reload:
+            # the continue reloads the checkpoint, often without a stage change: its boxes ending are no pickups
+            self.log(f"Ignored {len(pickups)} box event(s) during the death reload")
+            pickups = []
         if stage and self.in_game(stage):
             # before the gains: a hidden Moss / Spirit Camo handed out is restored first, never seen as a find
             self.keep_special_camos(result, stage, received_keys, now)
@@ -467,7 +483,7 @@ class Session(TrackingMixin, CodecMixin):
     # --- run start ----------------------------------------------------------------------------------
     def start_ready(self, stage, now):
         """Whether the run starts now. In the Virtuous Mission's first area (v001) it starts right after the game's
-        backpack hand-out (>= BULK_GAINS gains, quiet for START_SETTLE), or after START_FALLBACK seconds of play there
+        backpack hand-out (>= BACKPACK_GAINS gains, quiet for START_SETTLE), or after START_FALLBACK seconds of play there
         (a save from later in the mission); in any other playable stage it starts at once."""
         bridge = self.bridge
         if not (stage and self.in_game(stage)):
@@ -494,8 +510,10 @@ class Session(TrackingMixin, CodecMixin):
             self.start_gain_t = now
         if not free or bridge.masking:
             return False
-        if len(self.start_gains) >= BULK_GAINS and now - self.start_gain_t >= START_SETTLE:
+        if len(self.start_gains) >= BACKPACK_GAINS and now - self.start_gain_t >= START_SETTLE:
             self.log(f"Backpack hand-out seen ({len(self.start_gains)} items); starting the run")
+            self.detail("Backpack hand-out: " + ", ".join(
+                sorted(bridge.item_by_key.get(key, {}).get("name", str(key)) for key in self.start_gains)))
             return True
         if self.start_play >= START_FALLBACK:
             self.log("No backpack hand-out seen; starting the run anyway")
@@ -503,8 +521,12 @@ class Session(TrackingMixin, CodecMixin):
         return False
 
     def run_start(self):
-        """Wipe the inventory (except the camo to keep), grant the starting gear and zero the per-run counters."""
+        """Wipe the inventory (except the camo to keep), grant the starting gear and zero the per-run counters.
+        What the wipe removed is marked taken back and stripped, like a hand-out strip: a death's continue reloads a
+        checkpoint from before the wipe and gave back the new-game kit (Mk22, EZ Gun, SAA, Patriot, ...), and the
+        SAA reappearing after the restore window once counted as a find."""
         bridge = self.bridge
+        before = set(bridge.known or ())
         keep_camo = self.camo_to_keep()
         keep_items = {item_id for _, item_id in VANILLA_ITEMS}   # the game's (key doors are story-gated; the pill)
         if not self.opt("raikov_disguise", 0):
@@ -519,6 +541,12 @@ class Session(TrackingMixin, CodecMixin):
         worn_text = self.wear_starting_camo(keep_camo) + self.wear_starting_item()
         self.zero_kerotans()
         bridge.rebaseline()
+        wiped = before - set(bridge.known)
+        if self.owned_seen is not None:
+            self.owned_seen -= wiped             # a later hand-out strip must not keep them as "owned before"
+        for key in sorted(wiped):
+            self.state.add_taken_back(key)       # a checkpoint from before the wipe brings it back: re-take it on load
+            self.state.add_stripped(key)         # and it coming back later is no find
         self.state.initialized = True
         self.state.inventory = sorted(list(key) for key in bridge.known)
         self.state.save()
@@ -561,7 +589,7 @@ class Session(TrackingMixin, CodecMixin):
         bridge.grant("item", FACEPAINT_ITEM_BASE)                      # "No Paint" stays owned
         paint_type = paint_key[1] - FACEPAINT_ITEM_BASE if paint_key else 0
         if self.write_worn(keep_camo - CAMO_ITEM_BASE, paint_type):
-            self.modlink.camo_refresh()
+            self.refresh_camo()
         text = f"; worn camo {bridge.item_by_key.get(('item', keep_camo), {}).get('name', keep_camo)}"
         if paint_key:
             text += f", face paint {start_paint}"
@@ -574,6 +602,26 @@ class Session(TrackingMixin, CodecMixin):
         if not wear_key or not self.ready_item(wear_key[1]):
             return ""
         return f"; wearing {wearable}"
+
+    def fashion_wearable(self, desc):
+        """Fashion trap: one in FASHION_WEARABLE_CHANCE (always when no other camo / face paint was possible) also
+        equips a random other owned wearable item (AT Camo, a cap, a mask, ...). Returns the popup text."""
+        bridge = self.bridge
+        try:
+            equipped = self.vars().get("equipped_item")
+        except (OSError, KeyError):
+            return desc
+        owned = [(name, self.item_keys[name][1]) for name in FASHION_WEARABLES
+                 if name in self.item_keys and bridge.owned(*self.item_keys[name])
+                 and self.item_keys[name][1] != equipped]
+        no_look = "no other" in desc
+        if not owned or not (no_look or random.randrange(FASHION_WEARABLE_CHANCE) == 0):
+            return desc
+        name, item_id = random.choice(owned)
+        if not self.ready_item(item_id):
+            return desc
+        self.refresh_camo()
+        return f"A new look! ({name})" if no_look else f"A new look! (random camouflage and {name})"
 
     def ready_item(self, item_id):
         """Put a received utility item into the active items (the first free slot; with all slots taken, the last one
@@ -599,6 +647,11 @@ class Session(TrackingMixin, CodecMixin):
     def read_worn(self):
         """(worn camo type, worn face paint type) from GM+0x7AE / GM+0x7AF, or None if unreadable."""
         return self.vars_get("worn_camo", "worn_paint")
+
+    def refresh_camo(self):
+        """Ask the mod to redraw Snake's model with the worn camo / face paint (after write_worn or another write)."""
+        worn = self.read_worn()
+        self.modlink.camo_refresh(*(worn or (None, None)))
 
     def write_worn(self, camo_type, paint_type=0):
         """Equip a camo / face paint by type (the items must be owned). The model needs a camo_refresh afterwards."""
@@ -719,7 +772,7 @@ class Session(TrackingMixin, CodecMixin):
                 game_vars.set("worn_paint", 0)            # No Paint
                 changed = True
             if changed:
-                self.modlink.camo_refresh()
+                self.refresh_camo()
         except (OSError, KeyError):
             pass
 
@@ -1074,11 +1127,11 @@ class Session(TrackingMixin, CodecMixin):
                 pass
 
     def count_received_boxes(self, result, stage, received_keys):
-        """A received item is still a find in the game, but its box may not appear: the area's script places a box only
-        while Snake doesn't own the item (a weapon's turns into an ammo box), and hiding it at the load can lose that
-        race. Once the area's spawns settled: if a box of its model spawned, only the pickup counts it (open_boxes keeps
-        it acceptable; left behind, it stays a check and is masked again on the next visit); if none did, it counts now
-        (nothing to pick up)."""
+        """A received item is still a find in the game: only its box's pickup counts it (open_boxes keeps the box
+        acceptable; a weapon's comes as its ammo box). Once the area's spawns settled, log whether a box of its model
+        spawned. If none did (hiding the item at the load lost the race with the area script), it stays a check: leaving
+        and coming back masks it again. It is never counted on arrival: a box spawning just before the client saw the
+        stage change was missed that way, and the check went out on entering the area instead of at the pickup."""
         bridge = self.bridge
         for box in bridge.boxes_in_stage(stage):
             key = bridge.vanilla_of[box["id"]]
@@ -1088,14 +1141,12 @@ class Session(TrackingMixin, CodecMixin):
                     or not (self.countable_find(key) or BOX_TEST)):
                 continue
             name = bridge.item_by_key.get(key, {}).get("name", key)
+            self.boxes_spawned[key] = stage[:4]
             if set(box.get("models") or ()) & bridge.spawned_models:
-                self.boxes_spawned[key] = stage[:4]
                 self.log(f"{name}: received, its box spawned in {stage} (the pickup counts it)")
-            elif BOX_TEST:
-                self.boxes_spawned[key] = stage[:4]
-                self.log(f"BOX TEST: {name}: received, NO box of its model spawned in {stage} (not counted)")
-            elif self.count_find(result, key):
-                self.log(f"  ({name}: received, no box in {stage}: counted on reaching its box's area)")
+            else:
+                self.log(f"{name}: received, no box of its model seen in {stage} (still a check: its pickup counts it; "
+                         "if there is no box, leave the area and come back)")
 
     def forget_spawned_boxes(self, new_stage):
         """Leaving an area: its received boxes left behind stay checks (masked again on the next visit)."""
@@ -1236,7 +1287,7 @@ class Session(TrackingMixin, CodecMixin):
             return
         camo, paint = random.choice(uniforms), random.choice(paints or [FACEPAINT_ITEM_BASE])
         if self.write_worn(camo - CAMO_ITEM_BASE, paint - FACEPAINT_ITEM_BASE):
-            self.modlink.camo_refresh()
+            self.refresh_camo()
             self.log(f"Now wearing {bridge.item_by_key.get(('item', camo), {}).get('name', camo)} and "
                      f"{bridge.item_by_key.get(('item', paint), {}).get('name', 'No Paint')}")
 
@@ -1281,6 +1332,8 @@ class Session(TrackingMixin, CodecMixin):
                     self.trap_caution = True     # the caution it causes must not spoil the no-alert area check
                 if name == "Stealth Camo (temporary)":
                     self.ready_item(effects.STEALTH_CAMO)
+                if name == "Trap: Fashion" and "skipped" not in desc:
+                    desc = self.fashion_wearable(desc)
                 bridge.refresh()          # effects may change the inventory; never count that as a find
                 bridge.rebaseline()
             text = desc or (f"You found your {name}" if sender == "You" else
@@ -1439,8 +1492,8 @@ class Session(TrackingMixin, CodecMixin):
             return None
 
     def handle_death(self, result, now):
-        if not self.opt("death_link", 0):
-            return
+        """Detect Snake's death (life to 0, or the continue count +1): the continue's reload is noted in every game, the
+        death is sent with DeathLink."""
         values = self.vars_get("life", "life_max", "continue_count")
         if values is None:
             self.last_life = self.last_continue = None
@@ -1454,10 +1507,40 @@ class Session(TrackingMixin, CodecMixin):
             died = True
         self.last_life = life if playable else None
         self.last_continue = continue_count
+        self.note_death_reload(died, life if playable else 0, now)
         if died and now >= self.death_lock_until:
             self.death_lock_until = now + DEATH_DEBOUNCE
-            count_up(self.state.counters, "deaths_sent")
-            result.death = "Snake died. Snake? SNAAAKE!"
+            if self.opt("death_link", 0):
+                count_up(self.state.counters, "deaths_sent")
+                result.death = "Snake died. Snake? SNAAAKE!"
+
+    def note_death_reload(self, died, life, now):
+        """A death ends in a continue that reloads the last checkpoint, often in the same stage, so no stage event
+        follows: the boxes ending in that reload looked like pickups (a bunch of received items' checks went out after
+        a DeathLink), and the restored inventory could look like finds. From the death until DEATH_RELOAD_SETTLE after
+        Snake's life is back (life: 0 when not playable), box events are ignored and gains are a restore. The pickup
+        detector holds item ends meanwhile (they would only become pickups after its BATCH_WINDOW, past the settle) and
+        drops them when the reload is over."""
+        reload = self.death_reload
+        detector = getattr(self.bridge, "detector", None)
+        if died and (reload is None or reload["back"] is not None):
+            if reload is None:
+                self.log("Snake died: box and inventory changes until the continue has loaded are not checks")
+            reload = self.death_reload = {"t": now, "back": None}
+        if reload is None:
+            return
+        if reload["back"] is None and life > 0:
+            reload["back"] = now
+        if ((reload["back"] is not None and now - reload["back"] >= DEATH_RELOAD_SETTLE)
+                or now - reload["t"] >= DEATH_RELOAD_MAX):
+            self.death_reload = None
+            dropped = detector.discard_pending() if hasattr(detector, "discard_pending") else 0
+            if dropped:
+                self.log(f"Ignored {dropped} box event(s) during the death reload")
+            return
+        self.restore_until = max(self.restore_until, now + GAIN_WINDOW)
+        if detector is not None:
+            detector.loading = True          # (handle_codec_warp sets it each tick before this: warps or this reload)
 
     def kill(self):
         """Received DeathLink."""

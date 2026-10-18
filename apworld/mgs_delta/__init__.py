@@ -75,7 +75,8 @@ class MGSDeltaWorld(World):
         if self.options.starting_camo == StartingCamo.option_randomized:
             # a uniform, or (one in WEARABLE_CHANCE) a wearable item over the vanilla uniform; plus a face paint
             uniforms = [entry["name"] for entry in ITEM_TABLE
-                        if entry.get("group") == "camo" and entry["name"] not in self.not_offered]
+                        if entry.get("group") == "camo" and entry["name"] not in self.not_offered
+                        and entry["name"] not in DISGUISE]
             wearables = [n for n in WEARABLE_ITEMS if n not in self.not_offered and n not in self.starting_items]
             if wearables and self.random.randrange(WEARABLE_CHANCE) == 0:
                 self.starting_wearable = self.random.choice(wearables)
@@ -83,7 +84,7 @@ class MGSDeltaWorld(World):
                 self.starting_camo = self.random.choice(uniforms)
             face_paints = [entry["name"] for entry in ITEM_TABLE
                            if entry.get("group") == "facepaint" and entry["name"] != STARTING_PAINT_EXCLUDED
-                           and entry["name"] not in self.not_offered]
+                           and entry["name"] not in self.not_offered and entry["name"] not in DISGUISE]
             self.starting_facepaint = self.random.choice(face_paints)
         # Non-lethal boss checks: one non-lethal weapon is always in the pool (or the starting kit), early if asked
         self.stun_item = None

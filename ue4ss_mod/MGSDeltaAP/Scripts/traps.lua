@@ -114,20 +114,29 @@ function M.injury(c)
     error("injury: no menu source worked")
 end
 
--- Camo refresh: the client writes the worn camo / face paint (GM+0x7AE / 0x7AF); the camouflage manager re-reads them
--- and rebuilds Snake's model / materials: RefreshCamouflageBP(bReinitPose, bForcereplace, bHideMaskCap).
-function M.camoRefresh()
+-- Camo refresh: the client writes the worn camo / face paint (GM+0x7AE / 0x7AF) and sends their types. The camouflage
+-- manager keeps its own copy (CurrentInfo) and RefreshCamouflageBP alone redrew the old camo (seen in game), so the types
+-- are set first: UpdateCamouflageByNoPairing(facepaint, camo), then RefreshCamouflageBP(bReinitPose, bForcereplace,
+-- bHideMaskCap) rebuilds Snake's model / materials.
+function M.camoRefresh(c)
+    local camo, facepaint = tonumber(c and c.camo), tonumber(c and c.facepaint)
     local done = 0
     local list = FindAllOf("UE4PairingCamouflageManager")
     if list then
         for _, mgr in ipairs(list) do
             if valid(mgr) then
-                local ok, err = pcall(function() mgr:RefreshCamouflageBP(true, true, false) end)
+                local ok, err = pcall(function()
+                    if camo and facepaint then
+                        mgr:UpdateCamouflageByNoPairing(math.floor(facepaint), math.floor(camo))
+                    end
+                    mgr:RefreshCamouflageBP(true, true, false)
+                end)
                 if ok then done = done + 1 else log("camo_refresh failed: " .. tostring(err)) end
             end
         end
     end
-    log("camo_refresh: " .. done .. " manager(s) refreshed")
+    log("camo_refresh: " .. done .. " manager(s) refreshed (camo " .. tostring(camo) .. ", face paint "
+        .. tostring(facepaint) .. ")")
 end
 
 return M

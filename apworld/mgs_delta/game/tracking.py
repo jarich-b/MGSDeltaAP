@@ -31,12 +31,13 @@ GAKO_NAME = re.compile(r"^Gako (\d+)\b")
 KEROTAN_NAME = re.compile(r"^Kerotan (\d+)\b")
 FOOD_READ_INTERVAL = 0.5
 HANDOUT_GRACE = 3.0          # food kinds appearing this long after a hand-out are part of it
+SPOTTED_PHASES = (1, 2)      # alert, evasion: a no-alert visit fails; caution (3) is fine
 
 
 class TrackingMixin:
     """Counters of the optional checks (no-alert, Kerotans, Gako, animals, CQC) of the Session."""
 
-    def init_tracking(self, location_ids, bosses, animals=None):
+    def init_tracking(self, location_ids, bosses, animals=None, guarded=None, dead_ends=None):
         self.cqc_player_seen = False       # player-side CQC events arrive: ignore the enemy-side fallback
         self.last_cqc = -1000.0
         self.trap_caution = False          # an Alert trap's caution is active: ignored by the no-alert tracker
@@ -55,6 +56,8 @@ class TrackingMixin:
         self.animal_species = {animal["kind"]: animal["name"] for animal in animals or []}   # species kind -> name
         self.animal_names = {kind: f"Captured {name}" for kind, name in self.animal_species.items()}   # -> check name
         self.arenas = {area for boss in bosses for area in boss.get("arena", [])} or set(ARENA_PREFIXES)
+        self.guarded = set(guarded) if guarded is not None else None   # no-alert areas: only those with guards
+        self.dead_ends = set(dead_ends or ())    # no-alert areas left back the way they were entered still count
 
     # --- sending checks -------------------------------------------------------------------------------
     def send_location(self, result, name):
@@ -78,8 +81,9 @@ class TrackingMixin:
 
     def handle_no_alert(self, result, stage, new_stage, now):
         """A visit = from entering a playable stage until it is left through a door/exit. It is a clean area when the
-        phase stayed 0 (after NO_ALERT_GRACE), it lasted NO_ALERT_MIN_VISIT, Snake did not die, and both the entry and
-        the exit were normal transitions (not a save load / warp). Each area prefix counts once per run."""
+        phase was never alert or evasion (after NO_ALERT_GRACE; a caution is fine), it lasted NO_ALERT_MIN_VISIT,
+        Snake did not die, both the entry and the exit were normal transitions (not a save load / warp) and the exit
+        leads to another area than the entry came from (except in dead ends). Each area prefix counts once per run."""
         if int(self.opt("no_alert_areas", 0)) <= 0:
             self.visit = None
             return
@@ -91,9 +95,10 @@ class TrackingMixin:
             if visit and free and new_stage[:4] == visit["area"] and normal:
                 pass                                     # another stage of the same area (a/b/c): the visit goes on
             else:
-                self.end_visit(normal, now)
+                came_from = (self.bridge.previous_stage or "")[:4]
+                self.end_visit(normal, now, new_stage[:4])
                 if free and not locked:
-                    self.start_visit(new_stage, now, invalid=not normal)
+                    self.start_visit(new_stage, now, invalid=not normal, came_from=came_from)
         elif free and self.visit is None and not locked:
             self.start_visit(stage, now, invalid=True)   # attached mid-area: the entry was missed
         visit = self.visit
@@ -101,11 +106,12 @@ class TrackingMixin:
             self.update_visit(visit, now)
         self.send_counted(result, "No-Alert Area", len(self.state.clean_areas))
 
-    def start_visit(self, stage, now, invalid):
-        self.visit = {"area": stage[:4], "start": now, "dirty": False, "invalid": invalid, "continue": None}
+    def start_visit(self, stage, now, invalid, came_from=None):
+        self.visit = {"area": stage[:4], "start": now, "dirty": False, "invalid": invalid, "continue": None,
+                      "from": came_from}
 
     def update_visit(self, visit, now):
-        """Void the visit on a death (life 0 or a continue); mark it dirty once the phase is not sneak."""
+        """Void the visit on a death (life 0 or a continue); mark it dirty on an alert or evasion (not a caution)."""
         values = self.vars_get("life", "continue_count")
         if values is not None:
             life, continue_count = values
@@ -118,17 +124,23 @@ class TrackingMixin:
         if self.trap_caution:
             if not phase:
                 self.trap_caution = False    # the Alert trap's caution is over; real ones count again
-        elif phase:
+        elif phase in SPOTTED_PHASES:
             visit["dirty"] = True
             self.log(f"Area {visit['area']} is not a no-alert area (phase {phase})")
 
-    def end_visit(self, left_normally, now):
+    def end_visit(self, left_normally, now, going_to=None):
         visit, self.visit = self.visit, None
         if not visit:
             return
         area = visit["area"]
         if (visit["invalid"] or visit["dirty"] or not left_normally or now - visit["start"] < NO_ALERT_MIN_VISIT
                 or area in self.arenas or area in self.state.clean_areas or not AREA_PREFIX.match(area)):
+            return
+        if self.guarded is not None and area not in self.guarded:
+            self.log(f"Area {area} has no guards: not a no-alert area")
+            return
+        if going_to and going_to == visit.get("from") and area not in self.dead_ends:
+            self.log(f"Area {area} was left back to {going_to}, where it was entered from: not a no-alert area")
             return
         self.state.clean_areas.append(area)
         self.state.save()
@@ -151,12 +163,34 @@ class TrackingMixin:
                 out.add(index)
         return out
 
+    def write_kerotans(self, indices):
+        """Set the $var Kerotan flags to exactly these indices (0..63). Raises OSError."""
+        raw = bytearray(KEROTAN_FLAG_BYTES)
+        for index in indices:
+            pos = index + 1
+            raw[pos >> 3] |= 1 << (pos & 7)
+        self.bridge.game.write(self.kerotan_base(), bytes(raw))
+
+    def clear_reloaded_kerotans(self, current, extra):
+        """Clear Kerotan flags a reload brought back that are not this run's shots. Returns the flags left."""
+        try:
+            self.write_kerotans(current - extra)
+        except OSError:
+            return current
+        self.log(f"Kerotan flags restored by a reload, not this run's shots: cleared "
+                 f"{[i + 1 for i in sorted(extra)]}")
+        return current - extra
+
     def zero_kerotans(self):
         """Run start: clear the flags so only this run's shots count (the profile's lifetime counter is untouched)."""
+        before = self.read_kerotans()
         try:
             self.bridge.game.write(self.kerotan_base(), bytes(KEROTAN_FLAG_BYTES))
         except OSError:
             return False                                  # store not allocated yet: handle_kerotans baselines instead
+        if before:
+            self.log(f"Run start: Kerotan flags cleared: {[i + 1 for i in sorted(before)]}")
+        self.state.kerotan_profile = sorted(before or ())
         self.state.kerotans = []
         self.state.kerotan_bits = []
         self.state.kerotan_zeroed = True
@@ -173,6 +207,8 @@ class TrackingMixin:
                 entry = int.from_bytes(game.read(addr, 8), "little")
                 if entry == 0:
                     # a copy may have run since the run start: clear its flags once more (shots already counted stay)
+                    copied = self.read_kerotans() or set()
+                    self.state.kerotan_profile = sorted(set(self.state.kerotan_profile) | copied)
                     game.write(self.kerotan_base(), bytes(KEROTAN_FLAG_BYTES))
                     self.state.kerotan_bits = []
                     self.log("Kerotan profile copy disabled for this run (memory only); flags cleared")
@@ -194,6 +230,10 @@ class TrackingMixin:
         """Every flag that goes 0 -> 1 between two reads is a Kerotan shot. Reads right after a save load or warp only
         re-baseline (an older save carries older flags), as do reads during a stage load. While the game's profile copy
         is disabled every new flag counts; otherwise several flags flipping together are that copy, not shots.
+        While it is disabled, flags a reload brings back that are not this run's shots are cleared: a checkpoint from
+        before the run start holds the profile's lifetime flags (copied at the new game), and a death's continue
+        restored all of them (report 2: their checks sent when that came after the restore window, and those frogs
+        could no longer be shot for a check). Several profile flags at once are such a reload whenever they come.
         Checks already earned are never withdrawn."""
         state = self.state
         blocked = bool(self.opt("kerotan_checks")) and self.block_kerotan_push()
@@ -204,11 +244,18 @@ class TrackingMixin:
                     state.kerotan_zeroed = True
                     state.kerotan_bits = sorted(current)
                 elif now < self.restore_until or self.bridge.masking:
+                    extra = current - set(state.kerotans)
+                    if blocked and extra:
+                        current = self.clear_reloaded_kerotans(current, extra)
                     state.kerotan_bits = sorted(current)
                 else:
                     new = current - set(state.kerotan_bits) - set(state.kerotans)
+                    if blocked and len(new) > 1 and new <= set(state.kerotan_profile):
+                        # a shot flips one bit: several of the run start's cleared flags at once = a late reload
+                        current = self.clear_reloaded_kerotans(current, new)
+                        new = set()
                     state.kerotan_bits = sorted(current)
-                    if len(new) > 1 and not blocked:   # a shot flips one bit: several at once = the game's copy
+                    if len(new) > 1 and not blocked:   # several at once = the game's copy
                         self.log(f"Kerotan flags synced by the game ({len(new)}), not counted")
                         new = set()
                     for index in sorted(new):

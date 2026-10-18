@@ -36,6 +36,7 @@ class RunState:
         self.kerotans = []                # Kerotan indices (0..63) shot in this run
         self.kerotan_bits = []            # Kerotan indices set in the $var flags when last read (new bits = shots)
         self.kerotan_zeroed = False       # the $var Kerotan flags were cleared (or baselined) for this run
+        self.kerotan_profile = []         # Kerotan indices the run start cleared (the profile's lifetime frogs)
         self.gako = []                    # distinct Gako duck indices broken in this run
         self.animals = []                 # species kinds (normalised food kinds, data/animals.json) captured
         self.inventory = None             # [kind, id] category keys owned when last seen (offline gain detection)
@@ -68,6 +69,7 @@ class RunState:
         self.kerotans = [int(i) for i in data.get("kerotans", [])]
         self.kerotan_bits = [int(i) for i in data.get("kerotan_bits", [])]
         self.kerotan_zeroed = bool(data.get("kerotan_zeroed", False))
+        self.kerotan_profile = [int(i) for i in data.get("kerotan_profile", [])]
         self.gako = [int(i) for i in data.get("gako", [])]
         self.animals = [int(i) for i in data.get("animals", []) if int(i) > 0]
         self.nonlethal = list(data.get("nonlethal", []))
@@ -87,7 +89,8 @@ class RunState:
                 "completed": self.completed, "bosses_beaten": self.bosses_beaten, "nonlethal": self.nonlethal,
                 "visited": self.visited, "cqc_total": self.cqc_total,
                 "clean_areas": self.clean_areas, "kerotans": self.kerotans, "kerotan_bits": self.kerotan_bits,
-                "kerotan_zeroed": self.kerotan_zeroed, "gako": self.gako, "animals": self.animals,
+                "kerotan_zeroed": self.kerotan_zeroed, "kerotan_profile": self.kerotan_profile,
+                "gako": self.gako, "animals": self.animals,
                 "story_max": self.story_max, "inventory": self.inventory, "goal_reached": self.goal_reached,
                 "goal_sent": self.goal_sent, "counters": self.counters}
 

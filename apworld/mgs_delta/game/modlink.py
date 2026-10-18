@@ -10,7 +10,8 @@ Every command carries "t" (unix seconds); the mod drops stale exec_proc/warp com
   {"cmd": "notify_clear"}            remove the on-screen message a few seconds after it was shown (ModLink.clear_due)
   {"cmd": "codec_menu", "text": "..."}           text shown when calling the Archipelago codec frequency
   {"cmd": "codec_set", "freq": 14001, "text": "msg\x1emsg"}  stacked messages for a frequency ("" = unset)
-  {"cmd": "camo_refresh"}            rebuild Snake's camouflage model after GM+0x7AE/0x7AF were written
+  {"cmd": "camo_refresh", "camo": n, "facepaint": n}  rebuild Snake's camouflage model after GM+0x7AE/0x7AF were
+                                     written (the worn types; without them the manager redraws its cached camo)
   Trap commands (the mod calls UE functions; failures are only logged):
   {"cmd": "disarm"}                  AGsrPlayer:ChangeWeaponSlot(0)
   {"cmd": "weather", "type": 2}      BP_Weather_System_C:SwitchWeather(n, true), n = E_WeatherType 0..7 (1 light
@@ -77,11 +78,13 @@ class ModLink:
     def flush(self, ready):
         """Send held popups once the player can see them: warnings (caption strip) at once, item labels one at a time.
         The mod has a single label, so a burst of labels overwrote each other (only the last one was seen); each label
-        now waits until the previous one was cleared plus POPUP_GAP."""
+        now waits until the previous one was cleared plus POPUP_GAP. A styled one (re)starts the clear timer too: it
+        stayed on screen until the next popup replaced it."""
         if not ready or not self.held:
             return
         for entry in [e for e in self.held if e[2]]:
             self.held.remove(entry)
+            self.popup_at = self.clock()
             self.send("popup", title=entry[0], text=entry[1], style=entry[2])
         if not self.held or self.popup_at is not None:
             return
@@ -119,6 +122,10 @@ class ModLink:
     def injury(self, wound=2):
         self.send("injury", wound=int(wound))
 
-    def camo_refresh(self):
-        """Ask the mod to re-apply the worn camo / face paint (UE4PairingCamouflageManager:RefreshCamouflageBP)."""
-        self.send("camo_refresh")
+    def camo_refresh(self, camo=None, facepaint=None):
+        """Ask the mod to re-apply the worn camo / face paint (camo / face paint types, GM+0x7AE / 0x7AF). The camouflage
+        manager redraws its own cached camo, so the mod sets the types first (UpdateCamouflageByNoPairing)."""
+        if camo is None or facepaint is None:
+            self.send("camo_refresh")
+        else:
+            self.send("camo_refresh", camo=int(camo), facepaint=int(facepaint))

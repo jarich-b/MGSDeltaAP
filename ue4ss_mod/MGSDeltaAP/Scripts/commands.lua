@@ -4,7 +4,7 @@
 -- {"cmd":"exec_proc","proc":126} | {"cmd":"warp","stage":"s005a"} | {"cmd":"popup","title":..,"text":..,"style":..}
 -- {"cmd":"notify_clear"} | {"cmd":"codec_menu","text":..} | {"cmd":"codec_set","freq":14001,"text":"msg1\u001emsg2"}
 -- (empty text: unset) | {"cmd":"disarm"} | {"cmd":"weather","type":n} (n = 0..7) | {"cmd":"weather_restore","old":n}
--- | {"cmd":"injury","wound":n} | {"cmd":"camo_refresh"}
+-- | {"cmd":"injury","wound":n} | {"cmd":"camo_refresh","camo":n,"facepaint":n}
 local util = require("modutil")
 local flatjson = require("flatjson")
 

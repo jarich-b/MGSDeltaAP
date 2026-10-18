@@ -18,7 +18,8 @@ inventory. You play the story in order, and a few doors stay locked until you ge
 - **Locked doors:** Cave Exit (Cave to Ponizovje) and Sokrovenno Exit (Sokrovenno to Krasnogorje), each optional. The
   4 C3 Charges are needed to blow up the fuel tanks before Volgin.
 - **Checks:** story chapters and bosses, and the first time you get each weapon, piece of equipment, camo or medicine.
-  Optional: Kerotan frogs, Gako ducks, animals, areas cleared without an alert and CQC takedowns.
+  Optional: Kerotan frogs, Gako ducks, animals, guarded areas you get through without an alert (a caution is fine)
+  and CQC takedowns.
 - **Items:** weapons, equipment, camos and face paints, plus benefits (refills, food, temporary Stealth Camo) and traps
   (Hunger, Alert, Disarm, Snake Bite, Injury and more).
 - **Codec:** call **143.40** for your status, and **143.41 and up** to warp back to chapters you have reached.
@@ -79,6 +80,9 @@ later save.
 - The **Weather** trap only shows outdoors. The **Alert** trap starts a caution phase, but guards don't search.
 - Warps and traps wait until you close the pause menu or a game menu.
 - If a codec page does not change, call the frequency again.
+- **A weapon you already received shows up as an ammo box** where its weapon box would be. Picking up that ammo box
+  still sends the check.
+- If a received item's box doesn't appear, leave the area and come back. The check stays open until you pick it up.
 
 ## License
 

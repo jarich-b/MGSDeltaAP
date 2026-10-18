@@ -274,10 +274,21 @@ class MedicalBundleSize(Range):
     default = 3
 
 
-class ExtraWeapon(OptionSet):
+class ExtraItemSet(OptionSet):
+    """An Extra list: left blank in the yaml ("extra_weapon:" with nothing after it) it means none, not "None"."""
+
+    @classmethod
+    def from_any(cls, data):
+        if data is None or (isinstance(data, str) and data.strip().lower() in ("", "none")):
+            return cls(())
+        return super().from_any(data)
+
+
+class ExtraWeapon(ExtraItemSet):
     """Weapons that are always in your item pool. With few checks some items don't fit in the pool; extras make sure
     these do. They are items you receive, not checks, and take the place of filler first. If there isn't enough
-    room, generation fails. Default: the Survival Knife (it treats some wounds; skipped if you start with it)."""
+    room, generation fails. Default: the Survival Knife (it treats some wounds; skipped if you start with it).
+    For none, use [] (or leave it blank)."""
     display_name = "Extra Weapons"
     valid_keys = ITEMS_OF_TYPE["weapon"]
     default = frozenset({"Survival Knife"})
@@ -291,8 +302,8 @@ class ExtraWeaponRandom(Range):
     default = 0
 
 
-class ExtraEquipment(OptionSet):
-    """Equipment that is always in your item pool. Works like Extra Weapons."""
+class ExtraEquipment(ExtraItemSet):
+    """Equipment that is always in your item pool. Works like Extra Weapons. For none, use [] (or leave it blank)."""
     display_name = "Extra Equipment"
     valid_keys = ITEMS_OF_TYPE["equipment"]
 
@@ -305,9 +316,9 @@ class ExtraEquipmentRandom(Range):
     default = 0
 
 
-class ExtraCamo(OptionSet):
+class ExtraCamo(ExtraItemSet):
     """Camos and face paints that are always in your item pool, including camos you can only get as rewards. Works like
-    Extra Weapons."""
+    Extra Weapons. For none, use [] (or leave it blank)."""
     display_name = "Extra Camos"
     valid_keys = ITEMS_OF_TYPE["camo"]
 
@@ -339,8 +350,9 @@ class AnimalChecks(Toggle):
 
 
 class NoAlertAreas(Range):
-    """This many checks for areas you get through unseen (0 = off). Stay at least 10 seconds, never get spotted and
-    leave through an exit. Each area counts once."""
+    """This many checks for areas with guards that you get through unseen (0 = off). Stay at least 10 seconds, never
+    cause an alert or evasion (a caution is fine) and leave through an exit to another area than the one you came
+    from (in a dead end, back the way you came is fine). Each area counts once; areas without soldiers never count."""
     display_name = "No-Alert Area Checks"
     range_start = 0
     range_end = 30

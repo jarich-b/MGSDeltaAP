@@ -36,7 +36,7 @@ GM = {  # offset, struct format
     "battery": (0xB7E, "<h"), "battery_max": (0xB80, "<h"),
     "weapon": (0x704, "<h"), "weapon_load": (0x70C, "<h"),
     "phase_level": (0x19C4, "<i"), "weather": (0x19C0, "<h"),
-    "prev_weapon": (0x708, "<h"), "worn_camo": (0x7AE, "<B"),
+    "prev_weapon": (0x708, "<h"), "worn_camo": (0x7AE, "<B"), "worn_paint": (0x7AF, "<B"),
 }
 
 GRENADES = range(19, 24)
@@ -46,6 +46,8 @@ INFINITY_FACE_PAINT, STEALTH_CAMO = 130, 23
 TIMED_SECONDS = 180
 
 CAMO_ITEMS = range(CAMO_ITEM_BASE, FACEPAINT_ITEM_BASE)    # uniform item id = 51 + ECamouflageType
+FACEPAINT_ITEMS = range(FACEPAINT_ITEM_BASE, FACEPAINT_ITEM_BASE + 31)   # face paint item id = 117 + EFacePaintType
+FASHION_NO_PAINT = {INFINITY_FACE_PAINT, 127}   # never from Fashion: the timed benefit, the Mask (Raikov's disguise)
 FOOD_SLOTS = range(31, 47)           # Snake's food slots in the weapon table (dead food, definitions 50..97)
 ANIMAL_SLOTS = range(47, 50)         # his three live-animal slots (definitions 98..130)
 FOOD_CAPTURE_SHIFT = 600000          # seconds; > 2 x 259200 (rotten after 3 game days, half-speed kinds at 6 days)
@@ -314,16 +316,23 @@ def disarm(game, modlink=None, stage=None, **_):
 
 
 def fashion(game, modlink=None, stage=None, **_):
-    """Wear a random other owned camouflage: write the worn-camo byte, then ask the mod to refresh the model."""
+    """Wear a random owned camouflage and face paint, not both the worn ones: write the worn bytes, then ask the mod
+    to refresh the model. (The session may add a wearable item on top, see Session.fashion_wearable.)"""
     if modlink is None or not _playable(stage):
         return "Fashion trap skipped (needs the mod and a playable stage)"
-    worn = _get(game, "worn_camo")
-    owned = [i - CAMO_ITEM_BASE for i, _, count, _ in game.items() if i in CAMO_ITEMS and count > 0]
-    options = [c for c in owned if c != worn]
+    worn = (_get(game, "worn_camo"), _get(game, "worn_paint"))
+    owned = [(i, count) for i, _, count, _ in game.items() if count > 0]
+    camos = [i - CAMO_ITEM_BASE for i, _ in owned if i in CAMO_ITEMS]
+    paints = [i - FACEPAINT_ITEM_BASE for i, _ in owned if i in FACEPAINT_ITEMS and i not in FASHION_NO_PAINT]
+    if worn[1] not in paints:
+        paints.append(worn[1])               # the worn one (e.g. the Mask) may stay
+    options = [(c, p) for c in camos for p in paints if (c, p) != worn]
     if not options:
         return "Fashion trap (no other camouflage owned)"
-    _set(game, "worn_camo", random.choice(options))
-    modlink.camo_refresh()
+    camo, paint = random.choice(options)
+    _set(game, "worn_camo", camo)
+    _set(game, "worn_paint", paint)
+    modlink.camo_refresh(camo, paint)
     return "A new look! (random camouflage)"
 
 

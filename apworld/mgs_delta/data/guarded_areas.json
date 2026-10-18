@@ -1,0 +1,15 @@
+{
+  "note": "Areas with guards (soldiers) for the No-Alert Area checks, from docs/dev/AREA_GUARDS.md. Only these count. Left out: no enemies, dogs only (s113), guards only on the return (s111), boss arenas.",
+  "areas": [
+    "v004", "v005", "v006",
+    "s004", "s005", "s006", "s012", "s021", "s022",
+    "s041", "s042", "s043", "s044", "s051", "s052", "s053", "s055", "s056",
+    "s061", "s062",
+    "s071", "s072", "s073",
+    "s091", "s092", "s093", "s094", "s101",
+    "s112",
+    "s191", "s192"
+  ],
+  "dead_ends_note": "Areas with one way in and out: leaving back the way you came counts there (anywhere else it does not).",
+  "dead_ends": ["v006", "s042", "s062"]
+}

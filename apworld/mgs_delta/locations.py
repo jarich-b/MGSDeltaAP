@@ -115,15 +115,17 @@ def location_section(name, options):
 NO_ALERT_TOTAL = 30        # = the no_alert_areas option maximum
 CQC_TOTAL = 30             # = the cqc_takedowns option maximum
 ARENA_AREAS = {area for boss in BOSSES for area in boss.get("arena", [])}   # forced phases: never a no-alert area
+GUARDED_AREAS = load("guarded_areas.json")["areas"]   # the areas with guards: only these are no-alert areas
 
 
 def _no_alert_sections():
-    """Section in which the k-th no-alert area can be reached: the k-th (story order) playable jungle area (s###, no
-    boss arena) of the cumulative section list. Cutscene-only and Virtuous Mission areas are not counted."""
+    """Section in which the k-th no-alert area can be reached: the k-th (story order) area with guards
+    (data/guarded_areas.json) of the cumulative section list."""
     section_ids = []
     for section in SECTIONS:
-        playable = sum(1 for area in section["areas"] if area.startswith("s") and area not in ARENA_AREAS)
-        section_ids += [section["id"]] * playable
+        guarded = sum(1 for area in section["areas"] if area in GUARDED_AREAS and area not in ARENA_AREAS)
+        section_ids += [section["id"]] * guarded
+    assert len(section_ids) >= NO_ALERT_TOTAL, "fewer guarded areas than No-Alert Area checks"
     return section_ids
 
 
