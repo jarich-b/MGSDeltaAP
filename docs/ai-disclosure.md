@@ -15,16 +15,16 @@ With that knowledge I also used it to help me write code and documentation. AI w
 All decisions made are done by me, all testing before publishing any code is done by hand. I review all code by hand to ensure its quality.
 
 So all in all from AI usage:
-> Writing code
-> Writing documentation
-> Debugging assistance
-> Refactoring codebase
+- Writing code
+- Writing documentation
+- Debugging assistance
+- Refactoring codebase
 
 Human side:
-> Structuring the codebase
-> Structure of the mod
-> Checks and item pool. Which includes finding ways to implement these with the given tools.
-> Review of code
-> Review of documentation
-> Tests in game, debugging, trying different solutions
+- Structuring the codebase
+- Structure of the mod
+- Checks and item pool. Which includes finding ways to implement these with the given tools.
+- Review of code
+- Review of documentation
+- Tests in game, debugging, trying different solutions
 
