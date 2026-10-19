@@ -7,10 +7,20 @@ inventory. You play the story in order, and a few doors stay locked until you ge
 
 **Early alpha.** A full run has been played from start to goal, but expect bugs.
 
-> **Play offline story mode only.** Never use this mod in the game's online modes. Start a **new game** for every seed:
-> the client changes your inventory and story progress, and your in-game saves keep those changes. Your profile
-> (Kerotan and Gako records, achievements) is not changed. This project is not affiliated with Konami and includes no
-> game files.
+> [!CAUTION]
+> ## DISCLAIMER: do not use this mod online
+> **Never play Fox Hunt or any other online mode with this mod or the client running.**
+> The client changes the game's memory (your inventory, health and story progress). Online, that is cheating and it
+> can get your account banned. Before you go online: close the MGS Delta Client and turn the mod off
+> (`MGSDeltaAP : 0` in `ue4ss\Mods\mods.txt`), or remove UE4SS. Use the mod at your own risk.
+
+> [!WARNING]
+> **Play offline story mode only, and start a new game for every seed.** The client changes your inventory and story
+> progress, and your in-game saves keep those changes. Your profile (Kerotan and Gako records, achievements) is not
+> changed.
+
+This project is not affiliated with Konami and includes no game files. How it works: see the [docs](docs/README.md).
+AI use: see the [AI disclosure](docs/ai-disclosure.md).
 
 ## Features
 
