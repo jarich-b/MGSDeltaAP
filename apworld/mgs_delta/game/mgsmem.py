@@ -135,14 +135,16 @@ class Game:
             yield iid, tag, count, maximum
 
     def give_weapon(self, wid, stock=None):
-        _, _, maximum = next(w for w in self.weapons() if w[0] == wid)
-        value = stock if stock is not None else max(maximum, 1)
-        self.write(self.weapon_addr(wid) + 0x28, struct.pack("<h", value))
+        """Write a weapon's stock; without one, a full stack (only then is the maximum read)."""
+        if stock is None:
+            stock = max(struct.unpack("<h", self.read(self.weapon_addr(wid) + 0x2A, 2))[0], 1)
+        self.write(self.weapon_addr(wid) + 0x28, struct.pack("<h", stock))
 
     def give_item(self, iid, count=None):
-        _, _, _, maximum = next(i for i in self.items() if i[0] == iid)
-        value = count if count is not None else max(maximum, 1)
-        self.write(self.item_addr(iid) + 0x24, struct.pack("<h", value))
+        """Write an item's count; without one, a full stack (only then is the maximum read)."""
+        if count is None:
+            count = max(struct.unpack("<h", self.read(self.item_addr(iid) + 0x26, 2))[0], 1)
+        self.write(self.item_addr(iid) + 0x24, struct.pack("<h", count))
 
     def set_maximum(self, kind, item_id, value):
         """Write the stack maximum of a weapon (+0x2A) or item (+0x26)."""
