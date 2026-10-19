@@ -18,7 +18,7 @@ flowchart TD
         loader["data_loader.py"]
         data[("data/*.json")]
         init --> items & locations & options & rules
-        items & locations & rules --> loader --> data
+        items & locations & options --> loader --> data
     end
     subgraph client["Client: while playing"]
         ctx["client.py<br/>MGSDeltaContext"]
@@ -36,9 +36,11 @@ flowchart TD
         progress["game/progress.py<br/>ProgressPublisher"]
         ctx --> session & progress
         session --> tracking & codec & bridge & effects & heal & warp & state & link
-        bridge --> mem & ev
+        bridge --> mem & ev & warp
+        codec --> warp
         effects --> mem
         warp --> mem
+        state --> mem
     end
     init -. "slot data" .-> ctx
 ```
@@ -96,7 +98,7 @@ Builds the codec pages (status, locks, goal, warp list) and handles codec warps:
 prepares the warp, and the warp runs once the codec is closed. Mixed into `Session`.
 
 ### `game/bridge.py`: `Bridge`
-The game-facing tools. It caches the inventory each tick and remembers what the client wrote itself, so a change it
+The game-facing tools. It reads both inventory tables once per tick, so every step of that tick sees the same inventory, and remembers what the client wrote itself, so a change it
 sees later was made by the game. It matches pickup events to box locations (same area, same box model, nearest
 position). It does the masking at area loads, clears box respawn timers and reads the "next stage" value.
 

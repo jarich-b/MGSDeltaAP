@@ -34,6 +34,7 @@ flowchart LR
     ctx --> session
     session --> bridge
     bridge --> mem
+    session -- "warps, traps,<br/>story values" --> mem
     session --> link
     bridge --> reader
 
@@ -61,12 +62,17 @@ The client checks the game every 50 ms. Each check runs `Session.tick()`, which 
 ```mermaid
 flowchart TD
     A["Read the inventory and the stage"] --> B{"Run started?"}
-    B -- no --> B2["Wait for the backpack<br/>(then wipe and give the loadout)"]
-    B -- yes --> C["Stage changed?<br/>locks, masking"]
-    C --> D["Inventory changes and pickups<br/>(new finds, take-backs)"]
-    D --> E["Items received from Archipelago<br/>(give them, regrant missing ones)"]
-    E --> F["Story, bosses, Kerotans, Gako,<br/>animals, CQC, no-alert areas"]
-    F --> G["Codec menu, DeathLink, goal"]
+    B -- no --> B1{"Backpack picked up?"}
+    B1 -- no --> X["End of this tick"]
+    B1 -- yes --> B2["Run start:<br/>wipe and give the loadout"]
+    B2 --> C
+    B -- yes --> C{"Stage changed?"}
+    C -- yes --> C1["Locks and masking"]
+    C -- no --> C2["Next stage announced?<br/>mask early"]
+    C1 & C2 --> D["Inventory changes and pickups<br/>(new finds, take-backs)"]
+    D --> E["Items received from Archipelago<br/>(give new ones once in play, regrant missing ones),<br/>forced heals"]
+    E --> F["Story, bosses, codec warps, CQC, no-alert areas,<br/>Kerotans, Gako, animals"]
+    F --> G["Goal, DeathLink, codec pages"]
     G --> H["Show held popups once Snake is in play"]
     H --> I["Save the run state"]
 ```
@@ -82,8 +88,9 @@ sequenceDiagram
     Game->>Game: Snake picks up the M37 box
     Mod->>Client: item_end (box model, position) in events.jsonl
     Client->>Game: reads inventory: M37 is now owned
-    Client->>Client: the pickup explains the new M37: it is a find
+    Note over Client: up to 1.5 s: one new item, not a hand-out
     Client->>Server: location check "New Weapon 3"
+    Note over Client: 4 s with no stage change: the box ending was a pickup,<br/>it matches the M37 box
     Client->>Game: takes the M37 back (it was not received)
     Server-->>Client: item for you, e.g. "Thermal Goggles"
     Client->>Game: writes Thermal Goggles into the item table

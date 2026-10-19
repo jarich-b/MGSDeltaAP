@@ -1,7 +1,8 @@
 # How the game works
 
 This page collects what we found out about MGS Delta while building the randomizer, and how the client uses it.
-Most of it came from reading the game's code and stage scripts, then testing in game.
+Most of it came from testing in game: trying different approaches, and watching how the game's memory changed while
+we picked things up, walked through doors, loaded saves and called the codec.
 
 ## The inventory is two tables
 
@@ -19,14 +20,15 @@ and saved like one found in the world. This is how received items are given, and
 
 ## How item boxes decide to appear
 
-Each area has a script that places its boxes when the area loads. We read every stage script. The rules:
+Each area places its boxes when it loads. By changing the inventory before entering areas and watching which boxes
+showed up, we found these rules:
 
 - **Equipment and camo boxes** only appear while Snake owns **none** of that item (count 0).
-- **A weapon box becomes an ammo box** while Snake owns the weapon. The script compares the stock against 0, not
-  against the maximum.
+- **A weapon box becomes an ammo box** while Snake owns the weapon, even with almost no ammo
+  left.
 - **A weapon box is refused while the weapon is owned** ("M37 FULL"), whatever the stock.
-- **Weapon, ammo, grenade and medicine boxes also have a respawn timer.** When picked up, the box stores a counter and
-  only comes back after enough time has passed.
+- **Weapon, ammo, grenade and medicine boxes also have a respawn timer.** A box you picked up stays away for a while,
+  even when its item is hidden. The client clears that timer for boxes that are still a check.
 - Picking up an owned item at its maximum is refused ("FULL"). Below the maximum it is accepted, but a unique item
   doesn't change. So a pickup can't be seen from the inventory alone. That is why the mod reports box events.
 
@@ -46,21 +48,22 @@ appeared. We call this masking.
 ```mermaid
 sequenceDiagram
     participant Game
+    participant Mod
     participant Client
     Note over Game: Snake walks through a door
     Game->>Game: writes the next stage's code ($var 0x250)
     Client->>Game: sees the next stage, hides owned items, shows taken-back items
     Client->>Game: clears respawn timers of received items' boxes
     Game->>Game: stage name changes, the area script places the boxes
-    Game-->>Client: item_spawn events (from the mod)
+    Mod->>Client: item_spawn events
     Note over Client: 1.5 s after the last spawn (at most 8 s)
     Client->>Game: puts every masked item back
 ```
 
 **Timing was the hard part.** Masking when the stage *name* changes was too late now and then: the area script won the
-race, and a box was missing or came as ammo. The game writes the next stage's code to a script variable 0.3 to 0.8 s
-before the name changes (about 10 s early in the Virtuous Mission). The client masks on that value instead, and the
-boxes appeared every time in testing.
+race, and a box was missing or came as ammo. Recording the memory while walking through doors showed that the game
+writes the next stage's code to a variable 0.3 to 0.8 s before the name changes (about 10 s early in the Virtuous
+Mission). The client masks on that value instead, and the boxes appeared every time in testing.
 
 **Putting items back.** A hidden item goes back to its count, but at most `maximum - 1`. At the maximum, the game would
 refuse your pickup of that same box ("FULL"). For the same reason, in an area with an open box of an item you own, the
@@ -76,9 +79,12 @@ flowchart TD
     A["Something new in the inventory"] --> B{"Save load, warp<br/>or right after connecting?"}
     B -- yes --> R["Restored gear: ignore"]
     B -- no --> C{"4 or more new things at once?"}
-    C -- yes --> H["A game hand-out (backpack, cleared-game extras):<br/>strip it, keep what is allowed"]
-    C -- no --> D{"A box pickup event<br/>within 10 s?"}
-    D -- yes --> F["A find: send the check.<br/>Not received? take it back"]
+    C -- "yes, and no box was picked up" --> H["A game hand-out (backpack, cleared-game extras):<br/>strip it, keep what is allowed"]
+    C -- no --> N{"Received from Archipelago?"}
+    N -- yes --> K["Already yours: no check here<br/>(its box pickup counts it)"]
+    N -- no --> S["Counts toward 'New Weapon k' (or Equipment, Camo):<br/>send the check"]
+    S --> D{"A box pickup event<br/>within 10 s?"}
+    D -- yes --> F["A find: take it back"]
     D -- no --> G["A story gift or boss reward: keep it"]
 ```
 
@@ -142,8 +148,8 @@ tanks), which is why they come all at once.
 ## The codec as a menu
 
 Calling a frequency with no contact shows "No response.". The mod swaps that text for the client's pages: 143.40 is the
-status and 143.41 up to 143.54 are the chapter warps. These frequencies were picked from a range the game's scripts
-never use. A page holds up to 4 lines, and pressing confirm shows the next one.
+status and 143.41 up to 143.54 are the chapter warps. These frequencies were picked from a range no in-game contact
+uses. A page holds up to 4 lines, and pressing confirm shows the next one.
 
 ## Kerotan frogs
 

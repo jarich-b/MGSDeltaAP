@@ -67,6 +67,7 @@ Install while the game is closed.
 
 ## Playing
 
+> [!IMPORTANT]
 > **Before you pick up anything:**
 > - Start a **new game** for every seed.
 > - Connect the client **before you pick up the backpack**.
