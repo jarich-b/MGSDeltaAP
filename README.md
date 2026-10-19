@@ -28,8 +28,7 @@ inventory. You play the story in order, and a few doors stay locked until you ge
 
 ## Requirements
 
-- Metal Gear Solid Delta: Snake Eater on PC (Steam), the version from 2026-02-01 (`MGSDelta-Win64-Shipping.exe`,
-  221,809,664 bytes). A game update can break the client.
+- Metal Gear Solid Delta: Snake Eater on PC (Steam)
 - Windows.
 - [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) 0.6.8 or newer.
 - The **experimental-latest** build of [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/experimental-latest)
