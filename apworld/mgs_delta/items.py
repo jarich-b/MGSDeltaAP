@@ -14,7 +14,7 @@ ITEM_BY_NAME = {entry["name"]: entry for entry in ITEM_TABLE}
 
 # The Volgin / Shagohod section needs 4 C3 Charges: the 4 fuel tanks in the Main Wing take one charge each and the
 # story only goes on once all are planted (C3 can only be planted there). The client gives no C3 until all 4 are
-# received, then 4 minus the ones planted; the game's own C3 hand-out is removed.
+# received, then holds the stock at 4 until the tanks are done; the game's own C3 hand-out is removed.
 C3_CHARGE = "C3 Charge"
 C3_CHARGES = 4
 # Raikov's disguise, worn for the Groznyj Grad infiltration (raikov_disguise randomized: pool items, logic before the capture)

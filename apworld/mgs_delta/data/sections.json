@@ -274,7 +274,7 @@
   },
   "warp": false,
   "boss": true,
-  "note": "chapter D, gate 3: the 4 fuel tanks in the Main Wing s121a (story 137-141) each take one C3 Charge and the story only goes on once all are planted; C3 can only be planted there, so no door is bounced. The client keeps the C3 stock at the charges received minus the ones planted. s111a is only reachable through s121a. Then a one-way story chain",
+  "note": "chapter D, gate 3: the 4 fuel tanks in the Main Wing s121a (story 137-141) each take one C3 Charge and the story only goes on once all are planted; C3 can only be planted there, so no door is bounced. The client gives no C3 until all 4 charges are received, then holds the stock at 4 until the tanks are done (story 142). s111a is only reachable through s121a. Then a one-way story chain",
   "new_weapon": [],
   "new_equipment": [],
   "new_camo": [],

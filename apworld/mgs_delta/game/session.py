@@ -29,8 +29,9 @@ ACQ_BUNDLE_LABELS = {"weapon": "Weapon Bundle", "equipment": "Item Bundle", "cam
 ACQ_OPTIONS = {"weapon": "weapon_checks", "equipment": "equipment_checks", "camo": "camo_checks",
                "medical": "medical_checks"}
 C3_CHARGE, C3_CHARGES = "C3 Charge", 4         # = items.C3_CHARGE(S) (the game package cannot import the world)
-C3 = ("weapon", 26)                           # the C3 weapon: its stock = C3 Charges received - planted (keep_c3)
+C3 = ("weapon", 26)                           # the C3 weapon: held at 4 once all 4 C3 Charges are received (keep_c3)
 C3_TANK_STAGE, C3_TANK_STORY = "s121a", 137   # the 4 fuel tanks: Main Wing from story 137 (s121a "C3 Set Stage")
+C3_DONE_STORY = 142                           # the fourth charge on the tanks writes 142 (s121a proc367): tanks done
 GOAL_BOSS = "Ocelot (Duel)"  # the goal: winning the final gun duel with Ocelot (data/bosses.json)
 PICKUP_DECIDE = 10.0         # a gain with no matching pickup event within this time is a gift (animation ~3-4 s + 2 s)
 LOCK_FALLBACK = 1.5          # bounce a locked stage this long after load start if no item spawned before
@@ -47,7 +48,8 @@ SHAGOHOD_SECTION = "shagohod"
 SHAGOHOD_RPG = ("weapon", 17)    # the RPG-7: the story gift for the Shagohod fight (shagohod_rpg)
 WIG_PREFIX = "s211"              # the WIG: the Ocelot duel's SAA comes from its box there (a full SAA can't take it)
 DUEL_SAA = ("weapon", 8)
-GEAR_BACK_STORY = 135        # EVA's gear return behind the waterfall (s152a_0 chain -> s152a at 135): the escape is over
+CAPTURE_APPLIED = "capture_applied"   # run-state counter: received items applied when the capture began (regrant)
+GEAR_BACK_STORY = 135       # EVA's gear return behind the waterfall (s152a_0 chain -> s152a at 135): the escape is over
 MAX_POPUPS_PER_TICK = 5
 ATTACH_SETTLE = 3        # s in one playable stage after (re)attaching before items are written
 POPUP_SETTLE = 2        # s after the mod's stage event before labels are shown
@@ -222,6 +224,8 @@ class Session(TrackingMixin, CodecMixin):
         self.last_life = None
         self.last_continue = None
         self.death_reload = None     # {"t": died at, "back": life back at}: the continue's reload (see note_death_reload)
+        self.c3_given = False        # all 4 C3 Charges received and C3 handed out (logged once, see keep_c3)
+        self.c3_warned = False       # the missing-charges popup shown for this Main Wing entry (see warn_c3)
         self.init_tracking(location_ids, self.bosses, animals, guarded, dead_ends)
         self.init_codec(checkpoints or [], entries or {}, end_boss)
         self.probe = EscapeProbe(self)       # read-only logging of the Capture and Escape section ("[probe]")
@@ -360,7 +364,7 @@ class Session(TrackingMixin, CodecMixin):
                 self.apply_received(received, stage)
             # regrant only what was already applied: a new item waits for apply_received (in play)
             applied = Counter(name for name, _ in received[:self.state.applied_count])
-            self.regrant(self.received_item_keys(applied), stage, now)
+            self.regrant(self.received_item_keys(applied), stage, now, received[:self.state.applied_count])
             label = self.forced_heal.tick(stage, self.read_story(), self.read_vm_story())
             if label:
                 self.modlink.popup("Archipelago", label)
@@ -460,17 +464,25 @@ class Session(TrackingMixin, CodecMixin):
         self.settle_received_pickups(self.clock())
         self.keep_raised()
 
-    def regrant(self, received_keys, stage, now):
-        """Re-grant received items after save reloads. Not during the capture: the story strips Snake's gear on purpose
-        and gives it back later; received items return once EVA gave the gear back (story 135, behind the waterfall)."""
+    def regrant(self, received_keys, stage, now, applied=()):
+        """Re-grant received items after save reloads. During the capture only what arrived during it (a Fork received in
+        the cell was lost to a death reload) and the Revival Pill: the story strips Snake's gear on purpose and gives it
+        back later; the rest returns once EVA gave the gear back (story 135, behind the waterfall). `applied`: the
+        received (name, sender) list already applied."""
         stripped = self.gear_taken(stage)
-        sorrow = bool(stage) and stage.startswith(SORROW_STAGE)     # gear is back; Snake dies here and needs the pill
-        if (not stripped or sorrow) and now - self.last_regrant > REGRANT_SECONDS:
-            self.last_regrant = now
-            wig = bool(stage) and stage.startswith(WIG_PREFIX)
-            for key in received_keys:
-                if (not stripped or key == REVIVAL_PILL) and not (wig and key == DUEL_SAA):
-                    self.bridge.grant(*key)
+        if now - self.last_regrant <= REGRANT_SECONDS:
+            return
+        self.last_regrant = now
+        if stripped:
+            # the first tick in the capture marks where it began; items received from then on are Snake's in the cell
+            start = self.state.counters.setdefault(CAPTURE_APPLIED, len(applied))
+            sorrow = bool(stage) and stage.startswith(SORROW_STAGE)     # Snake dies here and needs the pill
+            received_keys = ({self.item_keys[name] for name, _ in applied[start:] if name in self.item_keys}
+                             | ({REVIVAL_PILL} & set(received_keys) if sorrow else set()))
+        wig = bool(stage) and stage.startswith(WIG_PREFIX)
+        for key in received_keys:
+            if not (wig and key == DUEL_SAA):
+                self.bridge.grant(*key)
 
     def gear_taken(self, stage):
         """Whether Snake is in the capture and escape without his gear: the Capture and Escape section before EVA's
@@ -708,44 +720,44 @@ class Session(TrackingMixin, CodecMixin):
 
     def keep_c3(self, stage):
         """C3 only fits the 4 fuel tanks in the Main Wing (story >= 137), and the story only goes on once all 4 are
-        planted, so the C3 Charges are gate 3. No C3 until all 4 charges are received, then all 4 at once: planting
-        some and warping back would lose them (the Main Wing script resets the tanks at story 137, "C3 Clear"). The
-        stock is then 4 minus the ones planted; the game's own C3 (the gear it gives back after the escape) is replaced
-        by it. A planting is the stock going down by one on the tanks' stage; the planted count is reset whenever the
-        story is below 137 (the tanks are reset when Snake gets there again), and any other change by the game (a save
-        reload, the hand-out) can only lower it: an uncertain case gives a charge too many (harmless: only the tanks
-        take C3), never one too few. Not during the capture: the story takes Snake's gear and gives it back itself."""
-        if not stage or not FREE_STAGE.match(stage) or self.bridge.masking:
+        planted, so the C3 Charges are gate 3. No C3 until all 4 charges are received; from then on the stock is held
+        at 4, topped up after every planting, until the fourth tank is done (story 142). The tanks are game state the
+        client can't see (a death's checkpoint reload, a save load or a warp back resets them, "C3 Clear" at 137), so
+        no planted count is kept: a spare charge is harmless (only the tanks take C3), one too few locks the run.
+        The game's own C3 (the gear it gives back after the escape) is replaced by this. Entering the Main Wing at
+        the tanks without all 4 charges shows a popup with the count. Not during the capture: the story takes
+        Snake's gear and gives it back itself."""
+        if not stage or not FREE_STAGE.match(stage) or self.bridge.masking or self.gear_taken(stage):
             return
-        if self.gear_taken(stage):
-            self.c3_last = None
-            return
-        bridge, counters = self.bridge, self.state.counters
-        complete = self.received_counts.get(C3_CHARGE, 0) >= C3_CHARGES
-        planted = counters.get("c3_planted", 0)
+        bridge = self.bridge
+        received = self.received_counts.get(C3_CHARGE, 0)
+        complete = received >= C3_CHARGES
         try:
-            stock = bridge.value(*C3)
             story = self.read_story()
-            last = getattr(self, "c3_last", None)
-            if story is not None and story < C3_TANK_STORY:
-                planted = 0
-            elif last is not None and stock != last:
-                if stock == last - 1 and stage.startswith(C3_TANK_STAGE) and story is not None:
-                    planted += 1
-                    self.log(f"C3 Charge planted ({planted}/{C3_CHARGES})")
-                else:
-                    planted = min(planted, max(0, C3_CHARGES - max(stock, 0)))
-            if planted != counters.get("c3_planted", 0):
-                counters["c3_planted"] = planted
-                self.state.save()
-            target = C3_CHARGES - planted if complete else -1
-            if stock != target:
+            if story is not None and story >= C3_DONE_STORY:
+                return                    # the tanks are done: C3 is left alone
+            self.warn_c3(stage, story, received)
+            target = C3_CHARGES if complete else -1
+            if bridge.value(*C3) != target:
                 bridge.set_value(*C3, target)
-                if complete and last == -1:
+                if complete and not self.c3_given:
                     self.log(f"All {C3_CHARGES} C3 Charges received: C3 given")
-            self.c3_last = target
+            self.c3_given = complete
         except OSError:
             pass
+
+    def warn_c3(self, stage, story, received):
+        """Once per entry into the Main Wing at the tanks (story 137-141): a popup when charges are still missing."""
+        at_tanks = stage.startswith(C3_TANK_STAGE) and story is not None and story >= C3_TANK_STORY
+        if not at_tanks:
+            self.c3_warned = False
+            return
+        if self.c3_warned or received >= C3_CHARGES:
+            return
+        self.c3_warned = True
+        text = f"You only have {received}/{C3_CHARGES} C3 Charges: the fuel tanks need all {C3_CHARGES}"
+        self.modlink.popup("C3 Charges", text, style="warning")
+        self.log(text)
 
     def keep_disguise(self, stage, received_keys):
         """raikov_disguise randomized: the Officer Camo and the Mask face paint are Archipelago items. The game's own
@@ -946,10 +958,14 @@ class Session(TrackingMixin, CodecMixin):
             gained = bridge.known - {tuple(key) for key in state.inventory}
         if gained and (first or now < self.restore_until):
             # save load / foreign save: not acquisitions, and the save's gear stays. Re-take known box items.
-            for key in gained:
+            retaken = []
+            for key in sorted(gained):
                 if state.is_taken_back(key) and key not in received_keys:
                     bridge.unown(*key)
-            self.log(f"Inventory restored ({len(gained)} items); not counted as checks")
+                    retaken.append(bridge.item_by_key.get(key, {}).get("name", str(key)))
+            self.log(f"Inventory restored ({len(gained)} items); not counted as checks"
+                     + (f"; removed {len(retaken)} found or handed out earlier, not received: {', '.join(retaken)}"
+                        if retaken else ""))
             self.gain_window = None
             gained = set()
         elif first:
@@ -1047,6 +1063,10 @@ class Session(TrackingMixin, CodecMixin):
                            and key not in received_keys)
             if counted or state.is_taken_back(key) or reward or after_quota:
                 self.pending.append({"key": key, "t": t_gain, "counted": counted, "reward": bool(reward)})
+            elif is_camo_key(key) and key not in received_keys:
+                # a camo the player keeps (no camo check: a box find, a boss reward). Hand-out strips never treat camos
+                # as owned before (the hand-out dresses Snake in one), so remember it: EVA's gear return wiped them all
+                state.add_kept(key)
 
     def countable_find(self, key):
         """Whether finding this item now earns collection progress (a new item of an open, counted category)."""
@@ -1253,7 +1273,8 @@ class Session(TrackingMixin, CodecMixin):
                 names.append(self.slot_data[start])
         legit = ({tuple(key) for key in received_keys} | {tuple(key) for key in self.state.kept}
                  | {("item", FACEPAINT_ITEM_BASE)} | AUTO_GIFTS | VANILLA_ITEMS
-                 | {self.item_keys[name] for name in names if name in self.item_keys})
+                 | {self.item_keys[name] for name in names if name in self.item_keys}
+                 | (set() if self.opt("raikov_disguise", 0) else set(DISGUISE_KEYS)))   # vanilla: the game's own
         # camos and face paints are never "owned before": the hand-out also dresses Snake in one of them (a worn
         # Tiger Stripe / Olive Drab / White Tuxedo survived the Operation Snake Eater hand-out)
         keep = legit | {key for key in self.owned_seen if not is_camo_key(key)}
